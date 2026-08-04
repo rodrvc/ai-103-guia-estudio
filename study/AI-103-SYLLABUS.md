@@ -1,5 +1,11 @@
 # AI-103 — Matriz del temario oficial
 
+> **Qué contiene:** los 44 objetivos oficiales con peso, nivel y evidencia. **Fuente canónica de los niveles.**
+> **Cuándo leerlo:** al actualizar un nivel (solo el dominio tocado) · al planificar (solo § Resumen de pesos) · al verificar vigencia (solo las cabeceras de fecha).
+> **Cuándo NO:** entero. Son 188 líneas y casi nunca necesitas todas.
+>
+> **Integridad al escribir:** un nivel solo sube con **evidencia registrada** (quiz, ejercicio, lab). Leer una lección no cuenta. Citar siempre la evidencia en la celda. Escala en `CLAUDE.md`.
+
 - **Fuente:** https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103
 - **Skills measured as of:** 2026-04-16
 - **Última verificación por un agente:** 2026-08-04

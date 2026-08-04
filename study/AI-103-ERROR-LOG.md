@@ -1,6 +1,10 @@
 # AI-103 — Registro de errores
 
-Cada fallo, confusión o duda relevante se registra aquí. Es la materia prima de la repetición espaciada.
+> **Qué contiene:** cada fallo con su causa, la respuesta correcta y el calendario de repaso. Es la materia prima de la repetición espaciada y la **fuente canónica** del análisis de patrones.
+> **Cuándo leerlo:** al corregir un quiz (solo § Patrones) · al registrar un error nuevo (solo la cabecera de formato) · en el repaso del día (solo los E-NNN de hoy).
+> **Cuándo NO:** entero, casi nunca. Ve a la sección que necesitas.
+>
+> **Integridad:** no borrar errores abiertos — su detalle es el material de repaso. Al cerrar uno, comprimir a una línea en § Errores cerrados.
 
 ## Cómo registrar
 
@@ -133,7 +137,11 @@ Todos provienen de **DIAG-1 (2026-08-04)**. Repasos programados: 1d = 2026-08-05
 
 ## Errores cerrados
 
-*Ninguno todavía.*
+**Un error cerrado ocupa UNA línea, no un bloque.** Al cerrarse, se borra su detalle y se añade aquí. El valor de un error cerrado es saber que se cerró y con qué evidencia; si el concepto sigue siendo útil, ya vive en `notes/`. Cuando esta tabla supere 40 filas, mover a `study/archive/ERROR-LOG-cerrados-<AAAA>Q<n>.md`.
+
+| ID | Tema | Objetivo | Cerrado | Evidencia |
+| --- | --- | --- | --- | --- |
+| *(ninguno todavía)* | | | | |
 
 ---
 

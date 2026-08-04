@@ -1,6 +1,32 @@
 # AI-103 — Bitácora de sesiones
 
-Orden cronológico inverso (lo más reciente arriba). Una entrada breve por sesión.
+> **Qué contiene:** qué pasó en cada sesión, en orden cronológico inverso.
+> **Cuándo leerlo:** para reconstruir historia o entender por qué se decidió algo.
+> **Cuándo NO:** en trabajo normal. El estado vive en STUDY-STATE; la evidencia en ERROR-LOG y PRACTICE. Este archivo casi nunca es necesario.
+
+**Política de tamaño:** solo las **últimas 5 sesiones** en detalle (**≤8 líneas** cada una: hecho / resultado / errores / cambios de nivel / próxima acción). Las anteriores colapsan a una fila de § Historial comprimido y se archivan por mes en `study/archive/SESSION-LOG-<AAAA-MM>.md`. No re-narrar aquí lo que ya está en ERROR-LOG o PRACTICE — enlazar.
+
+---
+
+## Historial comprimido
+
+| # | Fecha | Qué pasó |
+| --- | --- | --- |
+| *(vacío — se llena al rotar la sexta sesión)* | | |
+
+---
+
+---
+
+## 2026-08-04 — Sesión 004: Auditoría de memoria (memory-engineer)
+
+- **Hecho:** auditoría de arquitectura de contexto por el agente `memory-engineer`. Aplicado lo urgente.
+- **Podas:** `CLAUDE.md` 173 → ~110 líneas. Perfil, fuentes y riesgos R1–R8 → `study/PROFILE.md`. Formato de apuntes → `notes/_TEMPLATE.md`. Regla de reserva → PRACTICE. Duplicados eliminados en STUDY-STATE (§Hipótesis, §Temas débiles, §Lectura comprimida).
+- **Routing:** tabla de archivos sustituida por **tabla por tarea con columna "NO leas"**. Cabecera de 3 líneas (qué / cuándo sí / cuándo no) en los 5 archivos de `study/`.
+- **Anti-crecimiento:** techo de 200 líneas por archivo · SESSION-LOG solo 5 sesiones en detalle, resto a `study/archive/` · error cerrado = 1 línea · `notes/INDEX.md` para que los agentes no lean el directorio (proyección: 30 módulos ≈ 4800 líneas).
+- **Robustez:** auto-chequeo de frescura en EMPIEZA AQUÍ · tercer estado ✗ en repaso espaciado (antes no se podía registrar un fallo) · reglas de integridad repetidas en SYLLABUS/STUDY-STATE por si un agente no carga `CLAUDE.md`.
+- **Sesgo marcado:** la conclusión "brecha de superficie" ahora lleva `n=12, fuente única, revisar tras DIAG-1B`. El sistema aplicaba R7 al usuario pero no a sí mismo.
+- **Sin cambios** de nivel, errores ni progreso. **Próxima acción:** sin cambio — DIAG-2 o bloque B1.
 
 ---
 

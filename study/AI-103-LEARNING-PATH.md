@@ -1,5 +1,9 @@
 # AI-103 — Ruta oficial de aprendizaje (curso AI-103T00-A)
 
+> **Qué contiene:** los 30 módulos del curso oficial, su mapeo a objetivos del examen y los **huecos** que el curso no cubre.
+> **Cuándo leerlo:** al planificar el siguiente bloque (sobre todo § Cobertura y huecos) · al marcar un módulo completado.
+> **Cuándo NO:** en corrección de quizzes o tutoría.
+
 - **Curso:** AI-103T00-A — *Develop AI apps and agents on Azure*
 - **URL:** https://learn.microsoft.com/en-us/training/courses/ai-103t00
 - **Duración oficial:** 4 días presenciales / **96 h** self-paced (`hoursToComplete: 96`)

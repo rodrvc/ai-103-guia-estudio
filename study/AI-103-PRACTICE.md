@@ -1,5 +1,11 @@
 # AI-103 — Práctica: ejercicios, labs y simulaciones
 
+> **Qué contiene:** quizzes, diagnósticos, labs y simulaciones — pendientes y hechos, con sus resultados. **Fuente canónica de los puntajes.**
+> **Cuándo leerlo:** al corregir o preparar una prueba (solo la que toca) · al planificar simulaciones.
+> **Cuándo NO:** entero. Ve al ítem concreto.
+>
+> **Regla de reserva del examen:** ≥2 simulaciones completas con ≥80%, ningún dominio <70%, sin dominios de peso alto en Débil, y resultados consistentes (no un pico aislado). **No recomendar reservar solo por haber cubierto el contenido.**
+
 ## Estado general
 
 | Tipo | Pendientes | Completados |

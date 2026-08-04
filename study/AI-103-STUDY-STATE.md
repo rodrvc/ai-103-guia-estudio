@@ -1,6 +1,12 @@
 # AI-103 — Estado del estudio
 
-> **Resumen ejecutivo.** La evidencia detallada vive en `AI-103-SYLLABUS.md`, `AI-103-ERROR-LOG.md`, `AI-103-PRACTICE.md` y `AI-103-SESSION-LOG.md`. El currículo de contenido está en `AI-103-LEARNING-PATH.md`.
+> **Qué contiene:** dónde estamos y qué toca hacer. Es un **índice**, no una copia — remite a la evidencia.
+> **Cuándo leerlo:** al retomar el trabajo, o al actualizar progreso tras evidencia nueva.
+> **Cuándo NO:** si ya sabes tu tarea concreta, ve directo al archivo que toca (ver `CLAUDE.md` § Qué leer).
+>
+> **Reglas de integridad al escribir aquí:** no subir un nivel sin evidencia registrada · no inventar progreso · fechas `YYYY-MM-DD` · nunca guardar claves ni tokens.
+>
+> Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
 - **Última actualización:** 2026-08-04
 - **Fase actual:** DIAG-1 completado (42%) → **estudio del bloque B1 (D1 operativo)**
@@ -38,47 +44,15 @@
 
 ## Lectura del diagnóstico (2026-08-04)
 
-**El patrón es nítido y se repite en las 12 preguntas.**
+Acierta lo **conceptual y de diseño**; falla lo **operativo y nombrado de Azure**. Brecha de superficie, no de fundamentos — pero es lo que el examen mide. Cero errores de lectura o descarte: dijo "no lo sé" tres veces en vez de inventar, lo que hace el diagnóstico fiable.
 
-Lo que acertó — Foundry IQ con fuentes externas, filter vs blocklist, el modelo thread/run/message con persistencia del lado del servicio, el patrón de aprobación humana — es todo **conceptual y de diseño de sistemas**.
+⚠️ **Confianza de esta conclusión: media.** n=12, respuesta abierta, corregidas por el mismo agente que las escribió. **Revisar tras DIAG-1B** y degradar si no se confirma.
 
-Lo que falló — deployments, TPM/PTU, Managed Identity, categorías de content filter, las capas de retrieval de AI Search, el catálogo de tools, los evaluadores — es todo **operativo, nombrado y específico de Azure**.
-
-**Conclusión:** piensa como arquitecto de sistemas de IA; le falta el vocabulario de operación de la plataforma. Eso es una brecha de **superficie**, no de fundamentos: se cierra memorizando nombres, límites y mecánicas, no reaprendiendo conceptos. Pero es **exactamente lo que el examen mide**.
-
-**Señal positiva:** cero errores de lectura o de descarte en DIAG-1. No hay problema de técnica de examen ni de sobreconfianza — dijo "no lo sé" tres veces en vez de inventar. Eso hace el diagnóstico fiable y acelera la recuperación.
-
-**Dos errores especialmente reveladores:**
-
-- **E-005** (invierte vectorial/híbrida): usa RAG en producción pero no maneja la terminología de Azure AI Search. Es el arquetipo de R7.
-- **E-007** (confunde evaluación con observabilidad): usa LangSmith a diario. El concepto le es familiar; el encuadre y los nombres de Azure no.
+Análisis completo, distribución por causa y pares de servicios que confunde: `AI-103-ERROR-LOG.md` § Patrones detectados.
 
 ---
 
-## Hipótesis inicial (NO es evidencia)
-
-Derivada del perfil declarado por el usuario el 2026-08-04. Debe confirmarse o refutarse con el diagnóstico. **No usar para asignar niveles.**
-
-### Probables fortalezas transferibles
-
-- Conceptos de RAG, chunking, embeddings, búsqueda vectorial → **D2.1.b, D5.1.b**
-- Diseño de agentes: herramientas, memoria, orquestación multi-agente (LangGraph) → **D2.2.a–e**
-- Evaluación y observabilidad de LLMs (LangSmith) → **D2.1.d, D2.3.c, D2.2.f**
-- Prompt engineering y tuning de parámetros → **D2.3.a**
-- Consumo de APIs de modelos, Python, integración en backend → **D2.1.a, D2.1.e**
-
-### Probables riesgos principales
-
-| Riesgo | Dominios | Por qué |
-| --- | --- | --- |
-| **R1. Vocabulario y arquitectura Microsoft Foundry** | D1, D2 (55–65% del examen) | Toda la experiencia es fuera de Azure. El examen pregunta por nombres, límites y decisiones de servicios Foundry concretos, no por conceptos genéricos de IA. Riesgo más alto del proyecto. **Confirmado al revisar el curso oficial (2026-08-04):** el temario asume Responses API, Foundry IQ, Microsoft Agent Framework, A2A, MCP servers de Azure, Work IQ, Sora 2, Content Understanding — nomenclatura reciente y propia de Microsoft, sin equivalente 1:1 en LangChain/LangGraph. |
-| **R2. Seguridad e identidad de Azure** | D1.3.d | Managed identity, keyless credentials, RBAC, private endpoints. Sin experiencia declarada en Azure. |
-| **R3. Visión y generación de imagen/video** | D3 (10–15%) | Sin experiencia declarada. Dominio completo en riesgo. |
-| **R4. Voz (Speech)** | D4.2 | Sin experiencia declarada. |
-| **R5. Azure AI Search específico** | D5.1 | Sabe búsqueda vectorial en general, pero no la implementación de AI Search: skillsets, indexers, semantic ranker, híbrida + RRF. |
-| **R6. Content Understanding** | D3.2.e/g, D5.2 | Servicio Azure sin equivalente directo en su stack. Aparece en 3 dominios distintos. |
-| **R7. Falsa confianza por transferencia** | D2 | El mayor riesgo silencioso: asumir que "sé RAG y agentes" equivale a saber cómo AI-103 lo pregunta en Foundry. Requiere verificación explícita, no autoevaluación. |
-| **R8. El curso oficial no cubre todo D1** | D1.2.d, D1.3.a, D1.3.c, D1.3.d | Detectado el 2026-08-04 al mapear los 30 módulos contra los 44 objetivos. CI/CD, cuotas/costos, salud de índices y seguridad de red quedan fuera o de pasada. Completar solo el curso deja descubierto un trozo del segundo dominio más pesado. Requiere estudio dirigido de docs. Ver `AI-103-LEARNING-PATH.md` § Cobertura y huecos. |
+**Riesgos R1–R8:** viven en `PROFILE.md` § Mapa de riesgos. Confirmados por DIAG-1: **R1, R2, R7** (y R5 parcial). Pendientes de DIAG-2: R3, R4, R6.
 
 ---
 
@@ -91,27 +65,21 @@ Derivada del perfil declarado por el usuario el 2026-08-04. Debe confirmarse o r
 | Content filter vs blocklist | En aprendizaje | DIAG-1 p7 pleno |
 | Patrón human-in-the-loop en agentes (a nivel de diseño) | En aprendizaje | DIAG-1 p11 pleno en concepto |
 
-## Temas débiles (con evidencia)
+## Temas débiles
 
-Ordenados por prioridad = peso en el examen × severidad de la brecha.
+**9 errores abiertos, todos de DIAG-1.** Detalle, causa y respuesta correcta: `AI-103-ERROR-LOG.md`. Prioridad de estudio (peso × severidad):
 
-| # | Tema | Objetivo | Evidencia | Prioridad |
-| --- | --- | --- | --- | --- |
-| 1 | Managed Identity, RBAC, keyless auth | D1.3.d | E-003 | **Crítica** — muy preguntado, cero base |
-| 2 | Deployment vs model; qué se pasa a la API | D1.2.c | E-001 | **Crítica** — concepto de base de toda la plataforma |
-| 3 | Cuotas: TPM, PTU, 429, backoff | D1.3.a | E-002 | **Crítica** — cero base |
-| 4 | Capas de retrieval en AI Search: BM25 / vector / híbrida+RRF / semantic ranker | D2.1.b, D5.1.b | E-005 | **Alta** — concepto invertido, afecta 2 dominios |
-| 5 | Evaluadores de Foundry, groundedness | D2.1.d | E-007 | **Alta** |
-| 6 | Categorías y severidades de content filter | D1.4.a | E-004 | **Alta** — memorización pura, barata de cerrar |
-| 7 | Catálogo de tools del Agent Service | D2.2.c | E-006 | Media |
-| 8 | Mecánica `requires_action` / `submit_tool_outputs` | D2.2.e | E-009 | Media |
-| 9 | Criterios LLM vs SLM (costo, latencia, edge) | D1.1.a | E-008 | Media |
+- **Crítica:** E-003 managed identity · E-001 deployment vs model · E-002 cuotas TPM/PTU
+- **Alta:** E-005 capas de retrieval · E-007 evaluadores · E-004 content filters
+- **Media:** E-006 catálogo de tools · E-009 requires_action · E-008 LLM vs SLM
 
 ---
 
 ## Repaso programado (repetición espaciada)
 
-Los 9 errores de DIAG-1 entran en la cola con el mismo calendario base. Un repaso fallido reinicia el contador.
+Los 9 errores de DIAG-1 entran con el mismo calendario base.
+
+**Estados:** ☐ pendiente · ☑ repasado OK · ✗ **fallido → reinicia el contador** (se reprograma desde 1d con fecha nueva y se anota el fallo en el error correspondiente).
 
 | Error | Tema | Nivel | 1d | 3d | 7d | 14d | 30d |
 | --- | --- | --- | --- | --- | --- | --- | --- |
