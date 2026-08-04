@@ -14,7 +14,9 @@
 
 **Primera acción:** `study/AI-103-STUDY-STATE.md` § Siguiente acción. Luego, según tarea, ver § Qué leer.
 
-**Preguntas abiertas** (bloquean el calendario, sin responder desde 2026-08-04): ¿suscripción de Azure activa? · ¿DIAG-2 antes de B1? (recomendado sí) · ¿examen en inglés o español? (recomendado inglés).
+**Azure:** ✅ suscripción activa (2026-08-04) — los labs son viables.
+
+**Preguntas abiertas** (bloquean el calendario): ¿DIAG-2 antes de B1? (recomendado sí) · ¿examen en inglés o español? (recomendado inglés) · fecha objetivo y horas/semana.
 
 **Reglas que se rompen fácil:**
 

@@ -111,6 +111,7 @@ Contenido:
 4. Content filters: 4 categorías × 4 severidades, prompt vs completion, Prompt Shields (E-004)
 5. Evaluadores de Foundry: groundedness, relevance, coherence, fluency (E-007)
 6. Capas de retrieval en AI Search: BM25 / vectorial / híbrida + RRF / semantic ranker (E-005)
+7. **Deployment types** (D1.2.b): global/data zone/regional × standard/provisioned/batch, residencia. Apunte ya escrito, **falta evaluarlo**
 
 Material: módulos LP1-1 y LP1-2 del curso + docs dirigidas para cuotas y seguridad (huecos R8, que el curso no cubre).
 

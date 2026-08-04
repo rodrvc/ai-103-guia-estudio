@@ -18,6 +18,17 @@
 
 ---
 
+## 2026-08-04 — Sesión 005: Lab 02 + deployment types
+
+- **Hecho:** repasado el lab oficial 02 (model catalog & evaluation) en modo tutor. Aclarada la duda del usuario sobre **generación de dataset sintético** (los 3 orígenes de datos; distinción entre *prompt de generación* y *developer prompt*).
+- **Dato nuevo del usuario:** ✅ **tiene suscripción de Azure activa** → los labs son viables. Cierra una de las 3 preguntas abiertas.
+- **Hallazgo del usuario:** le preguntaron por **deployment types**. Verificado en docs oficiales (actualizado 2026-05-18) y escrito `notes/D1-deployment-types.md`. Cubre **D1.2.b**, que era un **hueco R8** — el curso oficial no lo trata.
+- **Cambios de nivel:** ninguno. D1.2.b marcado "Estudiado, sin evaluar" — leer no es evidencia.
+- **Errores:** ninguno nuevo. El apunte de deployment types apoya E-001 (qué define un deployment) y E-002 (standard=TPM vs provisioned=PTU).
+- **Próxima acción:** sin cambio. Pendiente: 3 preguntas del lab 02 + 5 del apunte de deployment types + DIAG-2.
+
+---
+
 ## 2026-08-04 — Sesión 004: Auditoría de memoria (memory-engineer)
 
 - **Hecho:** auditoría de arquitectura de contexto por el agente `memory-engineer`. Aplicado lo urgente.
