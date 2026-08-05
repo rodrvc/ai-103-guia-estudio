@@ -25,7 +25,7 @@ El curso se compone de **4 learning paths / 30 módulos**. Todos accesibles grat
 
 | Path | Módulos | Completados | Dominios AI-103 |
 | --- | --- | --- | --- |
-| LP1 Develop generative AI apps in Azure | 6 | **3 (45%)** ← aquí está | D1, D2 |
+| LP1 Develop generative AI apps in Azure | 6 | **4 (67%)** ← aquí está | D1, D2 |
 | LP2 Develop AI agents on Azure | 9 | 0 (1%) | D2, D1.4 |
 | LP3 Develop natural language solutions in Azure | 7 | 0 | D4 |
 | LP4 Extract insights from visual data on Azure | 8 | 0 | D3, D5 |
@@ -48,8 +48,8 @@ Marcar ☑ solo cuando el módulo esté **completado con su lab**, no solo leíd
 | ☑ | Plan and prepare to develop AI solutions on Azure | D1.1, D1.2 |
 | ☑ | Select, deploy, and evaluate Microsoft Foundry models | D1.1.a, D1.2.c, D2.1.a, D2.1.d |
 | ☑ | Develop a generative AI chat app with Microsoft Foundry (**Responses API**) | D2.1.e, D2.1.f |
-| ⏭️ | Develop generative AI apps that use tools (9 unidades: 4 tools) — **saltado, no abandonado**: sigue cubriendo E-006 | D2.1.c, D2.2.c |
-| 🔄 | Optimize generative AI model performance with Microsoft Foundry ← **en curso** (8 unidades). Unidad 3 (RAG) anotada el 2026-08-05 | D2.3.a, D2.1.b |
+| ☑ | Develop generative AI apps that use tools (9 unidades: 4 tools) — **completado**, verificado en Learn 2026-08-05. Sin apunte: E-006 sigue abierto | D2.1.c, D2.2.c |
+| 🔄 | Optimize generative AI model performance with Microsoft Foundry ← **en curso**, va por la **unidad 6** (ejercicio). Unidades 3 (RAG) y 5 (comparar estrategias) vistas | D2.3.a, D2.1.b |
 | ☐ | Implement a responsible generative AI solution in Microsoft Foundry | D1.4.a, D1.4.b |
 
 ## LP2 — Develop AI agents on Azure (9 módulos)

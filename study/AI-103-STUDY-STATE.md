@@ -9,7 +9,7 @@
 > Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
 - **Última actualización:** 2026-08-05
-- **Fase actual:** **LP1, módulo 5** (*"Optimize generative AI model performance"*, 8 unidades). **Saltó el módulo 4** (tools) el 2026-08-05 — queda pendiente, sigue cubriendo E-006. LP1 va **3 de 6 módulos (45%)** completados, verificado en Learn el 2026-08-05. Avanza por el curso y por temas que le surgen, no linealmente
+- **Fase actual:** **LP1, módulo 5** (*"Optimize generative AI model performance"*, 8 unidades) — va por la **unidad 6** (ejercicio). **Terminó el módulo 4** (tools). LP1 va **4 de 6 módulos (67%)**, verificado en Learn el 2026-08-05 (1800/3699 XP, Level 3). Avanza por el curso y por temas que le surgen, no linealmente
 - **Examen reservado:** No
 - **Fecha objetivo:** Sin definir (falta dato del usuario)
 
@@ -26,7 +26,7 @@
 | **Cobertura de material** | **~8 / 44 objetivos (18%)** | D3, D4 y D5 sin una línea |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
-| Módulos del curso oficial | **3 / 30 (10%)** | Verificado en Learn 2026-08-05 |
+| Módulos del curso oficial | **4 / 30 (13%)** | Verificado en Learn 2026-08-05 |
 
 **Nivel estimado actual: En aprendizaje, por debajo del umbral de aprobación.** DIAG-1 dio 42% sobre los dominios que pesan 55–65% del examen; se aprueba con 700/1000 (~70%). La brecha es real pero de **superficie, no de fundamentos** (ver § Lectura del diagnóstico).
 
@@ -105,7 +105,9 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 **Por qué:** el sistema tiende a premiar avanzar (siempre hay un módulo nuevo) y a no premiar repasar (la cola no protesta sola). Con 42% en DIAG-1 y 9 errores abiertos, avanzar sin consolidar es exactamente el fallo a evitar.
 
-**Si elige avanzar → LP1 módulo 5, donde está ahora** (*Optimize generative AI model performance*, 8 unidades). Anotada la u3 (RAG); quedan **u2 prompt engineering**, **u4 fine-tuning** y **u5 comparar estrategias** — las tres cubren D2.3.a, sin material. Pendiente también el **módulo 4** que saltó (tools, E-006).
+**Si elige avanzar → LP1 módulo 5, donde está ahora** (unidad 6, el ejercicio). Anotada la u3 (RAG); quedan sin apunte **u2 prompt engineering**, **u4 fine-tuning** y **u5 comparar estrategias** — cubren D2.3.a, hoy en cero.
+
+⚠️ **Deuda de material del módulo 4** (tools, ya completado en Learn el 2026-08-05): **no dejó apunte**. E-006 sigue abierto y sin material pese a haber pasado por el contenido. Escribir ese apunte es barato ahora que lo vio, y caro más adelante.
 
 **El cuello de botella real es la cobertura de material.** Preguntó (2026-08-05) si con los apuntes actuales en NotebookLM tendría suficiente: **no**. 7 apuntes ≈ 18% de los objetivos; D3+D4+D5 (30–45% del examen) sin nada. Escribir apuntes de los dominios vacíos es lo que más rinde después de DIAG-2.
 

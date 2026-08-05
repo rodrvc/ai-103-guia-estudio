@@ -15,6 +15,9 @@
 - **Fase corregida:** saltó del **módulo 4** (tools) al **módulo 5**. El 4 queda ⏭️ saltado, no abandonado — sigue cubriendo E-006.
 - **Hallazgo:** el apunte **no cierra E-005**. El curso no menciona **BM25, RRF ni semantic ranker**, que es justo lo que falló en DIAG-1 p8. Esa capa exige docs de AI Search. Anotado en el error.
 - **Sin evaluación: el usuario la rechazó explícitamente** ("ya no más… por ahora me interesa saber lo más importante"). Se le dio el resumen de alto valor en su lugar.
+- **Corrección (mismo día):** el agente escribió que había "saltado" el módulo 4 **sin verificarlo** — lo dedujo de que estuviera en el 5. **El usuario lo desmintió.** Verificado en Learn: **4/6 módulos (67%)**, 1800/3699 XP, va por la u6 del módulo 5. Corregido en 4 archivos.
+- **Lección:** no inferir progreso del curso a partir de la unidad que el usuario menciona. Learn es la única fuente — se lee con el navegador y su sesión.
+- **Deuda nueva:** el módulo 4 (tools) está **completo sin apunte**. E-006 sigue abierto y sin material.
 - **Sin cambios de nivel.** Cobertura: 6 → **7 apuntes**. **Próxima acción:** sin cambio — DIAG-2 o repaso.
 
 ---
