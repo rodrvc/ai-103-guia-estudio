@@ -18,6 +18,18 @@
 
 ---
 
+## 2026-08-04 — Sesión 008: Módulo foundry-sdk completo (corrección)
+
+- **El usuario detectó un fallo del agente:** el apunte de LP1-M3 cubría solo la **unidad 2 de 8** (playground, peso bajo). Faltaban las unidades 3–5: endpoints, SDKs, autenticación y Responses vs ChatCompletions — **peso alto**.
+- **Corregido:** leídas las unidades 3, 4 y 5. Escrito `notes/LP1-M3-foundry-sdk.md` cubriendo el módulo.
+- **Contenido clave:** dos endpoints (project vs Azure OpenAI) · Foundry SDK vs OpenAI SDK y cuándo cada uno · **Entra ID + `DefaultAzureCredential`** · Responses (stateful, `previous_response_id`) vs ChatCompletions (historial manual).
+- **Cierra E-003** (auth sin claves) y aclara **E-001** (`model=` recibe el nombre del deployment) — **pendiente de verificar con preguntas**.
+- **Cambios de nivel:** ninguno. D2.1.e y D2.1.f → `Estudiado, sin evaluar`.
+- **Lección de proceso registrada en el skill:** leer el **índice del módulo** antes de escribir un apunte, no solo la unidad que pasa el usuario. El apunte cubre el módulo, no la unidad.
+- **Próxima acción:** 5 preguntas del apunte nuevo (verifican E-003 y E-001) · luego DIAG-2.
+
+---
+
 ## 2026-08-04 — Sesión 007: Skill `study-tracker`
 
 - **Hecho:** creado `.claude/skills/study-tracker/SKILL.md` — automatiza el registro de progreso para que no dependa de que el usuario lo pida.

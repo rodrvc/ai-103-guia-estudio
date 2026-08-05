@@ -109,6 +109,16 @@ Si preguntan "¿dónde quedamos?" o "¿qué sabe el próximo agente?", **no actu
 
 ---
 
+## Antes de escribir un apunte: lee el módulo entero
+
+Cuando el usuario pasa la URL de **una unidad**, lee primero el **índice del módulo** (quita la unidad de la URL: `.../modules/<modulo>/`). Verás cuántas unidades tiene y qué cubre cada una.
+
+**Por qué:** las unidades individuales son fragmentos. Un apunte hecho desde una sola unidad omite lo que el examen realmente pregunta. Ocurrió el 2026-08-04 con `foundry-sdk`: se cubrió solo la unidad 2 (playground, peso bajo) y se dejaron fuera las unidades 3–5 — endpoints, autenticación y Responses vs ChatCompletions, que son **peso alto** y cierran E-003. Lo detectó el usuario, no el agente.
+
+**Regla:** el apunte cubre el **módulo**, no la unidad. Si el módulo es muy grande, divídelo — pero deliberadamente, y dilo en el índice.
+
+---
+
 ## Trampas conocidas
 
 1. **Fase desactualizada** — el fallo más caro. Verifícala siempre.

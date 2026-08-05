@@ -82,8 +82,8 @@ Escala de niveles: ver `CLAUDE.md` § Escala de niveles.
 | D2.1.b | Implement retrieval-augmented generation (RAG) in an application | Evaluado | **En aprendizaje** | DIAG-1 p8 parcial: **invierte** vectorial/híbrida, omite BM25, RRF y semantic ranker. Sabe RAG en la práctica, no la terminología AI Search. E-005 |
 | D2.1.c | Design workflows, tool-augmented flows, and multistep reasoning pipelines | Pendiente | No evaluado | — |
 | D2.1.d | Evaluate models and apps: fabrications, relevance, quality, safety | Evaluado | **Débil** | DIAG-1 p12 fallo: confunde evaluación con observabilidad, no conoce groundedness. Llamativo por su experiencia en LangSmith. E-007 |
-| D2.1.e | Integrate generative workflows into applications by using Foundry SDKs and connectors | Pendiente | No evaluado | — |
-| D2.1.f | Configure an application to connect to a Foundry project | Pendiente | No evaluado | — |
+| D2.1.e | Integrate generative workflows into applications by using Foundry SDKs and connectors | Estudiado, **sin evaluar** | No evaluado | Apunte `notes/LP1-M3-foundry-sdk.md` (2026-08-04): Foundry SDK vs OpenAI SDK, Responses vs ChatCompletions. Pendiente quiz |
+| D2.1.f | Configure an application to connect to a Foundry project | Estudiado, **sin evaluar** | No evaluado | Apuntes `LP1-M3-foundry-sdk.md` + `LP1-M3-playground.md` (2026-08-04): dos endpoints, `AIProjectClient`, auth. Pendiente quiz |
 
 ### D2.2 Build agents by using Foundry
 

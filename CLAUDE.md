@@ -12,7 +12,9 @@
 
 **Cómo trabaja el usuario (validado 2026-08-04):** trae un link de Microsoft Learn o docs → se lee la fuente (nunca de memoria) → apunte en `notes/` con analogías primero y el nombre técnico al final → preguntas de comprobación → si responde, se evalúa y se actualiza SYLLABUS. Si pasa un link en `es-es`, usar la versión `en-us`.
 
-**Progreso real:** 2 objetivos en Competente (D2.2.b, **D1.2.b**) · 3 apuntes escritos · 9 errores abiertos de DIAG-1 sin repasar aún.
+**Progreso real:** 2 objetivos en Competente (D2.2.b, **D1.2.b**) · 4 apuntes escritos · 9 errores abiertos de DIAG-1 **sin repasar aún**.
+
+⚠️ **Antes de escribir un apunte, lee el índice del módulo** (`.../modules/<modulo>/`), no solo la unidad que pasa el usuario. El apunte cubre el **módulo**. Detalle en el skill.
 
 **Hallazgo clave (n=12, revisar tras DIAG-1B):** acierta lo **conceptual**, falla lo **operativo de Azure** (deployments, cuotas, managed identity, evaluadores, retrieval). Brecha de superficie, no de fundamentos — pero es lo que el examen mide. **No confundir su fluidez conceptual con dominio** → riesgo R7.
 
