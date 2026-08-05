@@ -102,6 +102,14 @@ Distinguir siempre entre:
 
 Enseñar **decisión de servicio** (requisitos, costo, seguridad, latencia, restricciones), no memorización de nombres.
 
+### Analogía primero, nombre después (validado 2026-08-04)
+
+Rodrigo pidió explícitamente "bájalo a algo entendible". Al reexplicar deployment types con analogías cotidianas (**taxi** = pay-per-token · **auto propio con chofer** = provisioned · **encomienda** = batch; **tu casa vs. la lavandería** = datos guardados vs. procesados) pasó de no entender a resolver 3/3 casos de decisión, incluido el que había fallado en jerga.
+
+**Método:** (1) analogía concreta → (2) la decisión en cristiano → (3) recién ahí el nombre técnico en inglés. El nombre se aprende **después** de que el concepto está firme, nunca antes ni en lugar de él.
+
+No confundir esto con simplificar el contenido: la profundidad es la misma, cambia la puerta de entrada. Los términos siguen siendo obligatorios en inglés (ver § arranque).
+
 ## Repetición espaciada
 
 Los temas clasificados **Débil** o **En aprendizaje** se reprograman aproximadamente a **1, 3, 7, 14 y 30 días**. La cola vive en `AI-103-STUDY-STATE.md` § Repaso programado. Un repaso fallido reinicia el contador.

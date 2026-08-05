@@ -18,6 +18,17 @@
 
 ---
 
+## 2026-08-04 — Sesión 006: Deployment types evaluado + hallazgo pedagógico
+
+- **Hallazgo importante:** el usuario pidió "bájalo a algo entendible". Reexplicado con analogías (taxi / auto propio / encomienda · casa vs. lavandería) → pasó de no entender a **3/3 casos correctos**, incluido el que había fallado en jerga.
+- **Método registrado en `CLAUDE.md`:** analogía → decisión en cristiano → nombre técnico **al final**. No es simplificar contenido, es cambiar la puerta de entrada.
+- **Evidencia:** GlobalStandard (sin restricciones) · GlobalBatch (lotes sin prisa) · DataZoneProvisioned (UE + latencia crítica). Domina los dos ejes y el criterio de **no sobre-restringir** ("la UE"→zona, "Alemania"→región).
+- **Cambio de nivel:** **D1.2.b → Competente** (primer objetivo que sube desde el diagnóstico; el segundo Competente del proyecto).
+- **Falta para Dominado:** Developer tier, SLA por tipo, at-rest vs procesamiento, y evidencia en 2ª sesión separada.
+- **Próxima acción:** sin cambio. Pendientes: 3 preguntas del lab 02 · DIAG-2 · bloque B1.
+
+---
+
 ## 2026-08-04 — Sesión 005: Lab 02 + deployment types
 
 - **Hecho:** repasado el lab oficial 02 (model catalog & evaluation) en modo tutor. Aclarada la duda del usuario sobre **generación de dataset sintético** (los 3 orígenes de datos; distinción entre *prompt de generación* y *developer prompt*).

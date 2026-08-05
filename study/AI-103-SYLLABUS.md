@@ -48,7 +48,7 @@ Escala de niveles: ver `CLAUDE.md` § Escala de niveles.
 | ID | Objetivo oficial | Estado | Nivel | Evidencia |
 | --- | --- | --- | --- | --- |
 | D1.2.a | Design Azure infrastructure for AI apps and agent-based solutions | Pendiente | No evaluado | — |
-| D1.2.b | Choose appropriate deployment options | Estudiado, **sin evaluar** | No evaluado | Apunte `notes/D1-deployment-types.md` (2026-08-04, docs oficiales). Cubre los 10 deployment types, residencia de datos y SLA. **Leer no es evidencia** — pendiente quiz |
+| D1.2.b | Choose appropriate deployment options | Evaluado | **Competente** | 2026-08-04, **3/3 casos de decisión correctos**: sin restricciones→GlobalStandard · lotes masivos sin prisa→GlobalBatch · UE + latencia crítica→DataZoneProvisioned. Domina los dos ejes y el criterio de **no sobre-restringir**. Falta para Dominado: Developer tier, SLA, at-rest vs procesamiento, y evidencia en 2ª sesión. Apunte `notes/D1-deployment-types.md` |
 | D1.2.c | Configure model and agent deployments | Evaluado | **Débil** | DIAG-1 p3 fallo: confunde deployment con playground. E-001 |
 | D1.2.d | Integrate Foundry projects with CI/CD pipelines | Pendiente | No evaluado | — |
 

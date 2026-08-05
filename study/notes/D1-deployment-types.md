@@ -7,6 +7,32 @@
 
 ---
 
+## En cristiano primero
+
+Solo tomas **dos decisiones**. Todo lo demás son combinaciones.
+
+**1. ¿Cómo pagas?**
+
+| Analogía | Tipo | Qué significa |
+| --- | --- | --- |
+| 🚕 **Taxi** | Standard | Pagas por lo que usas. Barato si andas poco. En hora punta, esperas |
+| 🚗 **Auto propio con chofer** | Provisioned | Pagas fijo, lo uses o no. Siempre disponible, sin esperas |
+| 📦 **Encomienda** | Batch | Lo dejas y vuelves mañana. **Mitad de precio**, sin apuro |
+
+**2. ¿Dónde se procesa?**
+
+| Analogía | Tipo |
+| --- | --- |
+| "Me da igual, el que esté libre" | **Global** |
+| "Dentro de Europa" (o EE.UU., o Asia) | **Data Zone** |
+| "Solo en este datacenter" | **Regional** |
+
+**La regla de oro:** elige el nivel de restricción **que pide el requisito, ni más ni menos**. Si el enunciado dice "la UE" → Data Zone. Si dice "Alemania" → Regional. Restringir de más no te hace más legal, solo te limita (menos cuota, menos modelos, más riesgo de saturación).
+
+**Dónde viven tus datos:** tu ropa vive en tu casa (*at rest* → siempre en la geografía designada, en todos los tipos), pero la lavandería puede estar en otro barrio (*procesamiento* → esto es lo que cambia). **Cuando preguntan por GDPR o residencia, hablan de la lavandería.**
+
+---
+
 ## Las 3 decisiones que tomas al desplegar
 
 Un deployment type define tres cosas a la vez:
