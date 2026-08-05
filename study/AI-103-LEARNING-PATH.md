@@ -48,8 +48,8 @@ Marcar ☑ solo cuando el módulo esté **completado con su lab**, no solo leíd
 | ☑ | Plan and prepare to develop AI solutions on Azure | D1.1, D1.2 |
 | ☑ | Select, deploy, and evaluate Microsoft Foundry models | D1.1.a, D1.2.c, D2.1.a, D2.1.d |
 | ☑ | Develop a generative AI chat app with Microsoft Foundry (**Responses API**) | D2.1.e, D2.1.f |
-| 🔄 | Develop generative AI apps that use tools ← **en curso** (9 unidades: 4 tools) | D2.1.c, D2.2.c |
-| ☐ | Optimize generative AI model performance with Microsoft Foundry (prompt eng. + RAG + fine-tuning) | D2.3.a, D2.1.b |
+| ⏭️ | Develop generative AI apps that use tools (9 unidades: 4 tools) — **saltado, no abandonado**: sigue cubriendo E-006 | D2.1.c, D2.2.c |
+| 🔄 | Optimize generative AI model performance with Microsoft Foundry ← **en curso** (8 unidades). Unidad 3 (RAG) anotada el 2026-08-05 | D2.3.a, D2.1.b |
 | ☐ | Implement a responsible generative AI solution in Microsoft Foundry | D1.4.a, D1.4.b |
 
 ## LP2 — Develop AI agents on Azure (9 módulos)

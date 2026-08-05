@@ -30,8 +30,9 @@ Apuntes por tema. Cada uno es autocontenido: explicación → **Para el examen**
 | [03 El playground](D2-apps-y-agentes/03-playground.md) | Probar sin código, botón Code. **Peso bajo** | 📖 Leído, sin evaluar |
 | [04 Agentes en Foundry](D2-apps-y-agentes/04-agentes-en-foundry.md) | Declarativo (prompt-based / workflow YAML) vs hosted · automatic tool calling · 8 riesgos de seguridad y mitigaciones. **Peso alto** | 📖 Leído, sin evaluar |
 | [05 Labs oficiales](D2-apps-y-agentes/05-labs-oficiales.md) | Leaderboard y trade-offs · benchmarks ≠ evaluación · **dataset sintético** · el `.env` sin key · async | 📖 Leído, sin evaluar |
+| [06 RAG y grounding](D2-apps-y-agentes/06-rag-grounding.md) | Retrieve→Augment→Generate · embeddings y cosine similarity · Azure AI Search · **hybrid search** · RAG vs fine-tuning. **Peso alto** | 📖 Leído, sin evaluar |
 
-**Pendiente en D2:** las 4 tools (`code_interpreter`, `web_search`, `file_search`, `function`) ← **estás aquí** · multi-agente y orquestación · RAG y capas de retrieval · observabilidad y tracing.
+**Pendiente en D2:** las 4 tools (`code_interpreter`, `web_search`, `file_search`, `function`) ← **estás aquí** · multi-agente y orquestación · observabilidad y tracing.
 
 ---
 
@@ -65,8 +66,9 @@ Detalle por objetivo del temario: `../AI-103-SYLLABUS.md`
 | E-007 | Evaluadores vs observabilidad | D2/02 |
 | E-001 | Deployment vs modelo | D2/01 y D2/03 |
 | E-002 | TPM vs PTU | D1/01 |
+| E-005 | Retrieval / RAG | D2/06 |
 
-Los demás (E-004 content filters, E-005 retrieval, E-006 tools, E-008 SLM, E-009 `requires_action`) **aún no tienen material**.
+Los demás (E-004 content filters, E-006 tools, E-008 SLM, E-009 `requires_action`) **aún no tienen material**.
 
 ---
 

@@ -9,7 +9,7 @@
 > Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
 - **Última actualización:** 2026-08-05
-- **Fase actual:** **LP1, módulo 4** (*"Develop generative AI apps that use tools"*). LP1 va **3 de 6 módulos (45%)**, verificado en Learn el 2026-08-05. Avanza por el curso y por temas que le surgen, no linealmente
+- **Fase actual:** **LP1, módulo 5** (*"Optimize generative AI model performance"*, 8 unidades). **Saltó el módulo 4** (tools) el 2026-08-05 — queda pendiente, sigue cubriendo E-006. LP1 va **3 de 6 módulos (45%)** completados, verificado en Learn el 2026-08-05. Avanza por el curso y por temas que le surgen, no linealmente
 - **Examen reservado:** No
 - **Fecha objetivo:** Sin definir (falta dato del usuario)
 
@@ -22,8 +22,8 @@
 | Objetivos del temario | 44 | `AI-103-SYLLABUS.md` |
 | Evaluados | 12 (27%) | DIAG-1 + D1.2.b |
 | Competente o superior | **2** (5%) | D2.2.b · **D1.2.b** (3/3 casos, 2026-08-04) |
-| Apuntes escritos | **6** | `notes/INDEX.md` |
-| **Cobertura de material** | **~7 / 44 objetivos (16%)** | D3, D4 y D5 sin una línea |
+| Apuntes escritos | **7** | `notes/INDEX.md` |
+| **Cobertura de material** | **~8 / 44 objetivos (18%)** | D3, D4 y D5 sin una línea |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
 | Módulos del curso oficial | **3 / 30 (10%)** | Verificado en Learn 2026-08-05 |
@@ -105,9 +105,9 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 **Por qué:** el sistema tiende a premiar avanzar (siempre hay un módulo nuevo) y a no premiar repasar (la cola no protesta sola). Con 42% en DIAG-1 y 9 errores abiertos, avanzar sin consolidar es exactamente el fallo a evitar.
 
-**Si elige avanzar → LP1 módulo 4** (*apps that use tools*, 9 unidades: `code_interpreter`, `web_search`, `file_search`, `function`). Cubre **D2.2.c** y su error **E-006**.
+**Si elige avanzar → LP1 módulo 5, donde está ahora** (*Optimize generative AI model performance*, 8 unidades). Anotada la u3 (RAG); quedan **u2 prompt engineering**, **u4 fine-tuning** y **u5 comparar estrategias** — las tres cubren D2.3.a, sin material. Pendiente también el **módulo 4** que saltó (tools, E-006).
 
-**El cuello de botella real es la cobertura de material.** Preguntó (2026-08-05) si con los apuntes actuales en NotebookLM tendría suficiente: **no**. 4 apuntes ≈ 9% de los objetivos; D3+D4+D5 (30–45% del examen) sin nada. Escribir apuntes de los dominios vacíos es lo que más rinde después de DIAG-2.
+**El cuello de botella real es la cobertura de material.** Preguntó (2026-08-05) si con los apuntes actuales en NotebookLM tendría suficiente: **no**. 7 apuntes ≈ 18% de los objetivos; D3+D4+D5 (30–45% del examen) sin nada. Escribir apuntes de los dominios vacíos es lo que más rinde después de DIAG-2.
 
 **Deudas acumuladas** (mencionarlas, no imponerlas):
 
@@ -131,9 +131,9 @@ Están encadenados: un *deployment* tiene un *type* y una *cuota*, se protege co
 | TPM vs PTU, 429, backoff | E-002 | 🟡 parcial en D1/01 | ❌ |
 | Evaluadores (groundedness…) | E-007 | ✅ D2/02 | ❌ |
 | Content filters: 4×4, Prompt Shields | E-004 | ❌ sin material | ❌ |
-| Capas de retrieval en AI Search | E-005 | ❌ sin material | ❌ |
+| Capas de retrieval en AI Search | E-005 | 🟡 parcial en D2/06 — **falta BM25, RRF y semantic ranker** (el curso no los trata) | ❌ |
 
-**Lectura:** hay material para 5 de 7 y **ninguno se ha verificado con preguntas**. El cuello de botella no es escribir apuntes, es **repasar** (skill `repasar`).
+**Lectura:** hay material para 6 de 7 y **ninguno se ha verificado con preguntas**. El cuello de botella no es escribir apuntes, es **repasar** (skill `repasar`).
 
 **Cierre:** DIAG-1B, repesca de las 8 preguntas falladas/parciales de DIAG-1.
 

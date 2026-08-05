@@ -16,10 +16,10 @@ Sistema de estudio para que Rodrigo apruebe el examen **AI-103**. No es un repo 
 
 > Si hoy es **>7 días** después de esa fecha, no confíes en este bloque: lee `study/AI-103-STUDY-STATE.md` y actualízalo.
 
-- **Fase: LP1** (*Develop generative AI apps*), **3 de 6 módulos**. Va por el módulo 4, *"apps that use tools"*. El 1% de LP2 fue un vistazo, no un cambio de path.
+- **Fase: LP1** (*Develop generative AI apps*), **3 de 6 módulos**. Va por el **módulo 5**, *"optimize model performance"*; **saltó el 4** (tools) — pendiente, no abandonado. El 1% de LP2 fue un vistazo, no un cambio de path.
 - **DIAG-1: 42%** en D1+D2 (se aprueba con ~70%). **DIAG-2 sin hacer** → D3/D4/D5 (30–45% del examen) sin medir.
 - **Hallazgo:** acierta lo conceptual, falla lo operativo de Azure. **No confundir su fluidez conceptual con dominio** (riesgo R7).
-- **Material escrito: ~7 de 44 objetivos (16%).** D3, D4 y D5 sin nada — es el cuello de botella real.
+- **Material escrito: ~8 de 44 objetivos (18%).** D3, D4 y D5 sin nada — es el cuello de botella real.
 - **Azure** ✅ activa · examen en **inglés** · **10 h/semana**. Objetivo del usuario ~2 semanas; **estimación realista 6–8** (mediados de septiembre). Ya se le dijo.
 
 **Primera acción:** `study/AI-103-STUDY-STATE.md` § Siguiente acción.

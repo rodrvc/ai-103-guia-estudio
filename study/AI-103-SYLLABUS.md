@@ -85,7 +85,7 @@
 | ID | Objetivo oficial | Estado | Nivel | Evidencia |
 | --- | --- | --- | --- | --- |
 | D2.1.a | Deploy and consume LLMs, small models, code models, and multimodal models | Pendiente | No evaluado | — |
-| D2.1.b | Implement retrieval-augmented generation (RAG) in an application | Evaluado | **En aprendizaje** | DIAG-1 p8 parcial: **invierte** vectorial/híbrida, omite BM25, RRF y semantic ranker. Sabe RAG en la práctica, no la terminología AI Search. E-005 |
+| D2.1.b | Implement retrieval-augmented generation (RAG) in an application | Evaluado | **En aprendizaje** | DIAG-1 p8 parcial: **invierte** vectorial/híbrida, omite BM25, RRF y semantic ranker. Sabe RAG en la práctica, no la terminología AI Search. E-005. Material desde 2026-08-05: `notes/D2-apps-y-agentes/06-rag-grounding.md` (retrieve/augment/generate, 4 búsquedas, hybrid recomendado) — **sin evaluar, nivel sin cambio**. Ojo: el apunte no cubre BM25, RRF ni semantic ranker, que es justo lo que falló |
 | D2.1.c | Design workflows, tool-augmented flows, and multistep reasoning pipelines | Pendiente | No evaluado | — |
 | D2.1.d | Evaluate models and apps: fabrications, relevance, quality, safety | Evaluado | **Débil** | DIAG-1 p12 fallo: confunde evaluación con observabilidad, no conoce groundedness. Llamativo por su experiencia en LangSmith. E-007 |
 | D2.1.e | Integrate generative workflows into applications by using Foundry SDKs and connectors | Estudiado, **sin evaluar** | No evaluado | Apunte `notes/D2-apps-y-agentes/01-conectar-app-a-foundry.md` (2026-08-04): Foundry SDK vs OpenAI SDK, Responses vs ChatCompletions. Pendiente quiz |

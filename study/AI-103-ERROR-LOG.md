@@ -89,6 +89,7 @@ Todos provienen de **DIAG-1 (2026-08-04)**. Repasos programados: 1d = 2026-08-05
 - **Causa:** conceptual — invierte la atribución de lo semántico
 - **Concepto a reforzar:** las 3 capas de retrieval en AI Search y su costo/latencia relativos; qué es RRF
 - **Nota:** error revelador. El usuario domina RAG en la práctica pero no la terminología de AI Search
+- **Material (2026-08-05):** `notes/D2-apps-y-agentes/06-rag-grounding.md` — cubre el marco (retrieve/augment/generate, embeddings, los 4 tipos de búsqueda, hybrid como recomendado). ⚠️ **No cierra el error:** el curso de LP1 no menciona **BM25**, **RRF** ni **semantic ranker**, que es exactamente lo que falló. Esa capa hay que sacarla de las docs de Azure AI Search, no del training path
 - **Repasos:** 1d ☐ | 3d ☐ | 7d ☐ | 14d ☐ | 30d ☐
 - **Estado:** abierto
 

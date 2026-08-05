@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-08-05 — Sesión 012: Apunte de RAG (LP1-M5, unidad 3)
+
+- **El usuario pasó una URL en `es-es`** de *Optimize generative AI model performance* u3. Leída la fuente en **`en-us`** + índice del módulo (8 unidades).
+- **Apunte nuevo:** `notes/D2-apps-y-agentes/06-rag-grounding.md` — retrieve/augment/generate · embeddings y cosine similarity · Azure AI Search (3 pasos, 4 búsquedas, **hybrid recomendado**) · SDK con Responses API · RAG vs prompt eng. vs fine-tuning.
+- **Fase corregida:** saltó del **módulo 4** (tools) al **módulo 5**. El 4 queda ⏭️ saltado, no abandonado — sigue cubriendo E-006.
+- **Hallazgo:** el apunte **no cierra E-005**. El curso no menciona **BM25, RRF ni semantic ranker**, que es justo lo que falló en DIAG-1 p8. Esa capa exige docs de AI Search. Anotado en el error.
+- **Sin evaluación: el usuario la rechazó explícitamente** ("ya no más… por ahora me interesa saber lo más importante"). Se le dio el resumen de alto valor en su lugar.
+- **Sin cambios de nivel.** Cobertura: 6 → **7 apuntes**. **Próxima acción:** sin cambio — DIAG-2 o repaso.
+
+---
+
 ## 2026-08-05 — Sesión 011: Rescate de contenido explicado sin anotar
 
 - **El usuario preguntó si los apuntes cubrían todo lo conversado.** Auditadas las secciones de los 4 apuntes contra la conversación: **5 huecos**.
@@ -77,21 +88,11 @@
 
 ---
 
-## 2026-08-04 — Sesión 005: Lab 02 + deployment types
-
-- **Hecho:** repasado el lab oficial 02 (model catalog & evaluation) en modo tutor. Aclarada la duda del usuario sobre **generación de dataset sintético** (los 3 orígenes de datos; distinción entre *prompt de generación* y *developer prompt*).
-- **Dato nuevo del usuario:** ✅ **tiene suscripción de Azure activa** → los labs son viables. Cierra una de las 3 preguntas abiertas.
-- **Hallazgo del usuario:** le preguntaron por **deployment types**. Verificado en docs oficiales (actualizado 2026-05-18) y escrito `notes/D1-deployment-types.md`. Cubre **D1.2.b**, que era un **hueco R8** — el curso oficial no lo trata.
-- **Cambios de nivel:** ninguno. D1.2.b marcado "Estudiado, sin evaluar" — leer no es evidencia.
-- **Errores:** ninguno nuevo. El apunte de deployment types apoya E-001 (qué define un deployment) y E-002 (standard=TPM vs provisioned=PTU).
-- **Próxima acción:** sin cambio. Pendiente: 3 preguntas del lab 02 + 5 del apunte de deployment types + DIAG-2.
-
----
-
 ## Historial comprimido
 
 | # | Fecha | Qué pasó |
 | --- | --- | --- |
+| 005 | 2026-08-04 | Lab 02 (model catalog) + dataset sintético. Suscripción Azure confirmada. Apunte de **deployment types** (hueco R8) |
 | 004 | 2026-08-04 | Auditoría de memoria (memory-engineer): routing por tarea, presupuesto de contexto, políticas de archivado |
 | 003 | 2026-08-04 | **DIAG-1: 42%.** 9 errores registrados. D1→Débil, D2→En aprendizaje. Primera evidencia real |
 | 002 | 2026-08-04 | Curso oficial AI-103T00-A mapeado: 4 paths, 30 módulos. Detectados 7 huecos (R8), casi todos en D1 |
