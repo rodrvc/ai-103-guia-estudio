@@ -69,6 +69,16 @@ Si **solo se leyó contenido**: marca `Estudiado, sin evaluar` y **deja el nivel
 
 Añade la fila a `notes/INDEX.md`: archivo, tema, objetivo, error que cierra, fecha. Actualiza el contador de cobertura.
 
+### 2b. ¿Explicaste algo que no quedó escrito?
+
+**Explicar en conversación no deja rastro.** Si en la sesión explicaste un concepto que merece repasarse, tiene que estar en `notes/` **antes de cerrar** — o desaparece con el contexto.
+
+Repasa la sesión y pregúntate: ¿qué expliqué que no esté en ningún apunte? Añádelo al apunte del tema, o crea uno nuevo si no encaja.
+
+Ocurrió el 2026-08-05: Service Principal, los labs y los agentes de Foundry se explicaron a fondo y no quedaron anotados. Lo detectó el usuario al preguntar si podía llevarse el material a NotebookLM.
+
+**Regla:** si valió la pena explicarlo, vale la pena anotarlo. En la misma sesión.
+
 ### 3. Bitácora
 
 Entrada en `SESSION-LOG.md`, **≤8 líneas**, arriba del todo: hecho / resultado / errores / cambios de nivel / próxima acción.

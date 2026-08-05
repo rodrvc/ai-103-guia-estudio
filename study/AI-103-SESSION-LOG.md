@@ -8,6 +8,17 @@
 
 ---
 
+## 2026-08-05 — Sesión 011: Rescate de contenido explicado sin anotar
+
+- **El usuario preguntó si los apuntes cubrían todo lo conversado.** Auditadas las secciones de los 4 apuntes contra la conversación: **5 huecos**.
+- **Rescatado a `notes/`:** Service Principal vs Managed Identity vs `az login` (+ tabla API key vs SP, cadena de `DefaultAzureCredential`) · tabla comparativa de código ChatCompletions/Responses · imports `.aio` y `await credential.close()`.
+- **2 apuntes nuevos:** `04-agentes-en-foundry.md` (declarativo vs hosted, automatic tool calling, 8 riesgos + mitigaciones) y `05-labs-oficiales.md` (leaderboard, benchmarks ≠ evaluación, dataset sintético, `.env` sin key).
+- **Cobertura: 9% → 16%** (4 → 6 apuntes, ~7 de 44 objetivos).
+- **Lección de proceso:** explicar en conversación **no** deja rastro. Si vale la pena explicarlo, va a `notes/` en la misma sesión.
+- **Sin cambios de nivel.** **Próxima acción:** sin cambio — DIAG-2 o repaso.
+
+---
+
 ## 2026-08-05 — Sesión 010: Datos de calendario + auditoría de onboarding
 
 - **Datos nuevos:** examen en **inglés** · **10 h/semana** (con fin de semana) · objetivo del usuario ~2 semanas. Los 3 datos faltantes quedan resueltos.

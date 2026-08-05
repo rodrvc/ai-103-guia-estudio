@@ -23,7 +23,7 @@ Empieza por **[el índice](study/notes/INDEX.md)**: ahí ves qué hay, qué falt
 
 Markdown plano, sin dependencias. Arrastra `study/notes/` a **NotebookLM**, ábrelo como vault de **Obsidian**, o exporta a PDF.
 
-> ⚠️ **Cobertura actual: ~9% del temario** (4 apuntes ≈ 4 de 44 objetivos).
+> ⚠️ **Cobertura actual: ~16% del temario** (6 apuntes ≈ 7 de 44 objetivos).
 > **D3 (visión), D4 (texto y voz) y D5 (extracción) no tienen material** — y son el 30–45% del examen.
 > Llevarlo hoy a NotebookLM te da una base sólida de deployment types y de cómo conectar una app a Foundry. Nada más. Ver la cobertura real en el [índice](study/notes/INDEX.md).
 
@@ -62,7 +62,7 @@ Escribe lo que quieras hacer. Los skills se activan solos.
 - **LP1:** 3 de 6 módulos (45%). Vas por el módulo 4, *apps that use tools*
 - **DIAG-1:** 42% en D1+D2 (se aprueba con ~70%)
 - **DIAG-2:** sin hacer → D3, D4 y D5 (**30–45% del examen**) sin medir
-- **Material:** ~9% del temario. **9 errores** abiertos, ninguno repasado
+- **Material:** ~16% del temario. **9 errores** abiertos, ninguno repasado
 - **Examen:** en inglés · 10 h/semana disponibles
 
 ### Calendario

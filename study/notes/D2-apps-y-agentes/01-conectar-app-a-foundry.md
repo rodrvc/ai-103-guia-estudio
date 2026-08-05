@@ -101,6 +101,34 @@ Las tres formas, de mejor a peor:
 
 **Para correr en local:** `az login` antes de ejecutar. `DefaultAzureCredential` busca tu sesión de Azure CLI.
 
+### ¿Y si mi app NO corre en Azure?
+
+**Sí puede hablar con Azure.** Lo que no tiene es Managed Identity — esa se la asigna Azure a recursos que corren dentro.
+
+| Dónde corre tu app | Usa | Hay secreto |
+| --- | --- | --- |
+| **Dentro de Azure** | **Managed Identity** | ❌ ninguno ← lo mejor |
+| **Fuera de Azure** (otro cloud, tu servidor) | **Service Principal** | ✅ client secret |
+| **Tu PC, desarrollando** | `az login` | ❌ usa tu sesión |
+
+**Service Principal = un usuario, pero para aplicaciones.** Tú tienes un usuario (tu email); tu app necesita el suyo. Al crearlo, Azure te da:
+
+- **Client ID** → el "usuario"
+- **Client Secret** → la "contraseña"
+- **Tenant ID** → qué organización
+
+Se guardan en variables de entorno y `DefaultAzureCredential` los encuentra sola.
+
+**¿En qué se diferencia de una API key?** Ambos son secretos, pero:
+
+| | API key | Service Principal |
+| --- | --- | --- |
+| Da acceso a | Un servicio concreto | Lo que le permitas (**RBAC**) |
+| Permisos | Todo o nada | Ajustables: solo lectura, solo un recurso |
+| Auditoría | No sabes quién la usó | Queda registrado quién hizo qué |
+
+**La magia de `DefaultAzureCredential`:** prueba en orden — variables de entorno → Managed Identity → Azure CLI. Por eso **el mismo código funciona en tu PC y desplegado**, sin cambiar nada.
+
 ### El cliente `AzureOpenAI` (caso aparte)
 
 Normalmente usas `OpenAI` con el endpoint v1. Solo usas `AzureOpenAI` si necesitas **una versión concreta** de la API de Azure OpenAI:
@@ -166,6 +194,34 @@ print(completion.choices[0].message.content)
 ```
 
 **Aquí tú mantienes el historial:** tras cada respuesta, añades `{"role": "assistant", ...}` a la lista y reenvías **toda** la conversación en cada turno.
+
+---
+
+### Tabla comparativa de código
+
+| | ChatCompletions | Responses |
+| --- | --- | --- |
+| Método | `chat.completions.create()` | `responses.create()` |
+| System prompt | dentro de `messages` | `instructions=` |
+| Tu pregunta | dentro de `messages` | `input=` |
+| **Leer la respuesta** | `.choices[0].message.content` | **`.output_text`** |
+| Memoria | lista `messages` | `previous_response_id` |
+
+La fila de "leer la respuesta" es la que más se pregunta.
+
+### Los imports que se confunden
+
+```python
+from openai import OpenAI                    # síncrono
+from openai import AsyncOpenAI               # asíncrono
+
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+from azure.identity.aio import DefaultAzureCredential   # ← versión async
+```
+
+Dos pares peligrosos: `OpenAI`/`AsyncOpenAI` y `azure.identity`/**`azure.identity.aio`**. Mezclar síncrono con async falla.
+
+En async, además, **hay que cerrar la credencial**: `await credential.close()`.
 
 ---
 

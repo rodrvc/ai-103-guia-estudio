@@ -25,11 +25,13 @@ Apuntes por tema. Cada uno es autocontenido: explicación → **Para el examen**
 
 | Apunte | De qué va | Estado |
 | --- | --- | --- |
-| [01 Conectar tu app a Foundry](D2-apps-y-agentes/01-conectar-app-a-foundry.md) | Endpoints, SDKs, **autenticación**, Responses vs ChatCompletions. **Peso alto** | 📖 Leído, sin evaluar |
+| [01 Conectar tu app a Foundry](D2-apps-y-agentes/01-conectar-app-a-foundry.md) | Endpoints, SDKs, **autenticación** (Managed Identity / Service Principal / `az login`), Responses vs ChatCompletions, imports y async. **Peso alto** | 📖 Leído, sin evaluar |
 | [02 Evaluación de modelos](D2-apps-y-agentes/02-evaluacion-de-modelos.md) | Manual / AI-assisted / NLP metrics. **Groundedness** = anti-alucinación. Evaluator library | 📖 Leído, sin evaluar |
 | [03 El playground](D2-apps-y-agentes/03-playground.md) | Probar sin código, botón Code. **Peso bajo** | 📖 Leído, sin evaluar |
+| [04 Agentes en Foundry](D2-apps-y-agentes/04-agentes-en-foundry.md) | Declarativo (prompt-based / workflow YAML) vs hosted · automatic tool calling · 8 riesgos de seguridad y mitigaciones. **Peso alto** | 📖 Leído, sin evaluar |
+| [05 Labs oficiales](D2-apps-y-agentes/05-labs-oficiales.md) | Leaderboard y trade-offs · benchmarks ≠ evaluación · **dataset sintético** · el `.env` sin key · async | 📖 Leído, sin evaluar |
 
-**Pendiente en D2:** las 4 tools (`code_interpreter`, `web_search`, `file_search`, `function`) ← **estás aquí** · agentes en Foundry · multi-agente · RAG y capas de retrieval · observabilidad.
+**Pendiente en D2:** las 4 tools (`code_interpreter`, `web_search`, `file_search`, `function`) ← **estás aquí** · multi-agente y orquestación · RAG y capas de retrieval · observabilidad y tracing.
 
 ---
 
