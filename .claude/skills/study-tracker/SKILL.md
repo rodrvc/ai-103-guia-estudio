@@ -51,7 +51,7 @@ Cada dato tiene **un solo hogar canónico**. Los demás archivos llevan un punte
 | Módulo del curso completado | `AI-103-LEARNING-PATH.md` (marcar ☑) | — |
 | Qué pasó en la sesión | `AI-103-SESSION-LOG.md` (**≤8 líneas**) | No re-narres lo que ya está en ERROR-LOG o PRACTICE — enlaza |
 | Fase, métricas, siguiente acción | `AI-103-STUDY-STATE.md` | — |
-| Fase + hallazgo + preguntas abiertas | `CLAUDE.md` § 🚦 EMPIEZA AQUÍ | — |
+| Fase + hallazgo + preguntas abiertas | `CLAUDE.md` § 🚦 Estado | — |
 
 ---
 
@@ -77,7 +77,7 @@ Entrada en `SESSION-LOG.md`, **≤8 líneas**, arriba del todo: hecho / resultad
 
 En `STUDY-STATE.md`: métricas (evaluados, competentes, apuntes), temas fuertes/débiles, **siguiente acción**.
 
-En `CLAUDE.md` § 🚦 EMPIEZA AQUÍ: fase real, progreso, preguntas abiertas, fecha de actualización.
+En `CLAUDE.md` § 🚦 Estado: fase real, progreso, preguntas abiertas, fecha de actualización.
 
 > ⚠️ **Verifica que la fase declarada sea la real.** El fallo más común es dejar escrito un plan que se abandonó. Si el usuario lleva sesiones haciendo otra cosa, **corrige la fase** — un arranque desactualizado hace más daño que ausente.
 
@@ -122,7 +122,7 @@ Si un archivo se acerca a 200 líneas, dilo y propón qué compactar.
 
 ## Modo consulta
 
-Si preguntan "¿dónde quedamos?" o "¿qué sabe el próximo agente?", **no actualices nada**: lee `CLAUDE.md` § EMPIEZA AQUÍ + `STUDY-STATE.md` § Siguiente acción y responde en 5 líneas. Si detectas desfase entre lo escrito y lo real, avísalo y ofrece corregirlo.
+Si preguntan "¿dónde quedamos?" o "¿qué sabe el próximo agente?", **no actualices nada**: lee `CLAUDE.md` § Estado + `STUDY-STATE.md` § Siguiente acción y responde en 5 líneas. Si detectas desfase entre lo escrito y lo real, avísalo y ofrece corregirlo.
 
 ---
 

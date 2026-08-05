@@ -20,7 +20,7 @@
 
 **Leer una lección no cambia el nivel.** Solo lo cambian preguntas respondidas, ejercicios resueltos, labs completados o simulaciones. Un objetivo con apunte escrito pero sin evaluar se marca `Estudiado, sin evaluar` — que no es un nivel.
 
-**Progreso de evaluación:** 11 de 44 objetivos evaluados (25%) tras DIAG-1 el 2026-08-04. El resto sigue **No evaluado**.
+**Progreso de evaluación:** 12 de 44 objetivos evaluados (27%) — DIAG-1 (11) + D1.2.b (2026-08-04). El resto sigue **No evaluado**.
 
 ---
 
@@ -54,7 +54,7 @@
 | ID | Objetivo oficial | Estado | Nivel | Evidencia |
 | --- | --- | --- | --- | --- |
 | D1.2.a | Design Azure infrastructure for AI apps and agent-based solutions | Pendiente | No evaluado | — |
-| D1.2.b | Choose appropriate deployment options | Evaluado | **Competente** | 2026-08-04, **3/3 casos de decisión correctos**: sin restricciones→GlobalStandard · lotes masivos sin prisa→GlobalBatch · UE + latencia crítica→DataZoneProvisioned. Domina los dos ejes y el criterio de **no sobre-restringir**. Falta para Dominado: Developer tier, SLA, at-rest vs procesamiento, y evidencia en 2ª sesión. Apunte `notes/D1-deployment-types.md` |
+| D1.2.b | Choose appropriate deployment options | Evaluado | **Competente** | 2026-08-04, **3/3 casos de decisión correctos**: sin restricciones→GlobalStandard · lotes masivos sin prisa→GlobalBatch · UE + latencia crítica→DataZoneProvisioned. Domina los dos ejes y el criterio de **no sobre-restringir**. Falta para Dominado: Developer tier, SLA, at-rest vs procesamiento, y evidencia en 2ª sesión. Apunte `notes/D1-plataforma/01-deployment-types.md` |
 | D1.2.c | Configure model and agent deployments | Evaluado | **Débil** | DIAG-1 p3 fallo: confunde deployment con playground. E-001 |
 | D1.2.d | Integrate Foundry projects with CI/CD pipelines | Pendiente | No evaluado | — |
 
@@ -88,8 +88,8 @@
 | D2.1.b | Implement retrieval-augmented generation (RAG) in an application | Evaluado | **En aprendizaje** | DIAG-1 p8 parcial: **invierte** vectorial/híbrida, omite BM25, RRF y semantic ranker. Sabe RAG en la práctica, no la terminología AI Search. E-005 |
 | D2.1.c | Design workflows, tool-augmented flows, and multistep reasoning pipelines | Pendiente | No evaluado | — |
 | D2.1.d | Evaluate models and apps: fabrications, relevance, quality, safety | Evaluado | **Débil** | DIAG-1 p12 fallo: confunde evaluación con observabilidad, no conoce groundedness. Llamativo por su experiencia en LangSmith. E-007 |
-| D2.1.e | Integrate generative workflows into applications by using Foundry SDKs and connectors | Estudiado, **sin evaluar** | No evaluado | Apunte `notes/LP1-M3-foundry-sdk.md` (2026-08-04): Foundry SDK vs OpenAI SDK, Responses vs ChatCompletions. Pendiente quiz |
-| D2.1.f | Configure an application to connect to a Foundry project | Estudiado, **sin evaluar** | No evaluado | Apuntes `LP1-M3-foundry-sdk.md` + `LP1-M3-playground.md` (2026-08-04): dos endpoints, `AIProjectClient`, auth. Pendiente quiz |
+| D2.1.e | Integrate generative workflows into applications by using Foundry SDKs and connectors | Estudiado, **sin evaluar** | No evaluado | Apunte `notes/D2-apps-y-agentes/01-conectar-app-a-foundry.md` (2026-08-04): Foundry SDK vs OpenAI SDK, Responses vs ChatCompletions. Pendiente quiz |
+| D2.1.f | Configure an application to connect to a Foundry project | Estudiado, **sin evaluar** | No evaluado | Apuntes `notes/D2-apps-y-agentes/01-conectar-app-a-foundry.md` + `03-playground.md` (2026-08-04): dos endpoints, `AIProjectClient`, auth. Pendiente quiz |
 
 ### D2.2 Build agents by using Foundry
 

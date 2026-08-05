@@ -9,7 +9,7 @@
 > Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
 - **Última actualización:** 2026-08-05
-- **Fase actual:** **LP1, módulo 4** (*"Develop generative AI apps that use tools"*). LP1 va **3 de 6 módulos (45%)**, verificado en Learn el 2026-08-05. El bloque B1 sigue definido pero **no se sigue linealmente**: avanza por el curso y por temas que le surgen
+- **Fase actual:** **LP1, módulo 4** (*"Develop generative AI apps that use tools"*). LP1 va **3 de 6 módulos (45%)**, verificado en Learn el 2026-08-05. Avanza por el curso y por temas que le surgen, no linealmente
 - **Examen reservado:** No
 - **Fecha objetivo:** Sin definir (falta dato del usuario)
 
@@ -100,39 +100,39 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 ## Siguiente acción recomendada
 
-**Si el usuario retoma sin decir qué quiere → continuar LP1 módulo 4** (*apps that use tools*, 9 unidades: `code_interpreter`, `web_search`, `file_search`, `function`). Cubre **D2.2.c** y su error **E-006**.
+**Si el usuario dice "sigamos" sin más → antes de avanzar, mira § Repaso programado.** Si hay hitos vencidos (los hay desde 2026-08-05), **ofrece el repaso primero**: *"Tienes N repasos vencidos y 4 apuntes sin verificar. ¿Repasamos 10 minutos o seguimos avanzando?"* No lo impongas — pero tampoco lo omitas.
+
+**Por qué:** el sistema tiende a premiar avanzar (siempre hay un módulo nuevo) y a no premiar repasar (la cola no protesta sola). Con 42% en DIAG-1 y 9 errores abiertos, avanzar sin consolidar es exactamente el fallo a evitar.
+
+**Si elige avanzar → LP1 módulo 4** (*apps that use tools*, 9 unidades: `code_interpreter`, `web_search`, `file_search`, `function`). Cubre **D2.2.c** y su error **E-006**.
 
 **Deudas acumuladas** (mencionarlas, no imponerlas):
 
 1. **DIAG-2** — 8 preguntas, ~30 min. D3/D4/D5 llevan sin medir desde el inicio: **30–45% del examen** a ciegas. Es lo que más cambia el plan.
 2. **Repaso de los 9 errores de DIAG-1.** La cola espaciada arrancaba el 2026-08-05 y **no se ejecutó**. Hay apuntes que cubren E-003 y E-007, pero **ninguno verificado con preguntas** — así que ningún error está cerrado.
-3. **Preguntas planteadas sin responder:** 3 del lab 02 (model catalog) y 5 del apunte `LP1-M3-foundry-sdk.md` (estas cerrarían E-003 y E-001).
+3. **Preguntas planteadas sin responder:** 3 del lab 02 (model catalog) y 5 del apunte `notes/D2-apps-y-agentes/01-conectar-app-a-foundry.md` (estas cerrarían E-003 y E-001).
 
 **Preguntas abiertas al usuario:** idioma del examen (recomendado inglés) · fecha objetivo · horas/semana.
 
 ---
 
-### Bloque B1 — definido, no iniciado
+### Fundamentos operativos de D1 — estado por tema
 
-Sigue siendo válido como plan, pero el usuario avanza por el curso a su ritmo. Mantener como referencia de qué falta cerrar en D1.
+Están encadenados: un *deployment* tiene un *type* y una *cuota*, se protege con *content filters*, se accede con *Managed Identity* y se mide con *evaluadores*. Una sola historia.
 
-Ataca los 6 temas débiles de mayor prioridad de una sola vez, porque están encadenados: un *deployment* tiene una *cuota* (TPM), se protege con *content filters*, se accede con *Managed Identity* y se mide con *evaluadores*. Es una sola historia, no seis temas sueltos.
+| Tema | Error | Material | Evaluado |
+| --- | --- | --- | --- |
+| Deployment types | — | ✅ `notes/D1-plataforma/01-deployment-types.md` | ✅ **Competente** 3/3 |
+| Model → deployment → endpoint | E-001 | ✅ dentro de D2/01 y D2/03 | ❌ |
+| Managed Identity + RBAC | E-003 | ✅ D2/01 § Autenticación | ❌ |
+| TPM vs PTU, 429, backoff | E-002 | 🟡 parcial en D1/01 | ❌ |
+| Evaluadores (groundedness…) | E-007 | ✅ D2/02 | ❌ |
+| Content filters: 4×4, Prompt Shields | E-004 | ❌ sin material | ❌ |
+| Capas de retrieval en AI Search | E-005 | ❌ sin material | ❌ |
 
-Contenido:
+**Lectura:** hay material para 5 de 7 y **ninguno se ha verificado con preguntas**. El cuello de botella no es escribir apuntes, es **repasar** (skill `repasar`).
 
-1. Model → deployment → endpoint. Qué se pasa en `model=` del SDK (E-001)
-2. TPM vs PTU, 429 + `Retry-After`, backoff exponencial (E-002)
-3. Managed Identity + RBAC + `DefaultAzureCredential` (E-003)
-4. Content filters: 4 categorías × 4 severidades, prompt vs completion, Prompt Shields (E-004)
-5. Evaluadores de Foundry: groundedness, relevance, coherence, fluency (E-007)
-6. Capas de retrieval en AI Search: BM25 / vectorial / híbrida + RRF / semantic ranker (E-005)
-7. **Deployment types** (D1.2.b): global/data zone/regional × standard/provisioned/batch, residencia. Apunte ya escrito, **falta evaluarlo**
-
-Material: módulos LP1-1 y LP1-2 del curso + docs dirigidas para cuotas y seguridad (huecos R8, que el curso no cubre).
-
-**Cierre del bloque:** DIAG-1B (repesca de las 8 preguntas falladas/parciales). Solo entonces suben los niveles.
-
-Después: DIAG-2 (D3+D4+D5) para completar el mapa antes de planificar el resto.
+**Cierre:** DIAG-1B, repesca de las 8 preguntas falladas/parciales de DIAG-1.
 
 **Orden tentativo del curso:** LP1 → LP2 → LP4 → LP3, con los huecos de D1 (R8) intercalados como estudio dirigido de docs.
 

@@ -106,8 +106,8 @@ El curso oficial es el mejor punto de partida, pero **no es suficiente por sí s
 | Hueco | Objetivo | Cómo cubrirlo |
 | --- | --- | --- |
 | **CI/CD con proyectos Foundry** | D1.2.d | Docs de Azure + lab propio. Ningún módulo lo trata a fondo |
-| **Cuotas, TPM/PTU, rate limits, costos** | D1.3.a | Docs de Azure OpenAI quotas & limits. Alto valor por peso de D1. Parcialmente cubierto por `notes/D1-deployment-types.md` (standard=TPM vs provisioned=PTU) |
-| **Deployment types y residencia de datos** | D1.2.b | ✅ Cubierto 2026-08-04: `notes/D1-deployment-types.md`. El curso no lo trata; salió de una pregunta real al usuario |
+| **Cuotas, TPM/PTU, rate limits, costos** | D1.3.a | Docs de Azure OpenAI quotas & limits. Alto valor por peso de D1. Parcialmente cubierto por `notes/D1-plataforma/01-deployment-types.md` (standard=TPM vs provisioned=PTU) |
+| **Deployment types y residencia de datos** | D1.2.b | ✅ Cubierto 2026-08-04: `notes/D1-plataforma/01-deployment-types.md`. El curso no lo trata; salió de una pregunta real al usuario |
 | **Seguridad: managed identity, private networking, keyless, RBAC** | D1.3.d | Docs + lab. Riesgo R2 del perfil; los módulos lo tocan de pasada |
 | **Monitoreo de salud de índices y relevancia** | D1.3.c | Docs de AI Search |
 | **Gobierno de agentes: oversight modes, tool-access controls** | D1.4.d | Parcial en LP2 (workflows) |
