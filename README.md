@@ -21,11 +21,11 @@ Empieza por **[el índice](study/notes/INDEX.md)**: ahí ves qué hay, qué falt
 
 ### Llevarlo a otra herramienta
 
-Los apuntes son Markdown plano, sin dependencias. Puedes:
+Markdown plano, sin dependencias. Arrastra `study/notes/` a **NotebookLM**, ábrelo como vault de **Obsidian**, o exporta a PDF.
 
-- Arrastrar `study/notes/` completo a **NotebookLM** (o solo la carpeta de un dominio)
-- Abrir la carpeta como vault de **Obsidian**
-- Imprimir o exportar a PDF cualquier apunte
+> ⚠️ **Cobertura actual: ~9% del temario** (4 apuntes ≈ 4 de 44 objetivos).
+> **D3 (visión), D4 (texto y voz) y D5 (extracción) no tienen material** — y son el 30–45% del examen.
+> Llevarlo hoy a NotebookLM te da una base sólida de deployment types y de cómo conectar una app a Foundry. Nada más. Ver la cobertura real en el [índice](study/notes/INDEX.md).
 
 ---
 
@@ -62,9 +62,22 @@ Escribe lo que quieras hacer. Los skills se activan solos.
 - **LP1:** 3 de 6 módulos (45%). Vas por el módulo 4, *apps that use tools*
 - **DIAG-1:** 42% en D1+D2 (se aprueba con ~70%)
 - **DIAG-2:** sin hacer → D3, D4 y D5 (**30–45% del examen**) sin medir
-- **9 errores** abiertos, ninguno repasado todavía
+- **Material:** ~9% del temario. **9 errores** abiertos, ninguno repasado
+- **Examen:** en inglés · 10 h/semana disponibles
 
-**Lo que más rinde ahora:** hacer DIAG-2 (30 min) y empezar a repasar. Tienes 4 apuntes escritos y ninguno verificado con preguntas.
+### Calendario
+
+Planteaste rendir en ~2 semanas. **Con los datos actuales no llegas:** son ~20 h contra 96 h que estima el curso oficial, con 3 dominios sin medir y 9% de material escrito.
+
+**Estimación realista: 6–8 semanas** → mediados de septiembre.
+
+No se recomienda reservar el examen hasta tener ≥2 simulaciones con ≥80% y ningún dominio por debajo de 70%.
+
+### Lo que más rinde ahora
+
+1. **DIAG-2** (30 min) — deja de tener el 30–45% del examen a ciegas
+2. **Repasar** — tienes 4 apuntes y ninguno verificado con preguntas
+3. **Escribir material de D3/D4/D5** — están vacíos
 
 ---
 

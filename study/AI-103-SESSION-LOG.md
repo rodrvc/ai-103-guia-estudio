@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-08-05 — Sesión 010: Datos de calendario + auditoría de onboarding
+
+- **Datos nuevos:** examen en **inglés** · **10 h/semana** (con fin de semana) · objetivo del usuario ~2 semanas. Los 3 datos faltantes quedan resueltos.
+- **Se le comunicó que 2 semanas no es realista:** ~20 h contra 96 h estimadas del curso, 4/44 objetivos con material, 3 dominios sin medir, 42% en DIAG-1. **Estimación: 6–8 semanas** (mediados de septiembre).
+- **Preguntó por NotebookLM:** con los apuntes actuales **no** tendría material suficiente — 9% de cobertura, D3/D4/D5 vacíos.
+- **Test de onboarding:** un agente sin contexto se orientó en **2 archivos**, pero reportó 4 desfases (rutas rotas tras la reorganización, bloque B1 fosilizado, ancla inexistente en el skill, contador desfasado). Todos corregidos.
+- **Hallazgo estructural:** *"el sistema premia avanzar y no premia repasar"*. La siguiente acción ahora obliga a ofrecer los repasos vencidos antes de proponer módulo nuevo.
+- **Historial de git limpiado** de firmas de coautoría.
+- **Sin cambios de nivel.** **Próxima acción:** DIAG-2, o repaso (9 hitos vencidos).
+
+---
+
 ## 2026-08-05 — Sesión 009: Progreso real verificado + handoff
 
 - **Verificado en Learn con la sesión del usuario** (navegador, no WebFetch): **LP1 = 3/6 módulos (45%)** · LP2 = 0/9 (1%, solo un vistazo) · perfil Level 3, 200/3699 XP.

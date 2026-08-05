@@ -23,6 +23,7 @@
 | Evaluados | 12 (27%) | DIAG-1 + D1.2.b |
 | Competente o superior | **2** (5%) | D2.2.b · **D1.2.b** (3/3 casos, 2026-08-04) |
 | Apuntes escritos | 4 | `notes/INDEX.md` |
+| **Cobertura de material** | **~4 / 44 objetivos (9%)** | D3, D4 y D5 sin una línea |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
 | Módulos del curso oficial | **3 / 30 (10%)** | Verificado en Learn 2026-08-05 |
@@ -106,6 +107,8 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 **Si elige avanzar → LP1 módulo 4** (*apps that use tools*, 9 unidades: `code_interpreter`, `web_search`, `file_search`, `function`). Cubre **D2.2.c** y su error **E-006**.
 
+**El cuello de botella real es la cobertura de material.** Preguntó (2026-08-05) si con los apuntes actuales en NotebookLM tendría suficiente: **no**. 4 apuntes ≈ 9% de los objetivos; D3+D4+D5 (30–45% del examen) sin nada. Escribir apuntes de los dominios vacíos es lo que más rinde después de DIAG-2.
+
 **Deudas acumuladas** (mencionarlas, no imponerlas):
 
 1. **DIAG-2** — 8 preguntas, ~30 min. D3/D4/D5 llevan sin medir desde el inicio: **30–45% del examen** a ciegas. Es lo que más cambia el plan.
@@ -142,13 +145,32 @@ Están encadenados: un *deployment* tiene un *type* y una *cuota*, se protege co
 
 **Al resolver un dato, bórralo de esta tabla.** Si sigue aquí, es que nadie lo ha preguntado.
 
-| # | Dato | Por qué importa |
-| --- | --- | --- |
-| 1 | Fecha objetivo o deadline del examen | Define ritmo y cuándo empezar simulaciones |
-| 2 | Horas de estudio por semana | Determina el tamaño de los bloques |
-| 3 | Idioma en que rendirá el examen | El inglés se actualiza primero; la localización va ~8 semanas atrás. Recomendado: inglés |
+*(Ninguno pendiente ahora mismo.)*
 
-**Resueltos:** suscripción de Azure activa ✅ (2026-08-04, labs viables) · avanza por el curso oficial siguiendo LP1 en orden, no solo las brechas (observado 2026-08-05).
+**Resueltos (2026-08-04/05):** suscripción de Azure activa ✅ · examen en **inglés** ✅ · **10 h/semana** incluido fin de semana ✅ · avanza por el curso siguiendo LP1 en orden, no solo las brechas.
+
+---
+
+## Calendario
+
+- **Disponibilidad:** 10 h/semana (con fin de semana).
+- **Objetivo que planteó el usuario (2026-08-05):** rendir en ~2 semanas.
+- **Estimación realista: 6–8 semanas** → **mediados de septiembre de 2026**.
+
+**Por qué no llegan 2 semanas** — se le comunicó explícitamente:
+
+| Dato | Valor |
+| --- | --- |
+| Horas en 2 semanas | ~20 h |
+| Estimación oficial del curso | 96 h |
+| Objetivos con material | 4 de 44 |
+| Dominios sin medir | D3, D4, D5 (30–45% del examen) |
+| DIAG-1 | 42% (se aprueba con ~70%) |
+| Errores abiertos sin repasar | 9 |
+
+**Regla de reserva vigente:** ≥2 simulaciones completas con ≥80%, ningún dominio <70%, sin dominios de peso alto en Débil. Hoy no se cumple ninguna condición. **No recomendar reservar.**
+
+Si el usuario insiste en la fecha corta, ofrecer un plan de emergencia priorizado por peso (D2 → D1 → resto) advirtiendo que iría con ~50% de probabilidad.
 
 ---
 
