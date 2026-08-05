@@ -104,8 +104,7 @@ Revisa `STUDY-STATE.md` § Información faltante: **borra los datos que ya se re
 study(YYYY-MM-DD): <resumen corto>
 ```
 
-Cuerpo: qué cambió y por qué. Termina con:
-`Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>`
+Cuerpo: qué cambió y por qué. **Sin líneas de coautoría ni firmas de herramienta.**
 
 ---
 
