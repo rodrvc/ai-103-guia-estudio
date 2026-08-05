@@ -21,13 +21,19 @@ El curso se compone de **4 learning paths / 30 módulos**. Todos accesibles grat
 
 ## Estado global
 
+**Verificado en Microsoft Learn con la sesión del usuario el 2026-08-05** (Level 3, 200/3699 XP):
+
 | Path | Módulos | Completados | Dominios AI-103 |
 | --- | --- | --- | --- |
-| LP1 Develop generative AI apps in Azure | 6 | 0 | D1, D2 |
-| LP2 Develop AI agents on Azure | 9 | 0 | D2, D1.4 |
+| LP1 Develop generative AI apps in Azure | 6 | **3 (45%)** ← aquí está | D1, D2 |
+| LP2 Develop AI agents on Azure | 9 | 0 (1%) | D2, D1.4 |
 | LP3 Develop natural language solutions in Azure | 7 | 0 | D4 |
 | LP4 Extract insights from visual data on Azure | 8 | 0 | D3, D5 |
-| **Total** | **30** | **0 (0%)** | |
+| **Total** | **30** | **3 (10%)** | |
+
+> **Fase actual: LP1.** El 1% de LP2 es un vistazo puntual a la unidad 2 del primer módulo, no un cambio de rumbo.
+
+El progreso solo se lee con la sesión autenticada del usuario: usar el navegador (`mcp__claude-in-chrome__*`), no WebFetch — la versión pública no trae datos de progreso.
 
 Marcar ☑ solo cuando el módulo esté **completado con su lab**, no solo leído.
 
@@ -39,10 +45,10 @@ Marcar ☑ solo cuando el módulo esté **completado con su lab**, no solo leíd
 
 | ☐ | Módulo | Mapea a |
 | --- | --- | --- |
-| ☐ | Plan and prepare to develop AI solutions on Azure | D1.1, D1.2 |
-| ☐ | Select, deploy, and evaluate Microsoft Foundry models | D1.1.a, D1.2.c, D2.1.a, D2.1.d |
-| ☐ | Develop a generative AI chat app with Microsoft Foundry (**Responses API**) | D2.1.e, D2.1.f |
-| ☐ | Develop generative AI apps that use tools | D2.1.c, D2.2.c |
+| ☑ | Plan and prepare to develop AI solutions on Azure | D1.1, D1.2 |
+| ☑ | Select, deploy, and evaluate Microsoft Foundry models | D1.1.a, D1.2.c, D2.1.a, D2.1.d |
+| ☑ | Develop a generative AI chat app with Microsoft Foundry (**Responses API**) | D2.1.e, D2.1.f |
+| 🔄 | Develop generative AI apps that use tools ← **en curso** (9 unidades: 4 tools) | D2.1.c, D2.2.c |
 | ☐ | Optimize generative AI model performance with Microsoft Foundry (prompt eng. + RAG + fine-tuning) | D2.3.a, D2.1.b |
 | ☐ | Implement a responsible generative AI solution in Microsoft Foundry | D1.4.a, D1.4.b |
 

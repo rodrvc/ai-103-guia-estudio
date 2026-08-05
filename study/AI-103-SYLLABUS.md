@@ -6,13 +6,19 @@
 >
 > **Integridad al escribir:** un nivel solo sube con **evidencia registrada** (quiz, ejercicio, lab). Leer una lección no cuenta. Citar siempre la evidencia en la celda. Escala en `CLAUDE.md`.
 
-- **Fuente:** https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103
-- **Skills measured as of:** 2026-04-16
-- **Última verificación por un agente:** 2026-08-04
-- **Nota oficial:** la mayoría de preguntas cubren features GA; puede haber Preview si son de uso común.
-- **Aprobación:** 700/1000.
+**Fuente:** [study guide oficial](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) · *Skills measured as of* **2026-04-16** · verificado **2026-08-04** · aprobación **700/1000** · mayoría de preguntas sobre features GA (Preview solo si son de uso común).
 
-Escala de niveles: ver `CLAUDE.md` § Escala de niveles.
+### Escala de niveles (criterios completos)
+
+| Nivel | Criterio de evidencia |
+| --- | --- |
+| **No evaluado** | Sin evidencia. Estado inicial por defecto |
+| **Débil** | Falla preguntas conceptuales básicas o no sabe qué servicio elegir |
+| **En aprendizaje** | Entiende el concepto pero falla detalles, límites, o la decisión entre servicios similares |
+| **Competente** | Acierta preguntas tipo examen de forma consistente y explica *por qué*. Al menos 1 ejercicio práctico |
+| **Dominado** | Competente + resuelve casos de arquitectura con restricciones (costo, latencia, seguridad) + evidencia en ≥2 sesiones separadas en el tiempo |
+
+**Leer una lección no cambia el nivel.** Solo lo cambian preguntas respondidas, ejercicios resueltos, labs completados o simulaciones. Un objetivo con apunte escrito pero sin evaluar se marca `Estudiado, sin evaluar` — que no es un nivel.
 
 **Progreso de evaluación:** 11 de 44 objetivos evaluados (25%) tras DIAG-1 el 2026-08-04. El resto sigue **No evaluado**.
 

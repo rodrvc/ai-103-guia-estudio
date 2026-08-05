@@ -8,8 +8,8 @@
 >
 > Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
-- **Última actualización:** 2026-08-04
-- **Fase actual:** **estudio activo del curso oficial**, guiado por el usuario (trae URLs, se escribe apunte + preguntas). El bloque B1 sigue definido pero **no se está siguiendo linealmente**: el usuario avanza por LP1 y por temas que le surgen (ej. deployment types)
+- **Última actualización:** 2026-08-05
+- **Fase actual:** **LP1, módulo 4** (*"Develop generative AI apps that use tools"*). LP1 va **3 de 6 módulos (45%)**, verificado en Learn el 2026-08-05. El bloque B1 sigue definido pero **no se sigue linealmente**: avanza por el curso y por temas que le surgen
 - **Examen reservado:** No
 - **Fecha objetivo:** Sin definir (falta dato del usuario)
 
@@ -25,7 +25,7 @@
 | Apuntes escritos | 4 | `notes/INDEX.md` |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
-| Módulos del curso oficial | 0 / 30 (0%) | `AI-103-LEARNING-PATH.md` |
+| Módulos del curso oficial | **3 / 30 (10%)** | Verificado en Learn 2026-08-05 |
 
 **Nivel estimado actual: En aprendizaje, por debajo del umbral de aprobación.** DIAG-1 dio 42% sobre los dominios que pesan 55–65% del examen; se aprueba con 700/1000 (~70%). La brecha es real pero de **superficie, no de fundamentos** (ver § Lectura del diagnóstico).
 
@@ -100,11 +100,15 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 ## Siguiente acción recomendada
 
-**Prioridad 1: DIAG-2** (8 preguntas, ~30 min) — D3/D4/D5 llevan sin medir desde el inicio y son el **30–45% del examen**. Sin esto, cualquier calendario es adivinanza. Recomendado antes de seguir avanzando en LP1.
+**Si el usuario retoma sin decir qué quiere → continuar LP1 módulo 4** (*apps that use tools*, 9 unidades: `code_interpreter`, `web_search`, `file_search`, `function`). Cubre **D2.2.c** y su error **E-006**.
 
-**Prioridad 2: repasar los 9 errores de DIAG-1.** La cola de repaso espaciado (1d = 2026-08-05) **no se ha ejecutado**. Los apuntes escritos cubren E-007 (evaluación) y apoyan E-001/E-002, pero **ninguno se ha verificado con preguntas**.
+**Deudas acumuladas** (mencionarlas, no imponerlas):
 
-**Pendiente de respuesta del usuario:** 3 preguntas del lab 02 (model catalog) — ya planteadas, sin contestar.
+1. **DIAG-2** — 8 preguntas, ~30 min. D3/D4/D5 llevan sin medir desde el inicio: **30–45% del examen** a ciegas. Es lo que más cambia el plan.
+2. **Repaso de los 9 errores de DIAG-1.** La cola espaciada arrancaba el 2026-08-05 y **no se ejecutó**. Hay apuntes que cubren E-003 y E-007, pero **ninguno verificado con preguntas** — así que ningún error está cerrado.
+3. **Preguntas planteadas sin responder:** 3 del lab 02 (model catalog) y 5 del apunte `LP1-M3-foundry-sdk.md` (estas cerrarían E-003 y E-001).
+
+**Preguntas abiertas al usuario:** idioma del examen (recomendado inglés) · fecha objetivo · horas/semana.
 
 ---
 
@@ -136,16 +140,15 @@ Después: DIAG-2 (D3+D4+D5) para completar el mapa antes de planificar el resto.
 
 ## Información faltante
 
+**Al resolver un dato, bórralo de esta tabla.** Si sigue aquí, es que nadie lo ha preguntado.
+
 | # | Dato | Por qué importa |
 | --- | --- | --- |
-| 1 | Fecha objetivo o deadline del examen | Define ritmo, profundidad y cuándo empezar simulaciones |
-| 2 | Horas de estudio disponibles por semana | Determina tamaño de los bloques |
-| 3 | ¿Tiene suscripción de Azure activa con acceso a Foundry? ¿Créditos o límites? | Decide si los labs son reales o solo teóricos. Es un examen de implementación |
-| 4 | ¿Ha usado Azure antes en cualquier medida? (portal, CLI, App Service…) | Ajusta el punto de partida de D1 |
-| 5 | ¿Región de Azure disponible? | Disponibilidad de modelos y features varía por región; a veces se pregunta |
-| 6 | Idioma en que rendirá el examen | El inglés se actualiza primero; la localización va ~8 semanas atrás |
-| 7 | Preferencia de formato: ¿más quiz rápido o más lab práctico? | Ajusta el balance del plan |
-| 8 | ¿Harás el curso oficial completo (96 h) o solo los módulos que el diagnóstico marque como brecha? | Cambia radicalmente el calendario. Con tu perfil, hacer los 30 módulos linealmente probablemente desperdicia tiempo en LP1/LP2 |
+| 1 | Fecha objetivo o deadline del examen | Define ritmo y cuándo empezar simulaciones |
+| 2 | Horas de estudio por semana | Determina el tamaño de los bloques |
+| 3 | Idioma en que rendirá el examen | El inglés se actualiza primero; la localización va ~8 semanas atrás. Recomendado: inglés |
+
+**Resueltos:** suscripción de Azure activa ✅ (2026-08-04, labs viables) · avanza por el curso oficial siguiendo LP1 en orden, no solo las brechas (observado 2026-08-05).
 
 ---
 

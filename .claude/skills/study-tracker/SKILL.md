@@ -81,6 +81,23 @@ En `CLAUDE.md` § 🚦 EMPIEZA AQUÍ: fase real, progreso, preguntas abiertas, f
 
 > ⚠️ **Verifica que la fase declarada sea la real.** El fallo más común es dejar escrito un plan que se abandonó. Si el usuario lleva sesiones haciendo otra cosa, **corrige la fase** — un arranque desactualizado hace más daño que ausente.
 
+### 4b. ¿Aprendiste algo que merezca quedar escrito? Decide DÓNDE
+
+`CLAUDE.md` se carga **entero en cada sesión**; todo lo demás es bajo demanda. Por eso crece: cada hallazgo valioso tiende a escribirse en el sitio más visible. Aplica este criterio:
+
+| ¿Se puede romper **antes** de que un agente cargue un skill o abra un archivo? | Dónde va |
+| --- | --- |
+| **Sí** — se rompe en el primer mensaje (cómo explicar, fase actual, `en-us`, no subir nivel sin evidencia) | `CLAUDE.md`, en la mínima expresión |
+| **No** — solo aplica al registrar, planificar o escribir apuntes | **Este skill** o el archivo de `study/` que corresponda |
+
+**La regla va en `CLAUDE.md`; la anécdota que la originó, en `PROFILE.md` o aquí.** Ejemplo: *"usa `en-us`"* está en CLAUDE.md; la tabla de errores de traducción que lo justifica, en PROFILE.
+
+Antes de añadir a `CLAUDE.md`, comprueba que no esté ya dicho — la duplicación interna es el modo de fallo más común.
+
+### 4c. Depura lo resuelto
+
+Revisa `STUDY-STATE.md` § Información faltante: **borra los datos que ya se respondieron**. Un dato resuelto que sigue listado hace que el siguiente agente vuelva a preguntarlo. Pasó con la suscripción de Azure (resuelta el 2026-08-04, seguía en la tabla el 2026-08-05).
+
 ### 5. Commit
 
 ```
