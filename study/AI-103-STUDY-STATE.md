@@ -9,7 +9,7 @@
 > Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
 - **Última actualización:** 2026-08-04
-- **Fase actual:** DIAG-1 completado (42%) → **estudio del bloque B1 (D1 operativo)**
+- **Fase actual:** **estudio activo del curso oficial**, guiado por el usuario (trae URLs, se escribe apunte + preguntas). El bloque B1 sigue definido pero **no se está siguiendo linealmente**: el usuario avanza por LP1 y por temas que le surgen (ej. deployment types)
 - **Examen reservado:** No
 - **Fecha objetivo:** Sin definir (falta dato del usuario)
 
@@ -20,8 +20,9 @@
 | Métrica | Valor | Base |
 | --- | --- | --- |
 | Objetivos del temario | 44 | `AI-103-SYLLABUS.md` |
-| Evaluados | 11 (25%) | DIAG-1 |
-| Competente o superior | 1 (2%) | D2.2.b |
+| Evaluados | 12 (27%) | DIAG-1 + D1.2.b |
+| Competente o superior | **2** (5%) | D2.2.b · **D1.2.b** (3/3 casos, 2026-08-04) |
+| Apuntes escritos | 3 | `notes/INDEX.md` |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
 | Módulos del curso oficial | 0 / 30 (0%) | `AI-103-LEARNING-PATH.md` |
@@ -99,7 +100,17 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 ## Siguiente acción recomendada
 
-**Bloque B1 — "Fundamentos operativos de la plataforma Azure AI"**
+**Prioridad 1: DIAG-2** (8 preguntas, ~30 min) — D3/D4/D5 llevan sin medir desde el inicio y son el **30–45% del examen**. Sin esto, cualquier calendario es adivinanza. Recomendado antes de seguir avanzando en LP1.
+
+**Prioridad 2: repasar los 9 errores de DIAG-1.** La cola de repaso espaciado (1d = 2026-08-05) **no se ha ejecutado**. Los apuntes escritos cubren E-007 (evaluación) y apoyan E-001/E-002, pero **ninguno se ha verificado con preguntas**.
+
+**Pendiente de respuesta del usuario:** 3 preguntas del lab 02 (model catalog) — ya planteadas, sin contestar.
+
+---
+
+### Bloque B1 — definido, no iniciado
+
+Sigue siendo válido como plan, pero el usuario avanza por el curso a su ritmo. Mantener como referencia de qué falta cerrar en D1.
 
 Ataca los 6 temas débiles de mayor prioridad de una sola vez, porque están encadenados: un *deployment* tiene una *cuota* (TPM), se protege con *content filters*, se accede con *Managed Identity* y se mide con *evaluadores*. Es una sola historia, no seis temas sueltos.
 

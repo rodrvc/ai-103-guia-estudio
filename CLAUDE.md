@@ -8,7 +8,11 @@
 
 **Qué es esto:** sistema de estudio para que Rodrigo apruebe el examen **AI-103**. No es un repo de código.
 
-**Fase:** DIAG-1 hecho (**42%** en D1+D2, se aprueba con ~70%) · estudiando bloque **B1** · **DIAG-2 pendiente** → D3/D4/D5 (30–45% del examen) sin medir.
+**Fase:** DIAG-1 hecho (**42%** en D1+D2, se aprueba con ~70%). **Ahora: estudio activo del curso oficial**, guiado por el usuario — trae URLs de módulos y se le escribe apunte en `notes/` + preguntas de comprobación. **DIAG-2 pendiente** → D3/D4/D5 (30–45% del examen) sin medir.
+
+**Cómo trabaja el usuario (validado 2026-08-04):** trae un link de Microsoft Learn o docs → se lee la fuente (nunca de memoria) → apunte en `notes/` con analogías primero y el nombre técnico al final → preguntas de comprobación → si responde, se evalúa y se actualiza SYLLABUS. Si pasa un link en `es-es`, usar la versión `en-us`.
+
+**Progreso real:** 2 objetivos en Competente (D2.2.b, **D1.2.b**) · 3 apuntes escritos · 9 errores abiertos de DIAG-1 sin repasar aún.
 
 **Hallazgo clave (n=12, revisar tras DIAG-1B):** acierta lo **conceptual**, falla lo **operativo de Azure** (deployments, cuotas, managed identity, evaluadores, retrieval). Brecha de superficie, no de fundamentos — pero es lo que el examen mide. **No confundir su fluidez conceptual con dominio** → riesgo R7.
 
