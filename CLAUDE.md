@@ -36,6 +36,7 @@ Su progreso en Microsoft Learn solo se lee con el navegador (`mcp__claude-in-chr
 | Corregir un quiz o diagnóstico | ERROR-LOG § Patrones + PRACTICE (solo ese quiz) | SYLLABUS entero |
 | Registrar un error nuevo | ERROR-LOG (cabecera de formato) | — |
 | Planificar el siguiente bloque | STUDY-STATE + SYLLABUS § Resumen de pesos + LEARNING-PATH § Cobertura | ERROR-LOG detallado |
+| **Repasar / preguntar al usuario** | skill **`repasar`** + el apunte del tema | el resto de `notes/` |
 | Escribir apuntes de un módulo | `notes/_TEMPLATE.md` + la lección fuente | `study/` entero |
 | Actualizar niveles tras evidencia | SYLLABUS (solo el dominio tocado) + STUDY-STATE § Progreso | — |
 | Preparar simulación | PRACTICE + SYLLABUS § Resumen de pesos | `notes/` |
@@ -44,7 +45,9 @@ Su progreso en Microsoft Learn solo se lee con el navegador (`mcp__claude-in-chr
 
 Rutas: todo bajo `study/` con prefijo `AI-103-`. Perfil, fuentes y riesgos: `study/PROFILE.md`.
 
-`study/*.md` = memoria de agentes · `study/notes/*.md` = apuntes del humano: entra por `notes/INDEX.md`, **nunca leas el directorio entero**.
+`study/*.md` = memoria de agentes · `study/notes/**` = **material de estudio del humano**, agrupado por dominio (`D1-plataforma/`, `D2-apps-y-agentes/`…). Entra por `notes/INDEX.md`, **nunca leas el directorio entero**. `README.md` (raíz) es la guía de uso para Rodrigo, no para ti.
+
+**Dos skills:** `repasar` (preguntar y evaluar) · `study-tracker` (registrar y sincronizar).
 
 STUDY-STATE es el **resumen**; los demás son la **evidencia**. Ante contradicción, gana la evidencia.
 
