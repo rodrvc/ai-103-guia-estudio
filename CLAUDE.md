@@ -18,6 +18,8 @@
 
 **Primera acción:** `study/AI-103-STUDY-STATE.md` § Siguiente acción. Luego, según tarea, ver § Qué leer.
 
+**Al terminar cualquier bloque de estudio** (apunte escrito, respuestas corregidas, lab hecho, tema nuevo, fin de sesión): invoca el skill **`study-tracker`**. Registra el progreso y sincroniza la memoria sin que haya que pedirlo. También responde "¿dónde quedamos?".
+
 **Azure:** ✅ suscripción activa (2026-08-04) — los labs son viables.
 
 **Preguntas abiertas** (bloquean el calendario): ¿DIAG-2 antes de B1? (recomendado sí) · ¿examen en inglés o español? (recomendado inglés) · fecha objetivo y horas/semana.
@@ -58,20 +60,22 @@ Rutas: todo bajo `study/` con prefijo `AI-103-`. Detalle de perfil, fuentes y ri
 ## Presupuesto de contexto
 
 - **Ningún archivo de `study/` supera 200 líneas.** Al superarlo: compactar o archivar a `study/archive/`.
-- **SESSION-LOG:** solo las **últimas 5 sesiones** en detalle (≤8 líneas cada una). Las anteriores colapsan a una fila de tabla y se archivan por mes.
-- **ERROR-LOG:** un error **cerrado** pasa de bloque a **una línea** de tabla. Los abiertos conservan el detalle — son material de repaso. Si hay >15 abiertos, el problema es el plan de estudio, no la memoria.
-- **`notes/`** no se compacta (es producto humano), pero se accede solo por `INDEX.md`.
+- **SESSION-LOG:** solo las **últimas 5 sesiones** en detalle (≤8 líneas). El resto se archiva por mes.
+- **ERROR-LOG:** error **cerrado** = una línea de tabla. Los abiertos conservan el detalle (son material de repaso).
+- **`notes/`** no se compacta; se accede solo por `INDEX.md`.
+
+Detalle del procedimiento de registro: skill **`study-tracker`**.
 
 ## Reglas para otros agentes
 
 1. **Leer la memoria antes** de responder o modificar el plan.
-2. **No sobrescribir decisiones ni progreso sin evidencia.** Un tema no sube de nivel porque el usuario leyó una explicación.
-3. **Actualizar la memoria al terminar** trabajo relevante (sesión de estudio, quiz, lab, simulación). Esto incluye el bloque **🚦 EMPIEZA AQUÍ** al inicio de este archivo: si cambia la fase, el resultado de un diagnóstico o la siguiente acción, actualízalo. Es lo primero que lee el siguiente agente y desactualizado hace más daño que ausente.
+2. **No sobrescribir progreso sin evidencia.** Un tema no sube de nivel porque el usuario leyó algo.
+3. **Registrar al terminar** cualquier bloque de estudio → skill **`study-tracker`**.
 4. **Registrar fuentes y fechas** cuando el temario o un servicio pueda haber cambiado.
-5. **Comunicar contradicciones** encontradas en vez de resolverlas en silencio.
-6. **Mantener los archivos compatibles con Git**: Markdown plano, tablas legibles, diffs pequeños. Editar solo las secciones afectadas; no regenerar documentos completos.
-7. Fechas siempre en `YYYY-MM-DD`.
-8. **Nunca guardar** contraseñas, tokens, claves de Azure, connection strings, endpoints privados ni datos personales sensibles. Usar placeholders (`<AZURE_ENDPOINT>`).
+5. **Comunicar contradicciones** en vez de resolverlas en silencio.
+6. **Diffs pequeños.** Markdown plano, editar solo lo afectado, no regenerar documentos.
+7. Fechas en `YYYY-MM-DD`.
+8. **Nunca guardar** claves, tokens, connection strings, endpoints privados ni datos sensibles. Usar `<AZURE_ENDPOINT>`.
 
 ## Escala de niveles (única y obligatoria)
 

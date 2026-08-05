@@ -18,6 +18,18 @@
 
 ---
 
+## 2026-08-04 — Sesión 007: Skill `study-tracker`
+
+- **Hecho:** creado `.claude/skills/study-tracker/SKILL.md` — automatiza el registro de progreso para que no dependa de que el usuario lo pida.
+- **Se dispara solo** al: escribir un apunte, corregir respuestas, completar lab/quiz/diagnóstico, descubrir tema no cubierto, o cerrar sesión. También responde "¿dónde quedamos?" en modo consulta (sin escribir).
+- **Contiene:** tabla de hogar canónico por dato · procedimiento de 5 pasos · presupuesto de contexto · 7 trampas conocidas (la #1: dejar escrita una fase abandonada).
+- **`CLAUDE.md` comprimido** (–9 líneas): el procedimiento detallado vive ahora en el skill; aquí queda el puntero.
+- **Nota:** el skill se indexa al iniciar sesión. En **esta** sesión aún no es invocable; a partir de la próxima, sí.
+- **Sin cambios** de nivel ni errores nuevos.
+- **Próxima acción:** sin cambio — DIAG-2 (prioridad 1) y repaso de los 9 errores.
+
+---
+
 ## 2026-08-04 — Sesión 006: Deployment types evaluado + hallazgo pedagógico
 
 - **Hallazgo importante:** el usuario pidió "bájalo a algo entendible". Reexplicado con analogías (taxi / auto propio / encomienda · casa vs. lavandería) → pasó de no entender a **3/3 casos correctos**, incluido el que había fallado en jerga.
