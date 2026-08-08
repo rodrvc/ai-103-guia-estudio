@@ -65,7 +65,7 @@
 | D1.3.a | Manage quotas, scaling, rate limits, and cost footprints for model and agent workloads | Evaluado | **Débil** | DIAG-1 p4: "no lo sé". Sin TPM/PTU/429. E-002 |
 | D1.3.b | Monitor model performance, drift, safety events, and grounding quality | Pendiente | No evaluado | — |
 | D1.3.c | Monitor data ingestion quality, search index health, and relevance performance | Pendiente | No evaluado | — |
-| D1.3.d | Configure security: managed identity, private networking, keyless credentials, role policies | Evaluado | **Débil** | DIAG-1 p5 parcial-bajo: intuye Azure, no nombra Managed Identity / RBAC / DefaultAzureCredential. E-003 |
+| D1.3.d | Configure security: managed identity, private networking, keyless credentials, role policies | Evaluado | **Débil** | DIAG-1 p5 parcial-bajo: intuye Azure, no nombra Managed Identity / RBAC / DefaultAzureCredential. E-003. Material 2026-08-08: `notes/D2-apps-y-agentes/07` § Deploy vs Publish (identidad Entra propia, rol Azure AI User, RBAC no se hereda) — **sin verificar** |
 
 ### D1.4 Implement responsible AI across generative AI and agentic systems
 
@@ -95,9 +95,9 @@
 
 | ID | Objetivo oficial | Estado | Nivel | Evidencia |
 | --- | --- | --- | --- | --- |
-| D2.2.a | Define agent roles, goals, conversation-tracking approach, and tool schemas | Pendiente | No evaluado | — |
+| D2.2.a | Define agent roles, goals, conversation-tracking approach, and tool schemas | **Estudiado, sin evaluar** | No evaluado | Material 2026-08-08: `notes/D2-apps-y-agentes/07` (YAML del agente, instructions, temperature/top_p) + `/04` (tipos de agente). **Sin preguntas respondidas** |
 | D2.2.b | Build agents that integrate retrieval, function-calling, and conversation memory | Evaluado | **Competente** | DIAG-1 p10 pleno: thread/run/message correctos y acierta lo clave — **el servicio persiste el thread**, no la app. Único objetivo en Competente |
-| D2.2.c | Integrate agent tools: APIs, knowledge stores, search, content understanding, custom functions | Evaluado | **En aprendizaje** | DIAG-1 p9 parcial: catálogo incompleto, confunde modalidad (voz) con tool. E-006 |
+| D2.2.c | Integrate agent tools: APIs, knowledge stores, search, content understanding, custom functions | Evaluado | **En aprendizaje** | DIAG-1 p9 parcial: catálogo incompleto, confunde modalidad (voz) con tool. E-006. Material 2026-08-08: `notes/D2-apps-y-agentes/07` § Tools (3 categorías, File Search vs AI Search, OpenAPI, MCP) — **sin verificar** |
 | D2.2.d | Implement orchestrated multi-agent solutions | Pendiente | No evaluado | — |
 | D2.2.e | Build autonomous or semiautonomous workflows with safeguards and approval flow controls | Evaluado | **En aprendizaje** | DIAG-1 p11: patrón human-in-the-loop correcto, falta la mecánica `requires_action` → `submit_tool_outputs`. E-009 |
 | D2.2.f | Integrate monitoring into deployed agents, evaluate agent behavior, perform error analysis | Pendiente | No evaluado | — |

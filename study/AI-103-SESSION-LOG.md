@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-08-08 — Sesión 013: LP2-M1 completo (agentes con Foundry y VS Code)
+
+- **Cambio de fase verificado en Learn:** el usuario **saltó de LP1-M5 a LP2-M1**. LP1 = 4/6 (87%), LP2 = 0/9. LP1 queda incompleto: módulo 5 pausado en la u6 y **módulo 6 sin empezar (D1.4 entero)**.
+- **Corrección de proceso en la misma sesión:** el agente resumió solo la unidad 4 (la URL que pasó el usuario). **Él lo detectó** — *"te pedí del módulo, no del video"*. Releídas las 11 unidades y rehecho el resumen. Es la trampa del skill § "lee el módulo entero", que ya había fallado el 2026-08-04.
+- **Apunte nuevo:** `notes/D2-apps-y-agentes/07-construir-y-publicar-agentes.md` — portal vs VS Code · YAML del agente (temperature/top_p) · catálogo de tools (3 categorías) y MCP (3 tipos) · **Deploy vs Publish** · Agent Application, endpoint estable, Entra ID y la trampa de RBAC · stateless en producción.
+- **Hallazgo de alto valor:** *deploy* (guarda en el proyecto) ≠ *publish* (crea Agent Application con endpoint). Al publicar, el agente recibe **identidad de Entra propia y los permisos NO se heredan** — hay que reasignar RBAC o las tools fallan. Cae seguro.
+- **Cobertura: 18% → 23%** (7 → 8 apuntes). D2.2.a pasa a *Estudiado, sin evaluar*; D2.2.c y D1.3.d ganan material.
+- **Sin cambios de nivel. Sin evaluación** — ya van **~20 preguntas planteadas y nunca respondidas** en 4 apuntes. Ese es el patrón a romper.
+- **Próxima acción:** las 7 preguntas del apunte 07 (10 min) → luego u9 (ejercicio) y u10 (knowledge check) de LP2-M1, que sí dan evidencia.
+
+---
+
 ## 2026-08-05 — Sesión 012: Apunte de RAG (LP1-M5, unidad 3)
 
 - **El usuario pasó una URL en `es-es`** de *Optimize generative AI model performance* u3. Leída la fuente en **`en-us`** + índice del módulo (8 unidades).
@@ -80,21 +92,11 @@
 
 ---
 
-## 2026-08-04 — Sesión 006: Deployment types evaluado + hallazgo pedagógico
-
-- **Hallazgo importante:** el usuario pidió "bájalo a algo entendible". Reexplicado con analogías (taxi / auto propio / encomienda · casa vs. lavandería) → pasó de no entender a **3/3 casos correctos**, incluido el que había fallado en jerga.
-- **Método registrado en `CLAUDE.md`:** analogía → decisión en cristiano → nombre técnico **al final**. No es simplificar contenido, es cambiar la puerta de entrada.
-- **Evidencia:** GlobalStandard (sin restricciones) · GlobalBatch (lotes sin prisa) · DataZoneProvisioned (UE + latencia crítica). Domina los dos ejes y el criterio de **no sobre-restringir** ("la UE"→zona, "Alemania"→región).
-- **Cambio de nivel:** **D1.2.b → Competente** (primer objetivo que sube desde el diagnóstico; el segundo Competente del proyecto).
-- **Falta para Dominado:** Developer tier, SLA por tipo, at-rest vs procesamiento, y evidencia en 2ª sesión separada.
-- **Próxima acción:** sin cambio. Pendientes: 3 preguntas del lab 02 · DIAG-2 · bloque B1.
-
----
-
 ## Historial comprimido
 
 | # | Fecha | Qué pasó |
 | --- | --- | --- |
+| 006 | 2026-08-04 | **D1.2.b → Competente** (3/3 casos). Hallazgo pedagógico: analogías → 100% de acierto donde la jerga fallaba. Método registrado en `CLAUDE.md` |
 | 005 | 2026-08-04 | Lab 02 (model catalog) + dataset sintético. Suscripción Azure confirmada. Apunte de **deployment types** (hueco R8) |
 | 004 | 2026-08-04 | Auditoría de memoria (memory-engineer): routing por tarea, presupuesto de contexto, políticas de archivado |
 | 003 | 2026-08-04 | **DIAG-1: 42%.** 9 errores registrados. D1→Débil, D2→En aprendizaje. Primera evidencia real |

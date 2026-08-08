@@ -21,17 +21,18 @@ El curso se compone de **4 learning paths / 30 módulos**. Todos accesibles grat
 
 ## Estado global
 
-**Verificado en Microsoft Learn con la sesión del usuario el 2026-08-05** (Level 3, 200/3699 XP):
+**Verificado en Microsoft Learn con la sesión del usuario el 2026-08-08:**
 
 | Path | Módulos | Completados | Dominios AI-103 |
 | --- | --- | --- | --- |
-| LP1 Develop generative AI apps in Azure | 6 | **4 (67%)** ← aquí está | D1, D2 |
-| LP2 Develop AI agents on Azure | 9 | 0 (1%) | D2, D1.4 |
+| LP1 Develop generative AI apps in Azure | 6 | **4 (87% del path)** | D1, D2 |
+| LP2 Develop AI agents on Azure | 9 | **0 (9 h 19 min restantes)** ← aquí está | D2, D1.4 |
 | LP3 Develop natural language solutions in Azure | 7 | 0 | D4 |
 | LP4 Extract insights from visual data on Azure | 8 | 0 | D3, D5 |
-| **Total** | **30** | **3 (10%)** | |
+| **Total** | **30** | **4 (13%)** | |
 
-> **Fase actual: LP1.** El 1% de LP2 es un vistazo puntual a la unidad 2 del primer módulo, no un cambio de rumbo.
+> **Fase actual: LP2, módulo 1** (*Develop AI agents with Foundry and VS Code*). Saltó desde LP1-M5 sin terminarlo.
+> ⚠️ **LP1 quedó incompleto:** faltan el módulo 5 (*optimize model performance*, iba por la u6) y el 6 (*responsible generative AI*, D1.4 — sin tocar).
 
 El progreso solo se lee con la sesión autenticada del usuario: usar el navegador (`mcp__claude-in-chrome__*`), no WebFetch — la versión pública no trae datos de progreso.
 
@@ -49,8 +50,8 @@ Marcar ☑ solo cuando el módulo esté **completado con su lab**, no solo leíd
 | ☑ | Select, deploy, and evaluate Microsoft Foundry models | D1.1.a, D1.2.c, D2.1.a, D2.1.d |
 | ☑ | Develop a generative AI chat app with Microsoft Foundry (**Responses API**) | D2.1.e, D2.1.f |
 | ☑ | Develop generative AI apps that use tools (9 unidades: 4 tools) — **completado**, verificado en Learn 2026-08-05. Sin apunte: E-006 sigue abierto | D2.1.c, D2.2.c |
-| 🔄 | Optimize generative AI model performance with Microsoft Foundry ← **en curso**, va por la **unidad 6** (ejercicio). Unidades 3 (RAG) y 5 (comparar estrategias) vistas | D2.3.a, D2.1.b |
-| ☐ | Implement a responsible generative AI solution in Microsoft Foundry | D1.4.a, D1.4.b |
+| ⏸️ | Optimize generative AI model performance with Microsoft Foundry — **pausado en la unidad 6**. Anotada la u3 (RAG). Sin terminar | D2.3.a, D2.1.b |
+| ☐ | Implement a responsible generative AI solution in Microsoft Foundry — **sin empezar** | D1.4.a, D1.4.b |
 
 ## LP2 — Develop AI agents on Azure (9 módulos)
 
@@ -58,7 +59,7 @@ Marcar ☑ solo cuando el módulo esté **completado con su lab**, no solo leíd
 
 | ☐ | Módulo | Mapea a |
 | --- | --- | --- |
-| ☐ | Develop AI agents with Microsoft Foundry and Visual Studio Code | D2.2.a |
+| 🔄 | Develop AI agents with Microsoft Foundry and Visual Studio Code (11 unidades) ← **en curso** desde 2026-08-08. Apuntado en `notes/D2-apps-y-agentes/04` (u2) y `/07` (u3–u8) | D2.2.a, D2.2.c |
 | ☐ | Integrate custom tools into your agent | D2.2.c |
 | ☐ | Integrate MCP Tools with Azure AI Agents | D2.2.c |
 | ☐ | Build knowledge-enhanced AI agents with **Foundry IQ** | D2.1.b, D2.2.b, D5.1.e |

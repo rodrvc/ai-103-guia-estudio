@@ -12,15 +12,16 @@ Sistema de estudio para que Rodrigo apruebe el examen **AI-103**. No es un repo 
 - **Flujo:** trae un link → se lee la fuente → apunte en `notes/` → preguntas de comprobación → se evalúa.
 - Si el link viene en `es-es`, **usa `en-us`** (la traducción es automática y tiene errores). Por qué: `study/PROFILE.md`.
 
-## 🚦 Estado · actualizado 2026-08-05
+## 🚦 Estado · actualizado 2026-08-08
 
 > Si hoy es **>7 días** después de esa fecha, no confíes en este bloque: lee `study/AI-103-STUDY-STATE.md` y actualízalo.
 
-- **Fase: LP1** (*Develop generative AI apps*), **4 de 6 módulos (67%)**. Va por el **módulo 5**, *"optimize model performance"*, unidad 6. El 1% de LP2 fue un vistazo, no un cambio de path.
-- **Ojo:** completar un módulo en Learn **no deja apunte ni evidencia**. El módulo 4 (tools) está hecho y E-006 sigue abierto y sin material.
+- **Fase: LP2, módulo 1** (*agentes con Foundry y VS Code*). **Saltó desde LP1-M5 sin terminar LP1** — quedan el M5 (pausado) y el **M6, que es D1.4 entero**. No asumas orden lineal: salta según lo que le surge.
+- **Ojo:** completar un módulo en Learn **no deja apunte ni evidencia**. El módulo 4 de LP1 (tools) está hecho y E-006 sigue abierto y sin material propio.
 - **DIAG-1: 42%** en D1+D2 (se aprueba con ~70%). **DIAG-2 sin hacer** → D3/D4/D5 (30–45% del examen) sin medir.
 - **Hallazgo:** acierta lo conceptual, falla lo operativo de Azure. **No confundir su fluidez conceptual con dominio** (riesgo R7).
-- **Material escrito: ~8 de 44 objetivos (18%).** D3, D4 y D5 sin nada — es el cuello de botella real.
+- **~20 preguntas planteadas en apuntes y nunca respondidas.** Ningún error cerrado. Escribir material va muy por delante de verificarlo: **ofrece evaluar antes que avanzar**.
+- **Material escrito: ~10 de 44 objetivos (23%).** D3, D4 y D5 sin nada — es el cuello de botella real.
 - **Azure** ✅ activa · examen en **inglés** · **10 h/semana**. Objetivo del usuario ~2 semanas; **estimación realista 6–8** (mediados de septiembre). Ya se le dijo.
 
 **Primera acción:** `study/AI-103-STUDY-STATE.md` § Siguiente acción.

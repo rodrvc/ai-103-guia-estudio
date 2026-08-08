@@ -8,8 +8,9 @@
 >
 > Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
-- **Última actualización:** 2026-08-05
-- **Fase actual:** **LP1, módulo 5** (*"Optimize generative AI model performance"*, 8 unidades) — va por la **unidad 6** (ejercicio). **Terminó el módulo 4** (tools). LP1 va **4 de 6 módulos (67%)**, verificado en Learn el 2026-08-05 (1800/3699 XP, Level 3). Avanza por el curso y por temas que le surgen, no linealmente
+- **Última actualización:** 2026-08-08
+- **Fase actual:** **LP2, módulo 1** (*"Develop AI agents with Foundry and VS Code"*, 11 unidades). Verificado en Learn el 2026-08-08: **LP1 = 4/6 (87% del path)** · **LP2 = 0/9** (9 h 19 min restantes).
+  ⚠️ **Saltó de LP1-M5 a LP2-M1 sin terminar LP1.** Quedan pendientes el módulo 5 (pausado en la u6) y el 6 (*responsible generative AI*, **D1.4 entero, sin tocar**). Avanza por temas que le surgen, no linealmente — no asumir orden
 - **Examen reservado:** No
 - **Fecha objetivo:** Sin definir (falta dato del usuario)
 
@@ -22,8 +23,8 @@
 | Objetivos del temario | 44 | `AI-103-SYLLABUS.md` |
 | Evaluados | 12 (27%) | DIAG-1 + D1.2.b |
 | Competente o superior | **2** (5%) | D2.2.b · **D1.2.b** (3/3 casos, 2026-08-04) |
-| Apuntes escritos | **7** | `notes/INDEX.md` |
-| **Cobertura de material** | **~8 / 44 objetivos (18%)** | D3, D4 y D5 sin una línea |
+| Apuntes escritos | **8** | `notes/INDEX.md` |
+| **Cobertura de material** | **~10 / 44 objetivos (23%)** | D3, D4 y D5 sin una línea |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
 | Módulos del curso oficial | **4 / 30 (13%)** | Verificado en Learn 2026-08-05 |
@@ -105,19 +106,21 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 **Por qué:** el sistema tiende a premiar avanzar (siempre hay un módulo nuevo) y a no premiar repasar (la cola no protesta sola). Con 42% en DIAG-1 y 9 errores abiertos, avanzar sin consolidar es exactamente el fallo a evitar.
 
-**Si elige avanzar → LP1 módulo 5, donde está ahora** (unidad 6, el ejercicio). Anotada la u3 (RAG); quedan sin apunte **u2 prompt engineering**, **u4 fine-tuning** y **u5 comparar estrategias** — cubren D2.3.a, hoy en cero.
+**Si elige avanzar → LP2 módulo 1, donde está ahora.** El contenido teórico (u2–u8) **ya está anotado** en `notes/D2-apps-y-agentes/04` y `/07`. Le quedan la **u9 (ejercicio)** y la **u10 (knowledge check)** — ambas dan evidencia real, que es justo lo que falta.
 
-⚠️ **Deuda de material del módulo 4** (tools, ya completado en Learn el 2026-08-05): **no dejó apunte**. E-006 sigue abierto y sin material pese a haber pasado por el contenido. Escribir ese apunte es barato ahora que lo vio, y caro más adelante.
+**Antes de eso, las 7 preguntas del apunte 07** (10 min): verifican Deploy vs Publish, RBAC al publicar y File Search vs AI Search. Cerrarían parte de E-006 y darían el primer nivel evaluado de D2.2.a.
 
-**El cuello de botella real es la cobertura de material.** Preguntó (2026-08-05) si con los apuntes actuales en NotebookLM tendría suficiente: **no**. 7 apuntes ≈ 18% de los objetivos; D3+D4+D5 (30–45% del examen) sin nada. Escribir apuntes de los dominios vacíos es lo que más rinde después de DIAG-2.
+⚠️ **Dos deudas de LP1, que dejó a medias:**
+- **Módulo 4** (tools, completado en Learn): **sin apunte**. E-006 sigue abierto sin material propio — el apunte 07 lo cubre solo de pasada.
+- **Módulo 6** (*responsible generative AI*): **sin empezar**. Cubre **D1.4 entero** y D1 es el dominio Débil.
+
+**El cuello de botella real es la cobertura de material.** 8 apuntes ≈ 23% de los objetivos; **D3+D4+D5 (30–45% del examen) sin una línea**. Escribir apuntes de los dominios vacíos es lo que más rinde después de DIAG-2.
 
 **Deudas acumuladas** (mencionarlas, no imponerlas):
 
 1. **DIAG-2** — 8 preguntas, ~30 min. D3/D4/D5 llevan sin medir desde el inicio: **30–45% del examen** a ciegas. Es lo que más cambia el plan.
 2. **Repaso de los 9 errores de DIAG-1.** La cola espaciada arrancaba el 2026-08-05 y **no se ejecutó**. Hay apuntes que cubren E-003 y E-007, pero **ninguno verificado con preguntas** — así que ningún error está cerrado.
-3. **Preguntas planteadas sin responder:** 3 del lab 02 (model catalog) y 5 del apunte `notes/D2-apps-y-agentes/01-conectar-app-a-foundry.md` (estas cerrarían E-003 y E-001).
-
-**Preguntas abiertas al usuario:** idioma del examen (recomendado inglés) · fecha objetivo · horas/semana.
+3. **Preguntas planteadas sin responder — ya van ~20:** 3 del lab 02 (model catalog) · 5 de `D2/01-conectar-app-a-foundry` (cerrarían E-003 y E-001) · 5 de `D1/01-deployment-types` · **7 de `D2/07-construir-y-publicar-agentes`** (nuevas). **Ninguna respondida nunca.** Este es el patrón a romper: se escribe material y no se verifica.
 
 ---
 
