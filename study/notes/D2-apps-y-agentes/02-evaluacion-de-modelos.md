@@ -1,19 +1,20 @@
 # Evaluación de modelos en Foundry
 
 > LP1 · Módulo 2 · Unidad 5 — [Evaluate model performance](https://learn.microsoft.com/en-us/training/modules/model-catalog-evaluate/5-evaluate-performance?pivots=text)
-> Cubre: **D2.1.d** · Cierra tu error **E-007**
+> Cubre: **D2.1.d**
+> Peso: **medio-alto** — elegir y validar un modelo entra en el dominio más pesado (30–35%)
 > Fecha: 2026-08-04
 
 ---
 
-## La idea que te faltaba
+## La idea de partida
 
 **Evaluación ≠ observabilidad.**
 
 - **Observabilidad** = qué pasó (trazas, tokens, latencia).
 - **Evaluación** = qué tan buena fue la respuesta.
 
-En DIAG-1 respondiste "observabilidad" a la pregunta de métricas. Son cosas distintas.
+⚠️ **Confusión frecuente:** ante una pregunta sobre *métricas de calidad de las respuestas* es fácil contestar "observabilidad". La observabilidad mide la ejecución; la evaluación mide la respuesta. Son cosas distintas.
 
 ---
 
@@ -50,9 +51,11 @@ En DIAG-1 respondiste "observabilidad" a la pregunta de métricas. Son cosas dis
 
 ## Métricas de riesgo y seguridad
 
-Cuatro de daño — **las mismas 4 categorías de los content filters**:
+Cuatro de daño — **las mismas 4 categorías con niveles de severidad que usan los content filters** (hate and fairness, sexual, violence, self-harm × safe / low / medium / high):
 
 - Self-harm · Hateful and unfair · Violent · Sexual
+
+⚠️ **Ojo:** esas 4 son las categorías **con severidad**. Los content filters incluyen **aparte** filtros **binarios**, sin niveles: Prompt Shields, Groundedness, PII, Protected Material y Task Adherence. Detalle en [../D1-plataforma/02-ia-responsable.md](../D1-plataforma/02-ia-responsable.md).
 
 Más dos que no son categorías de daño:
 

@@ -1,7 +1,7 @@
 # El Model playground
 
 > LP1 · Módulo 3 (Foundry SDK) · Unidad 2 — [Explore with the model playground](https://learn.microsoft.com/en-us/training/modules/foundry-sdk/02-chat-playground)
-> Cubre: **D2.1.f** (conectar app a proyecto Foundry), roza **D2.3.a** (tuning) · **Aclara tu E-001**
+> Cubre: **D2.1.f** (conectar app a proyecto Foundry), roza **D2.3.a** (tuning)
 > Peso en el examen: **bajo** (7 min de lección, es introductoria)
 > Fecha: 2026-08-04
 
@@ -15,11 +15,11 @@ Y cuando encuentras lo que funciona, aprieta un botón y **te da el código ya e
 
 ---
 
-## ⚠️ Esto aclara tu E-001
+## ⚠️ Confusión frecuente: playground ≠ deployment
 
-En DIAG-1 dijiste que un *deployment* era "la face donde Microsoft me presenta el modelo y puedo interactuar con él".
+Es habitual describir un *deployment* como "la pantalla donde Microsoft te presenta el modelo y puedes interactuar con él".
 
-**Eso que describiste es el playground.** Son cosas distintas:
+**Eso que se describe ahí es el playground.** Son cosas distintas:
 
 | | Qué es |
 | --- | --- |
@@ -77,7 +77,7 @@ La idea: **validar barato antes de invertir tiempo en desarrollo**.
 - Dónde está el botón en el menú
 - La lista de lenguajes disponibles
 
-**Lo que sí vale de esta unidad:** que el playground **no es** el deployment (tu E-001), y que existe la **Responses API** como opción — es la API moderna de Foundry y aparece en el resto del módulo.
+**Lo que sí vale de esta unidad:** que el playground **no es** el deployment, y que existe la **Responses API** como opción — es la API moderna de Foundry y aparece en el resto del módulo.
 
 ---
 

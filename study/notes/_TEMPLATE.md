@@ -1,14 +1,15 @@
 # <Tema>
 
-> LP<n> · Módulo <n> · Unidad <n> — [<Título>](<URL>)
-> Cubre: **<objetivo AI-103>** · Cierra tu error **E-0NN** (si aplica)
+> LP<n> · Módulo <n> — [<Título>](<URL en en-us>)
+> Cubre: **<objetivo AI-103>**
+> Peso: **alto / medio / bajo** — <por qué>
 > Fecha: YYYY-MM-DD
 
 ---
 
 ## Reglas de formato (borrar al escribir)
 
-Estos apuntes son **para Rodrigo**, no para agentes. Optimizados para memorizar y repasar.
+Estos apuntes son **material humano de estudio**, no memoria de agentes. Optimizados para entender, memorizar y repasar. **El repo es público: nada de referencias al historial de una persona concreta** — una confusión se escribe como "⚠️ Confusión frecuente: X no es Y", nunca como "tu error E-0NN".
 
 - Frases cortas y memorizables. **Tablas sobre prosa.**
 - Términos técnicos **en inglés**; explicación en español.

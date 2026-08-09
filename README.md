@@ -1,106 +1,98 @@
-# Preparación AI-103
+# Guía de estudio AI-103
 
-Sistema de estudio para aprobar el examen **Microsoft AI-103: Developing AI Apps and Agents on Azure**.
+Material en **español** para preparar la certificación **Microsoft AI-103: Developing AI Apps and Agents on Azure**.
 
-> **Este archivo es para ti (Rodrigo).** Los agentes leen `CLAUDE.md`.
+Apuntes escritos leyendo la documentación oficial, pensados para entender y aprobar — no para memorizar nombres.
 
----
-
-## 📚 Tu material de estudio
-
-Todo está en **[`study/notes/`](study/notes/INDEX.md)**, organizado por tema.
-
-Cada apunte tiene la misma estructura:
-
-1. **En cristiano** — la idea con analogías, sin jerga
-2. **El contenido** — tablas, comparaciones, reglas de decisión
-3. **Para el examen** — qué es alto / medio / bajo valor
-4. **Comprueba que lo tienes** — preguntas con respuestas plegadas
-
-Empieza por **[el índice](study/notes/INDEX.md)**: ahí ves qué hay, qué falta y en qué nivel estás de cada tema.
-
-### Llevarlo a otra herramienta
-
-Markdown plano, sin dependencias. Arrastra `study/notes/` a **NotebookLM**, ábrelo como vault de **Obsidian**, o exporta a PDF.
-
-> ⚠️ **Cobertura actual: ~16% del temario** (6 apuntes ≈ 7 de 44 objetivos).
-> **D3 (visión), D4 (texto y voz) y D5 (extracción) no tienen material** — y son el 30–45% del examen.
-> Llevarlo hoy a NotebookLM te da una base sólida de deployment types y de cómo conectar una app a Foundry. Nada más. Ver la cobertura real en el [índice](study/notes/INDEX.md).
+> ⚠️ **Material no oficial.** Escrito a partir de la documentación pública de Microsoft Learn. La fuente de verdad es siempre [la guía oficial del examen](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103). Los servicios de Azure cambian; verifica antes de examinarte.
 
 ---
 
-## 🗣️ Cómo usar los agentes
+## Empieza aquí
 
-Escribe lo que quieras hacer. Los skills se activan solos.
+**→ [`study/notes/INDEX.md`](study/notes/INDEX.md)**
 
-| Le dices... | Qué pasa |
+Ahí está la ruta de lectura recomendada, los apuntes por dominio y una tabla de **confusiones frecuentes** con el apunte que resuelve cada una.
+
+---
+
+## Cómo está escrito cada apunte
+
+| Sección | Qué contiene |
 | --- | --- |
-| *"repasemos deployment types"* | Te hace preguntas del apunte, corrige y **sube tu nivel si aciertas** |
-| *"pregúntame lo del día"* | Toma los errores con repaso vencido |
-| *"estoy en este módulo: `<url>`"* | Lee la fuente, te explica y escribe el apunte |
-| *"¿dónde quedamos?"* | Resumen en 5 líneas |
-| *"¿cómo voy?"* | Progreso con evidencia |
+| **En cristiano** | La idea con una analogía y un caso concreto, sin jerga |
+| **El contenido** | Tablas, comparaciones y reglas de decisión |
+| **Para el examen** | Qué es de **alto / medio / bajo** valor. No todo pesa igual |
+| **Comprueba que lo tienes** | Preguntas de **aplicación** con respuestas plegadas |
 
-**Regla del sistema:** leer un apunte **no** sube tu nivel. Solo lo suben preguntas respondidas, ejercicios y labs. Por eso *"repasemos X"* es el comando que más importa.
+Dos principios detrás del material:
+
+- **Analogía → decisión en cristiano → nombre técnico en inglés al final.** Los nombres de servicio se mantienen en inglés porque así aparecen en el examen; la explicación va en español.
+- **Enseñar decisión de servicio, no memorización.** *"¿Cuál eliges si necesitas latencia baja y los datos no pueden salir de la UE?"* rinde más que *"¿qué es X?"*.
 
 ---
 
-## 📊 Dónde ves tu progreso
+## Cobertura
 
-| Archivo | Qué te dice |
+**9 apuntes ≈ 13 de los 44 objetivos del temario (~30%).**
+
+| Dominio | Peso en el examen | Estado |
+| --- | --- | --- |
+| **D1** Plan and manage an Azure AI solution | 25–30% | Parcial — fundamentos, deployment types, IA responsable |
+| **D2** Implement generative AI and agentic solutions | 30–35% | Parcial — el más cubierto |
+| **D3** Computer vision | 10–15% | ❌ Sin material |
+| **D4** Text analysis | 10–15% | ❌ Sin material |
+| **D5** Information extraction | 10–15% | ❌ Sin material |
+
+**No es una guía completa.** D3, D4 y D5 son el hueco principal. Detalle objetivo por objetivo en [`study/AI-103-SYLLABUS.md`](study/AI-103-SYLLABUS.md).
+
+---
+
+## Llevarlo a otra herramienta
+
+Markdown plano, sin dependencias ni frontmatter raro. Arrastra `study/notes/` a **NotebookLM**, ábrelo como vault de **Obsidian**, o expórtalo a PDF.
+
+---
+
+## Si usas Claude Code
+
+El repo incluye tres skills que automatizan el estudio:
+
+| Escribes... | Qué hace |
 | --- | --- |
-| [`study/notes/INDEX.md`](study/notes/INDEX.md) | Material por tema y tu nivel en cada uno |
-| [`study/AI-103-STUDY-STATE.md`](study/AI-103-STUDY-STATE.md) | Resumen: fase, métricas, siguiente acción |
-| [`study/AI-103-SYLLABUS.md`](study/AI-103-SYLLABUS.md) | Los 44 objetivos oficiales con tu nivel en cada uno |
-| [`study/AI-103-ERROR-LOG.md`](study/AI-103-ERROR-LOG.md) | Lo que fallaste, por qué, y cuándo toca repasarlo |
-| [`study/AI-103-LEARNING-PATH.md`](study/AI-103-LEARNING-PATH.md) | Los 30 módulos del curso oficial y cuáles llevas |
+| *"explícame X"* / *"estoy en este módulo: `<url>`"* | Lee la fuente oficial, explica con un caso concreto y escribe el apunte |
+| *"repasemos deployment types"* | Pregunta, corrige y registra el resultado como evidencia |
+| *"¿dónde quedamos?"* | Resumen del estado en 5 líneas |
+
+**Regla del sistema:** leer un apunte **no** sube tu nivel. Solo lo suben preguntas respondidas, ejercicios y labs. Los archivos `study/AI-103-*.md` son la memoria de seguimiento que mantienen los agentes.
 
 ---
 
-## 🎯 Estado actual · 2026-08-05
-
-- **LP1:** 3 de 6 módulos (45%). Vas por el módulo 4, *apps that use tools*
-- **DIAG-1:** 42% en D1+D2 (se aprueba con ~70%)
-- **DIAG-2:** sin hacer → D3, D4 y D5 (**30–45% del examen**) sin medir
-- **Material:** ~16% del temario. **9 errores** abiertos, ninguno repasado
-- **Examen:** en inglés · 10 h/semana disponibles
-
-### Calendario
-
-Planteaste rendir en ~2 semanas. **Con los datos actuales no llegas:** son ~20 h contra 96 h que estima el curso oficial, con 3 dominios sin medir y 9% de material escrito.
-
-**Estimación realista: 6–8 semanas** → mediados de septiembre.
-
-No se recomienda reservar el examen hasta tener ≥2 simulaciones con ≥80% y ningún dominio por debajo de 70%.
-
-### Lo que más rinde ahora
-
-1. **DIAG-2** (30 min) — deja de tener el 30–45% del examen a ciegas
-2. **Repasar** — tienes 4 apuntes y ninguno verificado con preguntas
-3. **Escribir material de D3/D4/D5** — están vacíos
-
----
-
-## 📁 Estructura
+## Estructura
 
 ```
-README.md              ← estás aquí (para ti)
-CLAUDE.md              ← reglas para los agentes
 study/
-  notes/               ← 📚 TU MATERIAL DE ESTUDIO
-    INDEX.md           ← empieza aquí
+  notes/                 ← 📚 EL MATERIAL DE ESTUDIO
+    INDEX.md             ← empieza aquí
     D1-plataforma/
     D2-apps-y-agentes/
-  AI-103-*.md          ← seguimiento (progreso, errores, temario)
-  archive/             ← histórico rotado
-.claude/skills/        ← automatizaciones
+  AI-103-SYLLABUS.md     ← los 44 objetivos oficiales
+  AI-103-*.md            ← seguimiento de progreso
+.claude/skills/          ← automatizaciones para Claude Code
+CLAUDE.md                ← instrucciones para los agentes
 ```
 
 ---
 
-## ⚙️ Fuentes oficiales
+## Fuentes
 
-- [Temario del examen](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) — vigente 2026-04-16, aprobación 700/1000
-- [Curso AI-103T00-A](https://learn.microsoft.com/en-us/training/courses/ai-103t00) — 4 learning paths, 30 módulos
+- [Temario oficial del examen](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/ai-103) — vigente 2026-04-16 · se aprueba con 700/1000
+- [Curso oficial AI-103T00-A](https://learn.microsoft.com/en-us/training/courses/ai-103t00) — 4 learning paths, 30 módulos, ~96 h
 
-Usa siempre la versión **`en-us`**: la traducción al español es automática y tiene errores que inducen a confusión (traduce *multimodal* como "multiplataforma").
+**Usa siempre la versión `en-us`** de Microsoft Learn: la traducción al español es automática y tiene errores de término que inducen a confusión.
+
+---
+
+## Licencia
+
+[MIT](LICENSE) para el material propio. Los nombres de productos y servicios de Microsoft pertenecen a sus titulares; este proyecto no está afiliado a Microsoft.

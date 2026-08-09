@@ -1,7 +1,8 @@
 # Agentes en Foundry
 
 > LP2 · Módulo 1 · Unidad 2 — [Understand AI agents and Foundry Agent Service](https://learn.microsoft.com/en-us/training/modules/develop-ai-agents-azure-vs-code/2-understand-ai-agents-foundry)
-> Cubre: **D2.2.a**, toca **D1.4.d** (gobierno) · Relacionado con **E-006**, **E-009**
+> Cubre la **unidad 2** del módulo (qué es un agente, tipos, riesgos). El resto del ciclo de vida — crear, configurar, tools, probar, deploy y publish — está en [07 Construir, configurar y publicar agentes](07-construir-y-publicar-agentes.md).
+> Cubre: **D2.2.a**, toca **D1.4.d** (gobierno)
 > Peso: **alto** — D2 es el dominio más pesado (30–35%)
 > Fecha: 2026-08-05
 
@@ -27,6 +28,8 @@ Puede buscar en internet, leer tus archivos, ejecutar código o llamar a tu API.
 
 Y **guarda la conversación** por ti (vía la Responses API). No mantienes historial.
 
+> ⚠️ **Excepción:** esto vale mientras el agente vive **dentro del proyecto**. Cuando lo **publicas** como **Agent Application**, el endpoint es **stateless** y el historial lo mantiene el cliente. Ver [07 Construir, configurar y publicar agentes](07-construir-y-publicar-agentes.md).
+
 ---
 
 ## Los dos tipos de agente — esto es lo que cae
@@ -51,7 +54,7 @@ Agentes en **contenedor**, creados en código y hospedados por Foundry. Control 
 | Feature | Qué significa |
 | --- | --- |
 | **Automatic tool calling** | Gestiona el ciclo completo de invocar tools |
-| **Estado gestionado** | El servicio persiste la conversación, no tu app |
+| **Estado gestionado** | El servicio persiste la conversación, no tu app — **salvo si el agente está publicado** ([07](07-construir-y-publicar-agentes.md)) |
 | **Catálogo de tools** | Built-in + comunidad: código, file search, web search, servicios Azure, APIs |
 | **Seguridad enterprise** | **Keyless auth**, content safety filters, privacidad |
 | **Storage** | Gestionado por la plataforma **o tu propio Azure Blob** |
@@ -80,18 +83,18 @@ Un agente accede a datos sensibles, decide y actúa solo. Riesgos que el módulo
 
 - **RBAC + mínimo privilegio**
 - **Filtrado y validación de prompts** (contra injection)
-- **Human-in-the-loop** para operaciones sensibles ← tu E-009
+- **Human-in-the-loop** para operaciones sensibles
 - **Logging y trazabilidad** completos
 - Auditar dependencias de terceros
 - Reentrenar y validar contra drift o poisoning
 
 ---
 
-## ⚠️ Tu riesgo R7 aquí
+## Si vienes de otros frameworks de agentes
 
-Con LangGraph esto te suena obvio. **Lo que no es obvio son los nombres de Microsoft:** *declarative* vs *hosted*, *workflow agents en YAML*, *automatic tool calling*.
+Si ya has trabajado con LangGraph, LlamaIndex o similares, el concepto te sonará obvio. **Lo que no es obvio son las etiquetas de Microsoft:** *declarative* vs *hosted*, *workflow agents en YAML*, *automatic tool calling*.
 
-Entiendes el concepto; te falta la etiqueta. Y la etiqueta es lo que pregunta el examen.
+El examen pregunta por la etiqueta, no por el concepto. Fluidez conceptual no equivale a saber el nombre que espera Microsoft.
 
 ---
 
@@ -100,7 +103,7 @@ Entiendes el concepto; te falta la etiqueta. Y la etiqueta es lo que pregunta el
 **Alto valor:**
 - **Declarativo (prompt-based / workflow YAML) vs hosted**
 - **Automatic tool calling** — el servicio gestiona el ciclo
-- **El servicio persiste la conversación**, no tu app
+- **El servicio persiste la conversación**, no tu app — excepto en un agente **publicado**, que es stateless
 - Mitigaciones: RBAC, mínimo privilegio, human-in-the-loop, logging
 
 **Valor medio:** keyless auth · storage propio o gestionado · observabilidad integrada.
@@ -124,6 +127,6 @@ Entiendes el concepto; te falta la etiqueta. Y la etiqueta es lo que pregunta el
 2. **Workflow agent**, definido en **YAML**. Es multi-agente y también declarativo.
 3. El servicio gestiona el ciclo completo: ejecuta el modelo, invoca la tool y devuelve el resultado. Te ahorra escribir ese bucle a mano.
 4. **Human-in-the-loop**: aprobación humana antes de ejecutar la acción sensible. Más RBAC con mínimo privilegio y logging completo.
-5. **El servicio** (vía Responses API). Lo acertaste en DIAG-1 p10.
+5. **El servicio** (vía Responses API), mientras el agente vive dentro del proyecto. Si está **publicado** como Agent Application, el endpoint es stateless y el historial lo guarda el cliente.
 
 </details>

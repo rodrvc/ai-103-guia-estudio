@@ -1,7 +1,8 @@
 # Labs oficiales: lo que se aprende haciéndolos
 
 > Labs de [mslearn-ai-studio](https://microsoftlearning.github.io/mslearn-ai-studio/) · 02 (model catalog), 03 (foundry SDK), 04a (use own data)
-> Cubre: **D2.1.a**, **D2.1.d**, **D2.1.e** · Refuerza **E-001**, **E-003**, **E-007**
+> Cubre: **D2.1.a**, **D2.1.d**, **D2.1.e**
+> Peso: **medio** — complemento práctico. Los conceptos que rescata sí caen; los pasos de los labs, no
 > Fecha: 2026-08-05
 
 ---
@@ -88,7 +89,7 @@ AZURE_OPENAI_ENDPOINT=...
 MODEL_DEPLOYMENT=...
 ```
 
-Con Entra ID no hay secreto que guardar. Y `MODEL_DEPLOYMENT` es **el nombre de tu deployment** (tu E-001 en la práctica).
+Con Entra ID no hay secreto que guardar. Y ⚠️ `MODEL_DEPLOYMENT` es **el nombre de tu deployment**, no el del modelo del catálogo — aquí se ve en la práctica esa distinción.
 
 **3. `az login` antes de correr.** Tu PC no está en Azure; `DefaultAzureCredential` usa tu sesión del CLI.
 

@@ -1,8 +1,9 @@
 # Deployment types en Foundry
 
 > Docs de Azure — [Understanding deployment types](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/deployment-types) · actualizado 2026-05-18
-> Cubre: **D1.2.b** *Choose appropriate deployment options* · Relacionado con **E-001** (deployment) y **E-002** (cuotas)
-> Hueco R8: el curso oficial NO cubre esto. Fuente: docs.
+> Cubre: **D1.2.b** *Choose appropriate deployment options*
+> Peso: **alto** — D1 pesa 25–30% y este es uno de sus objetivos más concretos
+> ⚠️ El curso oficial de Learn **no cubre** este tema. Fuente: la documentación de Azure.
 > Fecha: 2026-08-04
 
 ---
@@ -129,10 +130,10 @@ Más dos casos aparte:
 
 ---
 
-## Conexión con lo que ya sabes
+## Dos ideas que conviene fijar
 
-- **E-001:** el deployment type es parte de lo que define un *deployment* — junto al modelo, la versión, la cuota y el content filter. Refuerza que el deployment es **tu instancia configurada**, no el modelo.
-- **E-002:** aquí aterriza TPM vs PTU. **Standard = pay-per-token (TPM)**, **Provisioned = capacidad reservada (PTU)**. Es la misma decisión, vista desde el despliegue.
+- ⚠️ **Deployment ≠ modelo.** El deployment type es parte de lo que define un *deployment* — junto al modelo, la versión, la cuota y el content filter. El deployment es **tu instancia configurada**, no el modelo del catálogo.
+- **TPM vs PTU.** Aquí aterriza la distinción: **Standard = pay-per-token (TPM)**, **Provisioned = capacidad reservada (PTU)**. Es la misma decisión, vista desde el despliegue.
 
 ---
 

@@ -2,7 +2,7 @@
 
 > LP2 · Módulo 1 — [Develop AI agents with Foundry and VS Code](https://learn.microsoft.com/en-us/training/modules/develop-ai-agents-azure-vs-code/) (11 unidades)
 > Cubre las unidades **3, 4, 5, 6, 7 y 8**. La unidad 2 (qué es un agente, tipos, riesgos) está en [04 Agentes en Foundry](04-agentes-en-foundry.md).
-> Cubre: **D2.2.a**, **D2.2.c**, toca **D1.3.d** (identidad y RBAC) · Relacionado con **E-001**, **E-006**
+> Cubre: **D2.2.a**, **D2.2.c**, toca **D1.3.d** (identidad y RBAC)
 > Peso: **alto** — D2 es el dominio más pesado (30–35%)
 > Fecha: 2026-08-08
 
@@ -55,7 +55,7 @@ Muchos equipos usan los dos: portal para explorar, VS Code para producción.
 | **Model** | ⚠️ Un **deployment tuyo ya desplegado**, no "gpt-4o" a secas |
 | **Instructions** | Cómo se comporta. **Lo que de verdad importa** |
 
-> ⚠️ **Tu E-001 otra vez:** el desplegable de Model muestra *solo modelos que ya has desplegado*. Deployment ≠ modelo.
+> ⚠️ **Confusión frecuente — deployment ≠ modelo:** el desplegable de Model muestra *solo modelos que ya has desplegado*, no el catálogo entero.
 
 Se prueba en el **Playground** integrado, que mantiene el historial durante la sesión (así verificas multi-turno).
 
@@ -232,7 +232,7 @@ Cuidado: dentro del proyecto el servicio persiste la conversación (nota 04), pe
 | **Monitoreo** | **Application Insights**: latencia, éxito de tools, errores, tokens |
 | **Seguridad** | Managed identities, mínimo privilegio, retención de datos |
 | **Costo** | Vigilar tokens, limitar longitud de respuesta, rate limiting |
-| **Errores** | **Reintentos con backoff exponencial** ← tu E-002 |
+| **Errores** | **Reintentos con backoff exponencial** (la respuesta correcta ante throttling / límites de cuota) |
 
 ---
 

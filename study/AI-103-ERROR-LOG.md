@@ -75,12 +75,12 @@ Todos provienen de **DIAG-1 (2026-08-04)**. Repasos programados: 1d = 2026-08-05
 
 - **Objetivo:** D1.4.a · **Origen:** DIAG-1 p6
 - **Mi respuesta:** "no lo sé"
-- **Correcta:** **Cinco** categorías de daño: **hate and fairness, sexual, violence, self-harm, task-adherence**. Cuatro niveles de severidad: **safe, low, medium, high**. Se configuran de forma independiente para **prompt (input)** y **completion (output)**. Aparte existen los **Prompt Shields** (jailbreak y ataque indirecto) y detección de material protegido.
+- **Correcta:** **Cuatro** categorías **con niveles de severidad**: hate and fairness, sexual, violence, self-harm. Cuatro severidades: safe, low, medium, high (`safe` se anota pero no se filtra ni es configurable). Se configuran por separado para **prompt (input)** y **completion (output)**. **Aparte, filtros binarios sin severidad:** Prompt Shields (user prompt attacks + indirect attacks), Groundedness, PII, Protected Material (text/code) y **Task Adherence** (desvío del agente).
 - **Causa:** falta de conocimiento (memorización requerida)
-- **Concepto a reforzar:** las 5 categorías + 4 severidades; diferencia con Prompt Shields
+- **Concepto a reforzar:** 4 categorías graduadas × 4 severidades vs. filtros binarios; prompt filtrado → **HTTP 400**, completion filtrada → `finish_reason: content_filter`
 - **Repasos:** 1d ☐ | 3d ☐ | 7d ☐ | 14d ☐ | 30d ☐
 - **Estado:** abierto — **con material desde 2026-08-08:** `notes/D1-plataforma/02-ia-responsable.md`
-- ⚠️ **Corregido el 2026-08-08:** esta ficha decía **4 categorías**. El módulo `responsible-ai-studio` (actualizado 2026-04-28) lista **5**: añade **task-adherence**. Contradicción con material más antiguo — manda la fuente más reciente. Verificar en docs de Content Safety antes del examen.
+- ⚠️ **Verificado contra la fuente el 2026-08-08** (docs de Content Safety). Hubo una fase intermedia en la que esta ficha dijo "5 categorías" tras leer el módulo `responsible-ai-studio`, que las lista juntas. **Es incorrecto:** Task Adherence es un filtro, pero no una de las 4 categorías graduadas. Confusión resuelta.
 
 ### E-005 — Vectorial vs híbrida vs semantic ranker [2026-08-04]
 

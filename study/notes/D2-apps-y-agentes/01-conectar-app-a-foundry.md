@@ -2,7 +2,7 @@
 
 > LP1 · Módulo 3 — [Develop a generative AI chat app with Microsoft Foundry](https://learn.microsoft.com/en-us/training/modules/foundry-sdk/) · 8 unidades
 > Unidades cubiertas: 2 (playground), **3 (endpoints/SDK/auth)**, **4 (Responses API)**, **5 (ChatCompletions)**
-> Cubre: **D2.1.e, D2.1.f** · Toca **D1.3.d** · **Cierra E-003** (auth sin claves) y aclara **E-001**
+> Cubre: **D2.1.e, D2.1.f** · Toca **D1.3.d**
 > Peso: **alto** — la unidad 3 es de las más rentables de LP1
 > Fecha: 2026-08-04
 
@@ -73,7 +73,7 @@ pip install openai azure-identity
 
 ---
 
-## 3. Autenticación — ✅ esto cierra tu E-003
+## 3. Autenticación — sin claves en el código
 
 **Regla:** producción → **Microsoft Entra ID**. Las API keys, solo para pruebas.
 
@@ -246,10 +246,10 @@ for event in stream:
 
 ---
 
-## Conexión con tus errores
+## Confusiones frecuentes
 
-- **E-003 (auth sin claves):** aquí está la respuesta completa — `DefaultAzureCredential` + `get_bearer_token_provider`, del paquete `azure-identity`.
-- **E-001 (deployment):** fíjate que en todos los ejemplos, el parámetro `model=` recibe **el nombre de tu deployment**, no el del modelo del catálogo. Eso era exactamente lo que fallaste.
+- **Autenticación sin claves:** la respuesta completa es `DefaultAzureCredential` + `get_bearer_token_provider`, del paquete `azure-identity`. No hace falta ninguna API key.
+- ⚠️ **Deployment ≠ modelo:** en todos los ejemplos, el parámetro `model=` recibe **el nombre de tu deployment**, no el nombre del modelo del catálogo. Es de los fallos más habituales.
 
 ---
 
@@ -288,6 +288,6 @@ for event in stream:
 2. **Responses:** el servicio guarda el estado; encadenas con **`previous_response_id`**. **ChatCompletions:** no hay estado — tú mantienes la lista de `messages` y reenvías toda la conversación en cada turno.
 3. **Foundry SDK** (`azure-ai-projects`, `AIProjectClient`) con el **project endpoint**. Agentes, evaluaciones y tracing son funciones del proyecto, no del endpoint de inferencia.
 4. **Falso.** El SDK gestiona el estado, pero el historial se envía y tokeniza igual en cada request.
-5. El **nombre de tu deployment** — no el del modelo del catálogo. (Tu E-001.)
+5. El **nombre de tu deployment** — no el del modelo del catálogo.
 
 </details>

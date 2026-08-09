@@ -1,12 +1,13 @@
 # RAG y grounding
 
 > LP1 · Módulo *Optimize generative AI model performance* · Unidad 3 — [Ground your model with Retrieval Augmented Generation](https://learn.microsoft.com/en-us/training/modules/optimize-generative-ai-model-performance/3-retrieval-augmented-generation)
-> Cubre: **grounding con RAG · Azure AI Search como retrieval** · Cierra tu error **E-005**
+> Cubre: **D2.1.b**, **D2.3.a** — grounding con RAG · Azure AI Search como retrieval
+> Peso: **alto** — RAG es la técnica central de D2 y reaparece en D5 (knowledge mining)
 > Fecha: 2026-08-05
 
 ---
 
-## La idea que te faltaba
+## La idea de partida
 
 El modelo **no sabe nada de tus datos**. Su entrenamiento tiene fecha de corte y no incluye tu catálogo, tus políticas ni tu inventario. Cuando le falta contexto no dice "no sé": **inventa algo que suena bien**.
 
@@ -79,6 +80,22 @@ Es el servicio que hace el paso *Retrieve* en Foundry.
 
 **Regla de decisión:** ¿pregunta de examen sobre qué búsqueda usar en una app generativa? → **hybrid**. Es la respuesta por defecto y el curso lo dice explícito.
 
+### Chunking — el paso que nadie explica y todo el mundo necesita
+
+Antes de indexar, los documentos se **parten en trozos** (*chunks*). No se indexa un PDF de 200 páginas entero.
+
+**Por qué:** el modelo tiene una ventana de contexto limitada, y si recuperas el documento completo metes 199 páginas de ruido para responder una pregunta.
+
+| Si el chunk es… | Pasa esto |
+| --- | --- |
+| **Muy pequeño** (una frase) | Pierde contexto. Recuperas *"el plazo es de 30 días"* sin saber de qué trámite |
+| **Muy grande** (un capítulo) | Diluye la relevancia y gasta tokens. El dato bueno se ahoga en texto irrelevante |
+| **Con solapamiento** (*overlap*) | Las frases del borde aparecen en dos chunks → no se pierde la idea partida por la mitad |
+
+**En la práctica:** unos cientos de tokens por chunk, con un solapamiento del 10–25%, y **partiendo por límites naturales** (párrafo, sección, encabezado) en vez de cortar por número de caracteres a ciegas.
+
+> ⚠️ **Confusión frecuente:** *chunking* no es *embedding*. Primero **partes** el documento (chunking), después **vectorizas** cada trozo (embedding). Son dos pasos distintos del mismo proceso de indexado.
+
 ---
 
 ## RAG con el SDK de Azure AI Foundry
@@ -108,7 +125,7 @@ response = client.responses.create(
 print(response.output_text)
 ```
 
-**Lo que importa del código:** `retrieved_context` son los documentos que devolvió tu índice de Azure AI Search, **inyectados en el system message**. Ahí está el *augment*. Nota que sigue el patrón de tu apunte [01](01-conectar-app-a-foundry.md): `DefaultAzureCredential`, sin keys.
+**Lo que importa del código:** `retrieved_context` son los documentos que devolvió tu índice de Azure AI Search, **inyectados en el system message**. Ahí está el *augment*. Nota que sigue el patrón del apunte [01](01-conectar-app-a-foundry.md): `DefaultAzureCredential`, sin keys.
 
 ---
 

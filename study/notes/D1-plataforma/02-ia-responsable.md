@@ -1,7 +1,7 @@
 # IA responsable: mapear, medir, mitigar y gestionar
 
 > LP1 · Módulo 6 — [Implement a responsible generative AI solution in Microsoft Foundry](https://learn.microsoft.com/en-us/training/modules/responsible-ai-studio/) (9 unidades)
-> Cubre: **D1.4.a**, **D1.4.b** · Cierra material para **E-004** (content filters)
+> Cubre: **D1.4.a**, **D1.4.b**
 > Peso: **alto** — D1 pesa 25–30% y es tu dominio **Débil**
 > Fecha: 2026-08-08
 
@@ -162,15 +162,37 @@ La clasificación puede ser tan simple como *harmful* / *not harmful*, o una esc
 
 Configuración de plataforma. En Foundry son los **guardrails**:
 
-**Content filters** — clasifican en **4 niveles de severidad** × **5 categorías**:
+**Content filters.** Aquí hay una trampa que confunde a casi todo el mundo: **hay dos familias de filtros y solo una tiene niveles de severidad.**
 
-| Severidad | Categorías |
+**Familia 1 — las 4 categorías graduadas.** Estas son "los content filters" en sentido estricto:
+
+| Categorías (4) | Severidades (4) |
 | --- | --- |
-| `safe` · `low` · `medium` · `high` | **hate and fairness** · **sexual** · **violence** · **self-harm** · **task-adherence** |
+| **hate and fairness** · **sexual** · **violence** · **self-harm** | `safe` · `low` · `medium` · `high` |
 
-> ⚠️ **Ojo, esto cambió.** Antes eran 4 categorías. Este módulo (actualizado 2026-04-28) añade **task-adherence** — el modelo se sale de la tarea que le encargaste. **Son 5.**
+Se configuran con un **slider** por categoría, y **por separado para el prompt (input) y para la completion (output)**. El nivel `safe` se anota pero **no se filtra ni se puede configurar**.
 
-**Prompt shields** — algoritmos de detección de abuso: detectan si alguien intenta **subvertir el system prompt** de forma sistemática. Es la defensa contra **prompt injection**.
+**Familia 2 — filtros binarios opcionales.** No tienen severidad: detectan o no detectan.
+
+| Filtro | Qué detecta |
+| --- | --- |
+| **Prompt Shields** | *User prompt attacks* (jailbreak directo) e **indirect attacks** (instrucciones ocultas en documentos que el sistema lee) |
+| **Groundedness** | La respuesta no se apoya en las fuentes → alucinación |
+| **Protected material** (text / code) | Letras de canciones, artículos, código de repos públicos |
+| **PII** | Datos personales en la salida |
+| **Task Adherence** | El **agente** se desvía de la instrucción: llama a la tool equivocada o responde algo que no corresponde |
+
+> ⚠️ **La pregunta trampa del examen.** Si preguntan *"¿cuántas categorías con niveles de severidad?"* → **4**. Si preguntan qué otros filtros existen → los binarios de arriba. **Task Adherence es un filtro, pero no es una de las 4 categorías graduadas** (es específico de agentes y aparece en el material de Foundry más reciente).
+
+**Comportamiento en la API — esto también cae:**
+
+| Situación | Qué pasa |
+| --- | --- |
+| El **prompt** se filtra | **HTTP 400** |
+| La **completion** se filtra | HTTP 200 con `finish_reason: "content_filter"` |
+| El sistema de filtrado está caído | HTTP 200, la llamada pasa **sin filtrar** — hay que comprobar si existe un `error` en `content_filter_results` |
+
+**Blocklist** — lista de términos propia, aplicable a input, output o ambos. Es **distinta** del content filter: el filtro clasifica por categoría de daño; la blocklist busca palabras concretas que tú defines.
 
 ### Capa 3 — System message and grounding
 
@@ -213,7 +235,8 @@ Cuatro, memorízalas: **Legal · Privacy · Security · Accessibility**.
 **Alto valor:**
 - **Map → Measure → Mitigate → Manage**, en ese orden
 - **Las 4 capas de mitigación** y qué vive en cada una
-- **Content filters: 4 severidades × 5 categorías** (`safe/low/medium/high`) ← **E-004**
+- **Content filters: 4 categorías graduadas × 4 severidades** (`safe/low/medium/high`), configurables por separado para input y output. Los demás filtros (Prompt Shields, Groundedness, PII, Protected Material, Task Adherence) son **binarios, sin severidad**
+- **Prompt filtrado → HTTP 400** · completion filtrada → HTTP 200 con `finish_reason: content_filter`
 - **Prompt shields** = defensa contra prompt injection / subvertir el system prompt
 - **Red teaming** = probar deliberadamente a romperlo, en la etapa **Map**
 - **Manual primero, automático después**
@@ -229,7 +252,7 @@ Cuatro, memorízalas: **Legal · Privacy · Security · Accessibility**.
 
 1. Tu equipo ya listó y priorizó los daños posibles. ¿Cuál es el siguiente paso del proceso, y por qué no puedes saltar directamente a poner filtros?
 2. Quieres impedir que un usuario manipule tu agente con instrucciones ocultas para que ignore su system prompt. ¿Qué mitigación aplicas y **en qué capa** está?
-3. ¿Cuántas categorías y cuántos niveles de severidad tienen los content filters, y cómo se llaman los niveles?
+3. ¿Cuántas categorías de content filter tienen **niveles de severidad**, cómo se llaman los niveles, y dónde encajan Prompt Shields y Task Adherence?
 4. Tu solución solo clasifica textos de dos líneas en tres etiquetas. ¿Por qué podría ser mejor un modelo pequeño que GPT-4, en términos de IA responsable?
 5. Vas a medir cuánto daño genera tu app. ¿Empiezas con pruebas manuales o automatizadas? ¿Por qué?
 6. Nombra las cuatro capas de mitigación en orden, de la más profunda a la más cercana al usuario.
@@ -240,7 +263,7 @@ Cuatro, memorízalas: **Legal · Privacy · Security · Accessibility**.
 
 1. **Measure**: establecer una **línea base** que cuantifique los daños. Sin baseline no puedes demostrar que la mitigación funcionó — no sabrías contra qué comparar.
 2. **Prompt shields**, en la capa **Safety system**. Detectan intentos sistemáticos de subvertir el system prompt.
-3. **5 categorías** (hate and fairness, sexual, violence, self-harm, **task-adherence**) × **4 severidades**: `safe`, `low`, `medium`, `high`.
+3. **Cuatro** categorías graduadas: hate and fairness, sexual, violence, self-harm. **Cuatro** severidades: `safe`, `low`, `medium`, `high` (el `safe` se anota pero no se filtra). **Prompt Shields y Task Adherence no están ahí**: son filtros **binarios** opcionales, igual que Groundedness, PII y Protected Material.
 4. Porque un modelo más simple cumple igual la función **con menor riesgo de generar contenido dañino**. Mitigación de la capa **Model**: elegir el modelo apropiado al uso, no el más potente.
 5. **Manual primero**, con pocos casos, para verificar que los criterios de evaluación son consistentes y están bien definidos. Después automatizas a volumen. Y aun así, sigues haciendo manual periódico.
 6. **Model** → **Safety system** → **System message and grounding** → **User experience**.
