@@ -34,7 +34,7 @@ Dos principios detrás del material:
 
 ## Cobertura
 
-**15 apuntes ≈ 26 de los 44 objetivos del temario (~59%).**
+**16 apuntes ≈ 27 de los 44 objetivos del temario (~61%).**
 
 | Dominio | Peso en el examen | Estado |
 | --- | --- | --- |

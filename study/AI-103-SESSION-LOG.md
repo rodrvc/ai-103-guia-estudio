@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-08-09 — Sesión 016: tools personalizadas (LP2-M2)
+
+- **El usuario pasó la u5 (ejercicio) de LP2-M2** *Integrate custom tools into your agent*. Leídas las 7 unidades, no solo el ejercicio.
+- **Apunte nuevo:** `notes/D2-apps-y-agentes/11-tools-personalizadas.md` — **las 4 formas** de conectar sistemas propios: function calling · **Azure Functions** (triggers, bindings, colas de storage) · **OpenAPI 3.0** · **Logic Apps**, con tabla de decisión por enunciado.
+- **Contenido nuevo respecto a lo ya anotado:** Azure Functions y Logic Apps como custom tools (no estaban) y los **3 únicos tipos de auth de OpenAPI**: anonymous, API key, managed identity.
+- **Confusión añadida al índice:** *function calling* (tu app ejecuta) vs *Azure Functions* (serverless, se comunica por colas). Nombres casi idénticos, cosas distintas.
+- **Concepto que el propio módulo marca como difícil:** es **declarativo** — no existe código que llame a la tool; el agente decide leyendo el nombre y la descripción. Por eso una descripción vaga hace que la tool nunca se use.
+- **Cobertura: 59% → 61%** (15 → 16 apuntes). Cubre D2.2.c, que seguía En aprendizaje por E-006.
+- **Sin evaluación.** **Próxima acción:** sin cambio — DIAG-2, o verificar D1/D2 que ya están completos.
+
+---
+
 ## 2026-08-09 — Sesión 015: cierre de material de D1 y D2 (6 apuntes) + publicación
 
 - **El usuario pidió cerrar el contenido de D1 y D2** para poder estudiarlos completos. Escritos **6 apuntes** leyendo docs de Azure (5 de los 6 temas **no están en el curso oficial**): `D1/03-cuotas-y-rate-limits` · `D1/04-seguridad-identidad-y-red` · `D1/05-genaiops-cicd-y-monitoreo` · `D2/08-las-cuatro-tools` · `D2/09-multi-agente-y-orquestacion` · `D2/10-observabilidad-y-tracing`.

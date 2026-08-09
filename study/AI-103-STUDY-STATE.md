@@ -23,8 +23,8 @@
 | Objetivos del temario | 44 | `AI-103-SYLLABUS.md` |
 | Evaluados | 12 (27%) | DIAG-1 + D1.2.b |
 | Competente o superior | **2** (5%) | D2.2.b · **D1.2.b** (3/3 casos, 2026-08-04) |
-| Apuntes escritos | **15** | `notes/INDEX.md` |
-| **Cobertura de material** | **~26 / 44 objetivos (59%)** | **D1 y D2 cubiertos**; D3, D4 y D5 sin una línea |
+| Apuntes escritos | **16** | `notes/INDEX.md` |
+| **Cobertura de material** | **~27 / 44 objetivos (61%)** | **D1 y D2 cubiertos**; D3, D4 y D5 sin una línea |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
 | Módulos del curso oficial | **4 / 30 (13%)** | Verificado en Learn 2026-08-05 |

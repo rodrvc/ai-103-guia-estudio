@@ -27,12 +27,13 @@ La numeración es por dominio, no por orden de lectura. Esta es la ruta recomend
 | 7 | [D2/04 Agentes](D2-apps-y-agentes/04-agentes-en-foundry.md) | Qué es un agente y sus tipos |
 | 8 | [D2/07 Construir y publicar](D2-apps-y-agentes/07-construir-y-publicar-agentes.md) | Ciclo de vida completo — **depende del 04** |
 | 9 | [D2/08 Las tools en detalle](D2-apps-y-agentes/08-las-cuatro-tools.md) | Profundiza el catálogo del 07 |
-| 10 | [D2/09 Multi-agente](D2-apps-y-agentes/09-multi-agente-y-orquestacion.md) | Varios agentes coordinados |
-| 11 | [D1/03 Cuotas y rate limits](D1-plataforma/03-cuotas-y-rate-limits.md) | Capacidad y coste — **encaja con D1/01** |
-| 12 | [D1/04 Seguridad](D1-plataforma/04-seguridad-identidad-y-red.md) | Identidad, RBAC y red |
-| 13 | [D1/02 IA responsable](D1-plataforma/02-ia-responsable.md) | Filtros, riesgos y salida a producción |
-| 14 | [D2/10 Observabilidad](D2-apps-y-agentes/10-observabilidad-y-tracing.md) | Ya en producción: qué pasó por dentro |
-| 15 | [D1/05 GenAIOps y CI/CD](D1-plataforma/05-genaiops-cicd-y-monitoreo.md) | Cierra el ciclo: evaluar, desplegar, monitorizar |
+| 10 | [D2/11 Tools personalizadas](D2-apps-y-agentes/11-tools-personalizadas.md) | Conectar tus sistemas — **sigue al 08** |
+| 11 | [D2/09 Multi-agente](D2-apps-y-agentes/09-multi-agente-y-orquestacion.md) | Varios agentes coordinados |
+| 12 | [D1/03 Cuotas y rate limits](D1-plataforma/03-cuotas-y-rate-limits.md) | Capacidad y coste — **encaja con D1/01** |
+| 13 | [D1/04 Seguridad](D1-plataforma/04-seguridad-identidad-y-red.md) | Identidad, RBAC y red |
+| 14 | [D1/02 IA responsable](D1-plataforma/02-ia-responsable.md) | Filtros, riesgos y salida a producción |
+| 15 | [D2/10 Observabilidad](D2-apps-y-agentes/10-observabilidad-y-tracing.md) | Ya en producción: qué pasó por dentro |
+| 16 | [D1/05 GenAIOps y CI/CD](D1-plataforma/05-genaiops-cicd-y-monitoreo.md) | Cierra el ciclo: evaluar, desplegar, monitorizar |
 | — | [D2/05 Labs oficiales](D2-apps-y-agentes/05-labs-oficiales.md) | Complemento práctico, en cualquier momento |
 
 ---
@@ -68,6 +69,7 @@ La numeración es por dominio, no por orden de lectura. Esta es la ruta recomend
 | [08 Las tools en detalle](D2-apps-y-agentes/08-las-cuatro-tools.md) | Code Interpreter · File Search vs AI Search · **function calling lo ejecuta TU código** · `function_call` / `function_call_output` |
 | [09 Multi-agente y orquestación](D2-apps-y-agentes/09-multi-agente-y-orquestacion.md) | Agente vs workflow · **los 4 patrones** (sequential, concurrent, handoff, magentic) · executors y edges · checkpointing · human-in-the-loop |
 | [10 Observabilidad y tracing](D2-apps-y-agentes/10-observabilidad-y-tracing.md) | **Evaluación vs tracing** · OpenTelemetry y Application Insights · traces, spans y attributes · privacidad del contenido |
+| [11 Tools personalizadas](D2-apps-y-agentes/11-tools-personalizadas.md) | Las **4 formas**: function calling · **Azure Functions** · **OpenAPI** (3 tipos de auth) · Logic Apps · por qué es **declarativo** |
 
 **D2 cubierto.** Falta profundizar en MCP y en las integraciones con M365.
 
@@ -102,6 +104,7 @@ Los pares que más se confunden en el examen, y el apunte que los distingue:
 | Evaluación | Observabilidad / tracing | [D2/10](D2-apps-y-agentes/10-observabilidad-y-tracing.md) |
 | Benchmarks | Evaluación con tus datos | [D1/05](D1-plataforma/05-genaiops-cicd-y-monitoreo.md) |
 | Tools que ejecuta Azure | **Function calling (lo ejecutas tú)** | [D2/08](D2-apps-y-agentes/08-las-cuatro-tools.md) |
+| Function calling | **Azure Functions** (serverless, colas) | [D2/11](D2-apps-y-agentes/11-tools-personalizadas.md) |
 | Continuous evaluation | Scheduled evaluation | [D1/05](D1-plataforma/05-genaiops-cicd-y-monitoreo.md) |
 | Foundry User | Foundry Project Manager (publicar) | [D1/04](D1-plataforma/04-seguridad-identidad-y-red.md) |
 
@@ -109,7 +112,7 @@ Los pares que más se confunden en el examen, y el apunte que los distingue:
 
 ## Cobertura
 
-**15 apuntes ≈ 26 de los 44 objetivos del temario (~59%).**
+**16 apuntes ≈ 27 de los 44 objetivos del temario (~61%).**
 
 **D1 y D2 están cubiertos** — juntos son el **55–65% del examen**. D3, D4 y D5 siguen sin material.
 
