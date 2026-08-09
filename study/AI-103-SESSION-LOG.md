@@ -16,6 +16,8 @@
 - **Primer repaso real del proyecto** (LP2-M1, interrumpido a las 2 preguntas): **P1 Deploy vs Publish ✅ acertó** · **P2 RBAC al publicar ⚠️ parcial** — vio que era de permisos, no que la identidad de Entra es nueva y no hereda. Preguntó **qué es RBAC** (toca E-003, explicado).
 - **Cobertura: 23% → 27%** (8 → 9 apuntes). D1.4.b pasa a *Estudiado, sin evaluar*; E-004 y E-006 ya tienen material.
 - **Sin cambios de nivel** — 2 respuestas no bastan y una fue parcial.
+- **Feedback explícito del usuario sobre el método:** *"como me lo explicaste suena super simple… has mejorado en explicaciones"*, tras desarrollar el proceso de 4 pasos sobre un **caso concreto** (chatbot médico en una clínica) en vez de definir cada etapa. Pidió guardar el ejemplo **y** el método.
+- **Skill nuevo:** `.claude/skills/explicar/SKILL.md` — un caso concreto atravesando todos los pasos · hacer visible la fricción contraintuitiva · analogías solo para lo arbitrario, lógica para lo lógico · 5 señales de que la explicación va mal. El ejemplo del chatbot queda **dentro del apunte**, no solo en la conversación.
 - **Próxima acción:** u7 de LP1-M6 (**ejercicio de content filters**, cierra E-004) o las 7 preguntas del apunte nuevo. Retomar el repaso de LP2-M1 desde la P3.
 
 ---

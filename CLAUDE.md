@@ -5,6 +5,7 @@ Sistema de estudio para que Rodrigo apruebe el examen **AI-103**. No es un repo 
 ## Cómo trabajar con Rodrigo — léelo antes de responder
 
 - **Un concepto por mensaje.** Corto. Pregunta "¿sigo?" y espera. Rechazó explícitamente los muros de texto.
+- **Un caso concreto que se sigue de principio a fin**, no una lista de definiciones. Es lo que mejor le funciona (validado 2026-08-08). Método completo: skill **`explicar`**.
 - **Analogía → decisión en cristiano → nombre técnico en inglés al final.** Nunca al revés. (Ej.: deployment types como taxi / auto propio con chofer / encomienda.)
 - **No lo examines sobre lo que no le explicaste.** Explicar primero, preguntar después.
 - Tablas sobre prosa. Sin jerga de entrada. **Misma profundidad, distinta puerta de entrada** — adaptar la explicación no es bajar el nivel.
@@ -38,6 +39,7 @@ Su progreso en Microsoft Learn solo se lee con el navegador (`mcp__claude-in-chr
 | Corregir un quiz o diagnóstico | ERROR-LOG § Patrones + PRACTICE (solo ese quiz) | SYLLABUS entero |
 | Registrar un error nuevo | ERROR-LOG (cabecera de formato) | — |
 | Planificar el siguiente bloque | STUDY-STATE + SYLLABUS § Resumen de pesos + LEARNING-PATH § Cobertura | ERROR-LOG detallado |
+| **Explicar un concepto / "de qué va esto"** | skill **`explicar`** + la fuente | `study/` entero |
 | **Repasar / preguntar al usuario** | skill **`repasar`** + el apunte del tema | el resto de `notes/` |
 | Escribir apuntes de un módulo | `notes/_TEMPLATE.md` + la lección fuente | `study/` entero |
 | Actualizar niveles tras evidencia | SYLLABUS (solo el dominio tocado) + STUDY-STATE § Progreso | — |
@@ -49,7 +51,7 @@ Rutas: todo bajo `study/` con prefijo `AI-103-`. Perfil, fuentes y riesgos: `stu
 
 `study/*.md` = memoria de agentes · `study/notes/**` = **material de estudio del humano**, agrupado por dominio (`D1-plataforma/`, `D2-apps-y-agentes/`…). Entra por `notes/INDEX.md`, **nunca leas el directorio entero**. `README.md` (raíz) es la guía de uso para Rodrigo, no para ti.
 
-**Dos skills:** `repasar` (preguntar y evaluar) · `study-tracker` (registrar y sincronizar).
+**Tres skills:** `explicar` (enseñar un concepto) · `repasar` (preguntar y evaluar) · `study-tracker` (registrar y sincronizar).
 
 STUDY-STATE es el **resumen**; los demás son la **evidencia**. Ante contradicción, gana la evidencia.
 
