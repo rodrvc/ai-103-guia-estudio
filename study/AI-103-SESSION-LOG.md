@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-08-08 — Sesión 014: IA responsable (LP1-M6) + primer repaso real
+
+- **Volvió a LP1-M6** tras empezar LP2-M1 en la misma sesión. **Salta de módulo con frecuencia** — no asumir continuidad, verificar en Learn o preguntar.
+- **Apunte nuevo:** `notes/D1-plataforma/02-ia-responsable.md` — **Map → Measure → Mitigate → Manage** · los 4 pasos de Map (identify/prioritize/test/document) y **red teaming** · baseline y **manual antes que automático** · **las 4 capas de mitigación** (model / safety system / system message+grounding / UX) · **prompt shields** · plan de salida (phased delivery, incident response, rollback, telemetría).
+- ⚠️ **Contradicción detectada y comunicada:** el módulo (actualizado 2026-04-28) lista **5 categorías** de content filter — añade **task-adherence** a hate/sexual/violence/self-harm. E-004 decía 4. **Corregido**; queda por verificar en docs de Content Safety.
+- **Primer repaso real del proyecto** (LP2-M1, interrumpido a las 2 preguntas): **P1 Deploy vs Publish ✅ acertó** · **P2 RBAC al publicar ⚠️ parcial** — vio que era de permisos, no que la identidad de Entra es nueva y no hereda. Preguntó **qué es RBAC** (toca E-003, explicado).
+- **Cobertura: 23% → 27%** (8 → 9 apuntes). D1.4.b pasa a *Estudiado, sin evaluar*; E-004 y E-006 ya tienen material.
+- **Sin cambios de nivel** — 2 respuestas no bastan y una fue parcial.
+- **Próxima acción:** u7 de LP1-M6 (**ejercicio de content filters**, cierra E-004) o las 7 preguntas del apunte nuevo. Retomar el repaso de LP2-M1 desde la P3.
+
+---
+
 ## 2026-08-08 — Sesión 013: LP2-M1 completo (agentes con Foundry y VS Code)
 
 - **Cambio de fase verificado en Learn:** el usuario **saltó de LP1-M5 a LP2-M1**. LP1 = 4/6 (87%), LP2 = 0/9. LP1 queda incompleto: módulo 5 pausado en la u6 y **módulo 6 sin empezar (D1.4 entero)**.
@@ -80,22 +92,11 @@
 
 ---
 
-## 2026-08-04 — Sesión 007: Skill `study-tracker`
-
-- **Hecho:** creado `.claude/skills/study-tracker/SKILL.md` — automatiza el registro de progreso para que no dependa de que el usuario lo pida.
-- **Se dispara solo** al: escribir un apunte, corregir respuestas, completar lab/quiz/diagnóstico, descubrir tema no cubierto, o cerrar sesión. También responde "¿dónde quedamos?" en modo consulta (sin escribir).
-- **Contiene:** tabla de hogar canónico por dato · procedimiento de 5 pasos · presupuesto de contexto · 7 trampas conocidas (la #1: dejar escrita una fase abandonada).
-- **`CLAUDE.md` comprimido** (–9 líneas): el procedimiento detallado vive ahora en el skill; aquí queda el puntero.
-- **Nota:** el skill se indexa al iniciar sesión. En **esta** sesión aún no es invocable; a partir de la próxima, sí.
-- **Sin cambios** de nivel ni errores nuevos.
-- **Próxima acción:** sin cambio — DIAG-2 (prioridad 1) y repaso de los 9 errores.
-
----
-
 ## Historial comprimido
 
 | # | Fecha | Qué pasó |
 | --- | --- | --- |
+| 007 | 2026-08-04 | Creado el skill `study-tracker`: registro automático de progreso, hogar canónico por dato, 7 trampas |
 | 006 | 2026-08-04 | **D1.2.b → Competente** (3/3 casos). Hallazgo pedagógico: analogías → 100% de acierto donde la jerga fallaba. Método registrado en `CLAUDE.md` |
 | 005 | 2026-08-04 | Lab 02 (model catalog) + dataset sintético. Suscripción Azure confirmada. Apunte de **deployment types** (hueco R8) |
 | 004 | 2026-08-04 | Auditoría de memoria (memory-engineer): routing por tarea, presupuesto de contexto, políticas de archivado |

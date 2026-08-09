@@ -16,12 +16,12 @@ Sistema de estudio para que Rodrigo apruebe el examen **AI-103**. No es un repo 
 
 > Si hoy es **>7 días** después de esa fecha, no confíes en este bloque: lee `study/AI-103-STUDY-STATE.md` y actualízalo.
 
-- **Fase: LP2, módulo 1** (*agentes con Foundry y VS Code*). **Saltó desde LP1-M5 sin terminar LP1** — quedan el M5 (pausado) y el **M6, que es D1.4 entero**. No asumas orden lineal: salta según lo que le surge.
-- **Ojo:** completar un módulo en Learn **no deja apunte ni evidencia**. El módulo 4 de LP1 (tools) está hecho y E-006 sigue abierto y sin material propio.
+- **Fase: LP1, módulo 6** (*responsible generative AI*, D1.4). **Salta de módulo constantemente** — el 08-08 pasó por LP1-M5, LP2-M1 y LP1-M6 en una sesión. **No asumas dónde está: pregúntale o verifica en Learn.** A medias: LP1-M5 (u6) y LP2-M1 (falta el ejercicio).
+- **Ojo:** completar un módulo en Learn **no deja apunte ni evidencia**. El módulo 4 de LP1 (tools) está hecho y E-006 sigue sin material propio.
 - **DIAG-1: 42%** en D1+D2 (se aprueba con ~70%). **DIAG-2 sin hacer** → D3/D4/D5 (30–45% del examen) sin medir.
 - **Hallazgo:** acierta lo conceptual, falla lo operativo de Azure. **No confundir su fluidez conceptual con dominio** (riesgo R7).
-- **~20 preguntas planteadas en apuntes y nunca respondidas.** Ningún error cerrado. Escribir material va muy por delante de verificarlo: **ofrece evaluar antes que avanzar**.
-- **Material escrito: ~10 de 44 objetivos (23%).** D3, D4 y D5 sin nada — es el cuello de botella real.
+- **~25 preguntas planteadas y solo 2 respondidas** (08-08: 1 bien, 1 parcial). Ningún error cerrado. Escribir material va muy por delante de verificarlo: **ofrece evaluar antes que avanzar**.
+- **Material escrito: ~12 de 44 objetivos (27%).** D3, D4 y D5 sin nada — es el cuello de botella real.
 - **Azure** ✅ activa · examen en **inglés** · **10 h/semana**. Objetivo del usuario ~2 semanas; **estimación realista 6–8** (mediados de septiembre). Ya se le dijo.
 
 **Primera acción:** `study/AI-103-STUDY-STATE.md` § Siguiente acción.

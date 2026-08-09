@@ -51,7 +51,7 @@ Marcar ☑ solo cuando el módulo esté **completado con su lab**, no solo leíd
 | ☑ | Develop a generative AI chat app with Microsoft Foundry (**Responses API**) | D2.1.e, D2.1.f |
 | ☑ | Develop generative AI apps that use tools (9 unidades: 4 tools) — **completado**, verificado en Learn 2026-08-05. Sin apunte: E-006 sigue abierto | D2.1.c, D2.2.c |
 | ⏸️ | Optimize generative AI model performance with Microsoft Foundry — **pausado en la unidad 6**. Anotada la u3 (RAG). Sin terminar | D2.3.a, D2.1.b |
-| ☐ | Implement a responsible generative AI solution in Microsoft Foundry — **sin empezar** | D1.4.a, D1.4.b |
+| 🔄 | Implement a responsible generative AI solution in Microsoft Foundry (9 unidades) ← **en curso** desde 2026-08-08. Teoría (u2–u6) apuntada en `notes/D1-plataforma/02-ia-responsable.md`. Falta la u7 (ejercicio de content filters) | D1.4.a, D1.4.b |
 
 ## LP2 — Develop AI agents on Azure (9 módulos)
 

@@ -71,8 +71,8 @@
 
 | ID | Objetivo oficial | Estado | Nivel | Evidencia |
 | --- | --- | --- | --- | --- |
-| D1.4.a | Configure safety filters, guardrails, risk detection, and content moderation | Evaluado | **En aprendizaje** | DIAG-1 p7 pleno (filter vs blocklist) pero p6 fallo: no conoce las 4 categorías ni las 4 severidades. E-004 |
-| D1.4.b | Apply responsible AI instrumentation: evaluators, safety evaluations, explanation tooling | Pendiente | No evaluado | — |
+| D1.4.a | Configure safety filters, guardrails, risk detection, and content moderation | Evaluado | **En aprendizaje** | DIAG-1 p7 pleno (filter vs blocklist) pero p6 fallo: no conoce las categorías ni las severidades. E-004. Material 2026-08-08: `notes/D1-plataforma/02-ia-responsable.md` (5 categorías × 4 severidades, prompt shields) — **sin verificar** |
+| D1.4.b | Apply responsible AI instrumentation: evaluators, safety evaluations, explanation tooling | **Estudiado, sin evaluar** | No evaluado | Material 2026-08-08: `notes/D1-plataforma/02-ia-responsable.md` (Map→Measure→Mitigate→Manage, 4 capas, red teaming, baseline manual→automático) — **sin preguntas respondidas** |
 | D1.4.c | Implement auditing through trace logging, provenance metadata, approval workflows | Pendiente | No evaluado | — |
 | D1.4.d | Govern agent behavior with oversight modes, constraints, and tool-access controls | Pendiente | No evaluado | — |
 

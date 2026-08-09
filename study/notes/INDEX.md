@@ -15,8 +15,9 @@ Apuntes por tema. Cada uno es autocontenido: explicación → **Para el examen**
 | Apunte | De qué va | Estado |
 | --- | --- | --- |
 | [01 Deployment types](D1-plataforma/01-deployment-types.md) | Global / Data Zone / Regional × Standard / Provisioned / Batch. Residencia de datos, SLA, cuándo elegir cada uno | ✅ **Competente** (3/3 casos) |
+| [02 IA responsable](D1-plataforma/02-ia-responsable.md) | **Map → Measure → Mitigate → Manage** · las **4 capas de mitigación** · content filters (**5 categorías × 4 severidades**) · prompt shields · red teaming · plan de salida. **Peso alto** | 📖 Leído, sin evaluar |
 
-**Pendiente en D1:** cuotas (TPM/PTU, 429) · Managed Identity y RBAC · content filters (4 categorías × 4 severidades) · CI/CD · redes privadas.
+**Pendiente en D1:** cuotas (TPM/PTU, 429) · Managed Identity y RBAC · CI/CD · redes privadas.
 
 ---
 
@@ -68,8 +69,10 @@ Detalle por objetivo del temario: `../AI-103-SYLLABUS.md`
 | E-001 | Deployment vs modelo | D2/01 y D2/03 |
 | E-002 | TPM vs PTU | D1/01 |
 | E-005 | Retrieval / RAG | D2/06 |
+| E-004 | Content filters | D1/02 |
+| E-006 | Catálogo de tools | D2/07 (parcial) |
 
-Los demás (E-004 content filters, E-006 tools, E-008 SLM, E-009 `requires_action`) **aún no tienen material**.
+Los demás (E-008 SLM, E-009 `requires_action`) **aún no tienen material**.
 
 ---
 

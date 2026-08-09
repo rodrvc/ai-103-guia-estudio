@@ -9,8 +9,8 @@
 > Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
 - **Última actualización:** 2026-08-08
-- **Fase actual:** **LP2, módulo 1** (*"Develop AI agents with Foundry and VS Code"*, 11 unidades). Verificado en Learn el 2026-08-08: **LP1 = 4/6 (87% del path)** · **LP2 = 0/9** (9 h 19 min restantes).
-  ⚠️ **Saltó de LP1-M5 a LP2-M1 sin terminar LP1.** Quedan pendientes el módulo 5 (pausado en la u6) y el 6 (*responsible generative AI*, **D1.4 entero, sin tocar**). Avanza por temas que le surgen, no linealmente — no asumir orden
+- **Fase actual:** **LP1, módulo 6** (*"Implement a responsible generative AI solution"*, 9 unidades) — volvió a LP1 el 2026-08-08 tras empezar LP2-M1. Verificado en Learn ese día: **LP1 = 4/6 (87%)** · **LP2 = 0/9**.
+  ⚠️ **Salta de módulo con frecuencia** (LP1-M5 → LP2-M1 → LP1-M6 en una sesión). **No asumas que sigue donde lo dejaste: pregúntale o verifica en Learn.** Quedan a medias LP1-M5 (pausado en la u6) y LP2-M1 (teoría anotada, falta el ejercicio)
 - **Examen reservado:** No
 - **Fecha objetivo:** Sin definir (falta dato del usuario)
 
@@ -23,8 +23,8 @@
 | Objetivos del temario | 44 | `AI-103-SYLLABUS.md` |
 | Evaluados | 12 (27%) | DIAG-1 + D1.2.b |
 | Competente o superior | **2** (5%) | D2.2.b · **D1.2.b** (3/3 casos, 2026-08-04) |
-| Apuntes escritos | **8** | `notes/INDEX.md` |
-| **Cobertura de material** | **~10 / 44 objetivos (23%)** | D3, D4 y D5 sin una línea |
+| Apuntes escritos | **9** | `notes/INDEX.md` |
+| **Cobertura de material** | **~12 / 44 objetivos (27%)** | D3, D4 y D5 sin una línea |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
 | Módulos del curso oficial | **4 / 30 (13%)** | Verificado en Learn 2026-08-05 |
@@ -106,13 +106,18 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 **Por qué:** el sistema tiende a premiar avanzar (siempre hay un módulo nuevo) y a no premiar repasar (la cola no protesta sola). Con 42% en DIAG-1 y 9 errores abiertos, avanzar sin consolidar es exactamente el fallo a evitar.
 
-**Si elige avanzar → LP2 módulo 1, donde está ahora.** El contenido teórico (u2–u8) **ya está anotado** en `notes/D2-apps-y-agentes/04` y `/07`. Le quedan la **u9 (ejercicio)** y la **u10 (knowledge check)** — ambas dan evidencia real, que es justo lo que falta.
+**Si elige avanzar → LP1 módulo 6, donde está ahora.** La teoría (u2–u6) **ya está anotada** en `notes/D1-plataforma/02-ia-responsable.md`. Le queda la **u7: ejercicio de content filters** — es un lab, da evidencia real y **cierra E-004**, que lleva abierto desde el diagnóstico.
 
-**Antes de eso, las 7 preguntas del apunte 07** (10 min): verifican Deploy vs Publish, RBAC al publicar y File Search vs AI Search. Cerrarían parte de E-006 y darían el primer nivel evaluado de D2.2.a.
+**Repaso interrumpido el 2026-08-08** (LP2-M1, quedó a medias — retomar):
+- **P1 Deploy vs Publish → ✅ acertó** ("publish", limpio)
+- **P2 RBAC al publicar → ⚠️ parcial**: dijo "storage is not configurated". Identificó que era de permisos, **no** que el agente recibe identidad de Entra nueva y no hereda nada
+- **P3 File Search vs Azure AI Search → sin responder**, cambió de módulo
+- Preguntó **qué significa RBAC** — se le explicó (rol + identidad + recurso, base del keyless). Toca **E-003**
 
-⚠️ **Dos deudas de LP1, que dejó a medias:**
-- **Módulo 4** (tools, completado en Learn): **sin apunte**. E-006 sigue abierto sin material propio — el apunte 07 lo cubre solo de pasada.
-- **Módulo 6** (*responsible generative AI*): **sin empezar**. Cubre **D1.4 entero** y D1 es el dominio Débil.
+⚠️ **Deudas abiertas:**
+- **LP1-M4** (tools, completado en Learn): **sin apunte propio**. E-006 solo cubierto de pasada en D2/07
+- **LP1-M5**: pausado en la u6
+- **LP2-M1**: teoría anotada, falta el ejercicio (u9) y el knowledge check (u10)
 
 **El cuello de botella real es la cobertura de material.** 8 apuntes ≈ 23% de los objetivos; **D3+D4+D5 (30–45% del examen) sin una línea**. Escribir apuntes de los dominios vacíos es lo que más rinde después de DIAG-2.
 
@@ -120,7 +125,7 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 
 1. **DIAG-2** — 8 preguntas, ~30 min. D3/D4/D5 llevan sin medir desde el inicio: **30–45% del examen** a ciegas. Es lo que más cambia el plan.
 2. **Repaso de los 9 errores de DIAG-1.** La cola espaciada arrancaba el 2026-08-05 y **no se ejecutó**. Hay apuntes que cubren E-003 y E-007, pero **ninguno verificado con preguntas** — así que ningún error está cerrado.
-3. **Preguntas planteadas sin responder — ya van ~20:** 3 del lab 02 (model catalog) · 5 de `D2/01-conectar-app-a-foundry` (cerrarían E-003 y E-001) · 5 de `D1/01-deployment-types` · **7 de `D2/07-construir-y-publicar-agentes`** (nuevas). **Ninguna respondida nunca.** Este es el patrón a romper: se escribe material y no se verifica.
+3. **Preguntas planteadas sin responder — ya van ~25:** 3 del lab 02 (model catalog) · 5 de `D2/01-conectar-app-a-foundry` (cerrarían E-003 y E-001) · 5 de `D1/01-deployment-types` · 5 de `D2/07` (2 respondidas el 08-08: 1 bien, 1 parcial) · **7 de `D1/02-ia-responsable`** (nuevas, cerrarían E-004). Patrón a romper: **se escribe material mucho más rápido de lo que se verifica**.
 
 ---
 
@@ -135,7 +140,7 @@ Están encadenados: un *deployment* tiene un *type* y una *cuota*, se protege co
 | Managed Identity + RBAC | E-003 | ✅ D2/01 § Autenticación | ❌ |
 | TPM vs PTU, 429, backoff | E-002 | 🟡 parcial en D1/01 | ❌ |
 | Evaluadores (groundedness…) | E-007 | ✅ D2/02 | ❌ |
-| Content filters: 4×4, Prompt Shields | E-004 | ❌ sin material | ❌ |
+| Content filters: **5 cat × 4 sev**, Prompt Shields | E-004 | ✅ `notes/D1-plataforma/02-ia-responsable.md` | ❌ |
 | Capas de retrieval en AI Search | E-005 | 🟡 parcial en D2/06 — **falta BM25, RRF y semantic ranker** (el curso no los trata) | ❌ |
 
 **Lectura:** hay material para 6 de 7 y **ninguno se ha verificado con preguntas**. El cuello de botella no es escribir apuntes, es **repasar** (skill `repasar`).
