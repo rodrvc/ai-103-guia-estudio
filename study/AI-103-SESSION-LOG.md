@@ -8,6 +8,18 @@
 
 ---
 
+## 2026-08-09 — Sesión 017: Foundry IQ (LP2-M4)
+
+- **El usuario pasó el módulo LP2-M4** *Build knowledge-enhanced AI agents with Foundry IQ*. Leídas las 8 unidades.
+- **Apunte nuevo:** `notes/D2-apps-y-agentes/12-foundry-iq.md` — capa de conocimiento **compartida** sobre Azure AI Search · **las 6 fuentes de datos** con su tipo de acceso · **SharePoint Remote vs Indexed** · instructions que fuerzan búsqueda y cita · los 4 tipos de consulta de prueba · métricas de producción.
+- **La idea central:** con RAG a medida, 3 agentes = 3 sistemas. Con Foundry IQ, **una knowledge base que los tres comparten** y que se organiza por dominio de negocio, no por dónde están los datos.
+- **Toca E-005** (capas de retrieval): el módulo confirma que Foundry IQ aplica semantic ranking y expansión de consulta **automáticamente**. Sigue sin nombrar BM25 ni RRF — esa capa exige docs de AI Search.
+- **Se conecta por MCP**, lo que enlaza con el apunte 11.
+- **Cobertura: 61% → 66%** (16 → 17 apuntes). Cubre D2.1.b, D2.2.b y **D5.1.e** — primer material que toca D5.
+- **Sin evaluación.** **Próxima acción:** sin cambio — DIAG-2, o verificar D1/D2.
+
+---
+
 ## 2026-08-09 — Sesión 016: tools personalizadas (LP2-M2)
 
 - **El usuario pasó la u5 (ejercicio) de LP2-M2** *Integrate custom tools into your agent*. Leídas las 7 unidades, no solo el ejercicio.

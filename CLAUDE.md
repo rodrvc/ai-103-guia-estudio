@@ -22,7 +22,7 @@ Sistema de estudio para que Rodrigo apruebe el examen **AI-103**. No es un repo 
 - **DIAG-1: 42%** en D1+D2 (se aprueba con ~70%). **DIAG-2 sin hacer** → D3/D4/D5 (30–45% del examen) sin medir.
 - **Hallazgo:** acierta lo conceptual, falla lo operativo de Azure. **No confundir su fluidez conceptual con dominio** (riesgo R7).
 - **~25 preguntas planteadas y solo 2 respondidas** (08-08: 1 bien, 1 parcial). Ningún error cerrado. Escribir material va muy por delante de verificarlo: **ofrece evaluar antes que avanzar**.
-- **Material escrito: ~27 de 44 objetivos (61%). D1 y D2 cerrados** (2026-08-09). D3, D4 y D5 sin nada — es el cuello de botella real.
+- **Material escrito: ~29 de 44 objetivos (66%). D1 y D2 cerrados** (2026-08-09). D3, D4 y D5 sin nada — es el cuello de botella real.
 - **Azure** ✅ activa · examen en **inglés** · **10 h/semana**. Objetivo del usuario ~2 semanas; **estimación realista 6–8** (mediados de septiembre). Ya se le dijo.
 
 **Primera acción:** `study/AI-103-STUDY-STATE.md` § Siguiente acción.
