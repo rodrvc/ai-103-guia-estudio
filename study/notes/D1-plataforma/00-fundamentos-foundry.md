@@ -79,7 +79,7 @@ Azure recomienda **no usar API keys**. En su lugar, tres piezas que van juntas:
 | Pieza | Pregunta que responde | Ejemplo |
 | --- | --- | --- |
 | **Identity** | ¿Quién eres? | Managed Identity, Service Principal, tu usuario |
-| **RBAC** | ¿Qué puedes hacer? | Rol *Azure AI User* sobre el recurso |
+| **RBAC** | ¿Qué puedes hacer? | Rol *Foundry User* sobre el recurso |
 | **Least privilege** | ¿Cuánto de eso necesitas? | Solo el rol mínimo, solo donde haga falta |
 
 **RBAC** = *Role-Based Access Control*. Se lee siempre igual:

@@ -34,17 +34,17 @@ Dos principios detrás del material:
 
 ## Cobertura
 
-**9 apuntes ≈ 13 de los 44 objetivos del temario (~30%).**
+**15 apuntes ≈ 26 de los 44 objetivos del temario (~59%).**
 
 | Dominio | Peso en el examen | Estado |
 | --- | --- | --- |
-| **D1** Plan and manage an Azure AI solution | 25–30% | Parcial — fundamentos, deployment types, IA responsable |
-| **D2** Implement generative AI and agentic solutions | 30–35% | Parcial — el más cubierto |
+| **D1** Plan and manage an Azure AI solution | 25–30% | ✅ **Cubierto** |
+| **D2** Implement generative AI and agentic solutions | 30–35% | ✅ **Cubierto** |
 | **D3** Computer vision | 10–15% | ❌ Sin material |
 | **D4** Text analysis | 10–15% | ❌ Sin material |
 | **D5** Information extraction | 10–15% | ❌ Sin material |
 
-**No es una guía completa.** D3, D4 y D5 son el hueco principal. Detalle objetivo por objetivo en [`study/AI-103-SYLLABUS.md`](study/AI-103-SYLLABUS.md).
+**No es una guía completa.** D1 y D2 (el 55–65% del examen) están cubiertos; **D3, D4 y D5 son el hueco principal**. Detalle objetivo por objetivo en [`study/AI-103-SYLLABUS.md`](study/AI-103-SYLLABUS.md).
 
 ---
 

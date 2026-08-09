@@ -26,7 +26,13 @@ La numeración es por dominio, no por orden de lectura. Esta es la ruta recomend
 | 6 | [D2/06 RAG y grounding](D2-apps-y-agentes/06-rag-grounding.md) | Darle tus datos al modelo |
 | 7 | [D2/04 Agentes](D2-apps-y-agentes/04-agentes-en-foundry.md) | Qué es un agente y sus tipos |
 | 8 | [D2/07 Construir y publicar](D2-apps-y-agentes/07-construir-y-publicar-agentes.md) | Ciclo de vida completo — **depende del 04** |
-| 9 | [D1/02 IA responsable](D1-plataforma/02-ia-responsable.md) | Filtros, riesgos y salida a producción |
+| 9 | [D2/08 Las tools en detalle](D2-apps-y-agentes/08-las-cuatro-tools.md) | Profundiza el catálogo del 07 |
+| 10 | [D2/09 Multi-agente](D2-apps-y-agentes/09-multi-agente-y-orquestacion.md) | Varios agentes coordinados |
+| 11 | [D1/03 Cuotas y rate limits](D1-plataforma/03-cuotas-y-rate-limits.md) | Capacidad y coste — **encaja con D1/01** |
+| 12 | [D1/04 Seguridad](D1-plataforma/04-seguridad-identidad-y-red.md) | Identidad, RBAC y red |
+| 13 | [D1/02 IA responsable](D1-plataforma/02-ia-responsable.md) | Filtros, riesgos y salida a producción |
+| 14 | [D2/10 Observabilidad](D2-apps-y-agentes/10-observabilidad-y-tracing.md) | Ya en producción: qué pasó por dentro |
+| 15 | [D1/05 GenAIOps y CI/CD](D1-plataforma/05-genaiops-cicd-y-monitoreo.md) | Cierra el ciclo: evaluar, desplegar, monitorizar |
 | — | [D2/05 Labs oficiales](D2-apps-y-agentes/05-labs-oficiales.md) | Complemento práctico, en cualquier momento |
 
 ---
@@ -39,8 +45,11 @@ La numeración es por dominio, no por orden de lectura. Esta es la ruta recomend
 | [00 Fundamentos](D1-plataforma/00-fundamentos-foundry.md) | Recurso → proyecto → **deployment** → endpoint · **modelo ≠ deployment** · los dos endpoints · qué es RBAC |
 | [01 Deployment types](D1-plataforma/01-deployment-types.md) | Global / Data Zone / Regional × Standard / Provisioned / Batch · residencia de datos · SLA · cuándo elegir cada uno |
 | [02 IA responsable](D1-plataforma/02-ia-responsable.md) | **Map → Measure → Mitigate → Manage** · las **4 capas de mitigación** · content filters y prompt shields · red teaming · plan de salida |
+| [03 Cuotas y rate limits](D1-plataforma/03-cuotas-y-rate-limits.md) | **TPM vs PTU** · RPM · **429 y backoff exponencial** · la cuota vive en la suscripción · quota tiers · control de coste |
+| [04 Seguridad: identidad y red](D1-plataforma/04-seguridad-identidad-y-red.md) | Managed Identity / Service Principal · **los 5 roles de Foundry** · scopes · **private endpoint y PNA** · qué tools no funcionan aisladas |
+| [05 GenAIOps, CI/CD y monitoreo](D1-plataforma/05-genaiops-cicd-y-monitoreo.md) | Las **3 etapas** de evaluación · continuous vs scheduled · **evaluadores como quality gate** · salud de índices en AI Search |
 
-**Sin cubrir en D1:** cuotas y rate limits (TPM/PTU, 429) · CI/CD con proyectos Foundry · redes privadas · monitoreo de índices.
+**D1 cubierto.** Lo que queda son detalles menores de operaciones.
 
 ---
 
@@ -56,8 +65,11 @@ La numeración es por dominio, no por orden de lectura. Esta es la ruta recomend
 | [05 Labs oficiales](D2-apps-y-agentes/05-labs-oficiales.md) | Leaderboard y trade-offs · benchmarks ≠ evaluación · **dataset sintético** · el `.env` sin key |
 | [06 RAG y grounding](D2-apps-y-agentes/06-rag-grounding.md) | Retrieve → Augment → Generate · embeddings y cosine similarity · Azure AI Search · **hybrid search** · RAG vs fine-tuning |
 | [07 Construir y publicar agentes](D2-apps-y-agentes/07-construir-y-publicar-agentes.md) | Portal vs VS Code · **YAML del agente** · catálogo de tools y MCP · **Deploy vs Publish** · Agent Application, Entra y RBAC |
+| [08 Las tools en detalle](D2-apps-y-agentes/08-las-cuatro-tools.md) | Code Interpreter · File Search vs AI Search · **function calling lo ejecuta TU código** · `function_call` / `function_call_output` |
+| [09 Multi-agente y orquestación](D2-apps-y-agentes/09-multi-agente-y-orquestacion.md) | Agente vs workflow · **los 4 patrones** (sequential, concurrent, handoff, magentic) · executors y edges · checkpointing · human-in-the-loop |
+| [10 Observabilidad y tracing](D2-apps-y-agentes/10-observabilidad-y-tracing.md) | **Evaluación vs tracing** · OpenTelemetry y Application Insights · traces, spans y attributes · privacidad del contenido |
 
-**Sin cubrir en D2:** las 4 tools en detalle (`code_interpreter`, `web_search`, `file_search`, `function`) · multi-agente y orquestación · observabilidad y tracing.
+**D2 cubierto.** Falta profundizar en MCP y en las integraciones con M365.
 
 ---
 
@@ -86,12 +98,20 @@ Los pares que más se confunden en el examen, y el apunte que los distingue:
 | Evaluadores | Observabilidad / tracing | [D2/02](D2-apps-y-agentes/02-evaluacion-de-modelos.md) |
 | Deploy | Publish | [D2/07](D2-apps-y-agentes/07-construir-y-publicar-agentes.md) |
 | Declarative agent | Hosted agent | [D2/04](D2-apps-y-agentes/04-agentes-en-foundry.md) |
+| Agente | Workflow | [D2/09](D2-apps-y-agentes/09-multi-agente-y-orquestacion.md) |
+| Evaluación | Observabilidad / tracing | [D2/10](D2-apps-y-agentes/10-observabilidad-y-tracing.md) |
+| Benchmarks | Evaluación con tus datos | [D1/05](D1-plataforma/05-genaiops-cicd-y-monitoreo.md) |
+| Tools que ejecuta Azure | **Function calling (lo ejecutas tú)** | [D2/08](D2-apps-y-agentes/08-las-cuatro-tools.md) |
+| Continuous evaluation | Scheduled evaluation | [D1/05](D1-plataforma/05-genaiops-cicd-y-monitoreo.md) |
+| Foundry User | Foundry Project Manager (publicar) | [D1/04](D1-plataforma/04-seguridad-identidad-y-red.md) |
 
 ---
 
 ## Cobertura
 
-**9 apuntes ≈ 13 de los 44 objetivos del temario (~30%).** D3, D4 y D5 sin material.
+**15 apuntes ≈ 26 de los 44 objetivos del temario (~59%).**
+
+**D1 y D2 están cubiertos** — juntos son el **55–65% del examen**. D3, D4 y D5 siguen sin material.
 
 Detalle objetivo por objetivo: [`../AI-103-SYLLABUS.md`](../AI-103-SYLLABUS.md).
 

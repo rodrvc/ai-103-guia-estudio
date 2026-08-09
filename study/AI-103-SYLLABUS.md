@@ -56,22 +56,22 @@
 | D1.2.a | Design Azure infrastructure for AI apps and agent-based solutions | Pendiente | No evaluado | — |
 | D1.2.b | Choose appropriate deployment options | Evaluado | **Competente** | 2026-08-04, **3/3 casos de decisión correctos**: sin restricciones→GlobalStandard · lotes masivos sin prisa→GlobalBatch · UE + latencia crítica→DataZoneProvisioned. Domina los dos ejes y el criterio de **no sobre-restringir**. Falta para Dominado: Developer tier, SLA, at-rest vs procesamiento, y evidencia en 2ª sesión. Apunte `notes/D1-plataforma/01-deployment-types.md` |
 | D1.2.c | Configure model and agent deployments | Evaluado | **Débil** | DIAG-1 p3 fallo: confunde deployment con playground. E-001 |
-| D1.2.d | Integrate Foundry projects with CI/CD pipelines | Pendiente | No evaluado | — |
+| D1.2.d | Integrate Foundry projects with CI/CD pipelines | Pendiente | No evaluado | —. Material 2026-08-09: `notes/D1-plataforma/05-genaiops-cicd-y-monitoreo.md` — **sin verificar** |
 
 ### D1.3 Manage, monitor, and secure AI systems
 
 | ID | Objetivo oficial | Estado | Nivel | Evidencia |
 | --- | --- | --- | --- | --- |
-| D1.3.a | Manage quotas, scaling, rate limits, and cost footprints for model and agent workloads | Evaluado | **Débil** | DIAG-1 p4: "no lo sé". Sin TPM/PTU/429. E-002 |
-| D1.3.b | Monitor model performance, drift, safety events, and grounding quality | Pendiente | No evaluado | — |
-| D1.3.c | Monitor data ingestion quality, search index health, and relevance performance | Pendiente | No evaluado | — |
-| D1.3.d | Configure security: managed identity, private networking, keyless credentials, role policies | Evaluado | **Débil** | DIAG-1 p5 parcial-bajo: intuye Azure, no nombra Managed Identity / RBAC / DefaultAzureCredential. E-003. Material 2026-08-08: `notes/D2-apps-y-agentes/07` § Deploy vs Publish (identidad Entra propia, rol Azure AI User, RBAC no se hereda) — **sin verificar** |
+| D1.3.a | Manage quotas, scaling, rate limits, and cost footprints for model and agent workloads | Evaluado | **Débil** | DIAG-1 p4: "no lo sé". Sin TPM/PTU/429. E-002. Material 2026-08-09: `notes/D1-plataforma/03-cuotas-y-rate-limits.md` — **sin verificar** |
+| D1.3.b | Monitor model performance, drift, safety events, and grounding quality | **Estudiado, sin evaluar** | No evaluado | Material 2026-08-09: `notes/D1-plataforma/05-genaiops-cicd-y-monitoreo.md` (continuous vs scheduled, drift) + `notes/D2-apps-y-agentes/10-observabilidad-y-tracing.md` — **sin verificar** |
+| D1.3.c | Monitor data ingestion quality, search index health, and relevance performance | Pendiente | No evaluado | —. Material 2026-08-09: `notes/D1-plataforma/05-genaiops-cicd-y-monitoreo.md` — **sin verificar** |
+| D1.3.d | Configure security: managed identity, private networking, keyless credentials, role policies | Evaluado | **Débil** | DIAG-1 p5 parcial-bajo: intuye Azure, no nombra Managed Identity / RBAC / DefaultAzureCredential. E-003. Material 2026-08-08: `notes/D2-apps-y-agentes/07` § Deploy vs Publish (identidad Entra propia, rol Foundry User, RBAC no se hereda) — **sin verificar**. Ampliado 2026-08-09: `notes/D1-plataforma/04-seguridad-identidad-y-red.md` (5 roles, scopes, private endpoint) |
 
 ### D1.4 Implement responsible AI across generative AI and agentic systems
 
 | ID | Objetivo oficial | Estado | Nivel | Evidencia |
 | --- | --- | --- | --- | --- |
-| D1.4.a | Configure safety filters, guardrails, risk detection, and content moderation | Evaluado | **En aprendizaje** | DIAG-1 p7 pleno (filter vs blocklist) pero p6 fallo: no conoce las categorías ni las severidades. E-004. Material 2026-08-08: `notes/D1-plataforma/02-ia-responsable.md` (5 categorías × 4 severidades, prompt shields) — **sin verificar** |
+| D1.4.a | Configure safety filters, guardrails, risk detection, and content moderation | Evaluado | **En aprendizaje** | DIAG-1 p7 pleno (filter vs blocklist) pero p6 fallo: no conoce las categorías ni las severidades. E-004. Material 2026-08-08: `notes/D1-plataforma/02-ia-responsable.md` (**4 categorías graduadas** × 4 severidades + filtros binarios, prompt shields) — **sin verificar** |
 | D1.4.b | Apply responsible AI instrumentation: evaluators, safety evaluations, explanation tooling | **Estudiado, sin evaluar** | No evaluado | Material 2026-08-08: `notes/D1-plataforma/02-ia-responsable.md` (Map→Measure→Mitigate→Manage, 4 capas, red teaming, baseline manual→automático) — **sin preguntas respondidas** |
 | D1.4.c | Implement auditing through trace logging, provenance metadata, approval workflows | Pendiente | No evaluado | — |
 | D1.4.d | Govern agent behavior with oversight modes, constraints, and tool-access controls | Pendiente | No evaluado | — |
@@ -86,7 +86,7 @@
 | --- | --- | --- | --- | --- |
 | D2.1.a | Deploy and consume LLMs, small models, code models, and multimodal models | Pendiente | No evaluado | — |
 | D2.1.b | Implement retrieval-augmented generation (RAG) in an application | Evaluado | **En aprendizaje** | DIAG-1 p8 parcial: **invierte** vectorial/híbrida, omite BM25, RRF y semantic ranker. Sabe RAG en la práctica, no la terminología AI Search. E-005. Material desde 2026-08-05: `notes/D2-apps-y-agentes/06-rag-grounding.md` (retrieve/augment/generate, 4 búsquedas, hybrid recomendado) — **sin evaluar, nivel sin cambio**. Ojo: el apunte no cubre BM25, RRF ni semantic ranker, que es justo lo que falló |
-| D2.1.c | Design workflows, tool-augmented flows, and multistep reasoning pipelines | Pendiente | No evaluado | — |
+| D2.1.c | Design workflows, tool-augmented flows, and multistep reasoning pipelines | Pendiente | No evaluado | —. Material 2026-08-09: `notes/D2-apps-y-agentes/08-las-cuatro-tools.md` — **sin verificar** |
 | D2.1.d | Evaluate models and apps: fabrications, relevance, quality, safety | Evaluado | **Débil** | DIAG-1 p12 fallo: confunde evaluación con observabilidad, no conoce groundedness. Llamativo por su experiencia en LangSmith. E-007 |
 | D2.1.e | Integrate generative workflows into applications by using Foundry SDKs and connectors | Estudiado, **sin evaluar** | No evaluado | Apunte `notes/D2-apps-y-agentes/01-conectar-app-a-foundry.md` (2026-08-04): Foundry SDK vs OpenAI SDK, Responses vs ChatCompletions. Pendiente quiz |
 | D2.1.f | Configure an application to connect to a Foundry project | Estudiado, **sin evaluar** | No evaluado | Apuntes `notes/D2-apps-y-agentes/01-conectar-app-a-foundry.md` + `03-playground.md` (2026-08-04): dos endpoints, `AIProjectClient`, auth. Pendiente quiz |
@@ -98,8 +98,8 @@
 | D2.2.a | Define agent roles, goals, conversation-tracking approach, and tool schemas | **Estudiado, sin evaluar** | No evaluado | Material 2026-08-08: `notes/D2-apps-y-agentes/07` (YAML del agente, instructions, temperature/top_p) + `/04` (tipos de agente). **Sin preguntas respondidas** |
 | D2.2.b | Build agents that integrate retrieval, function-calling, and conversation memory | Evaluado | **Competente** | DIAG-1 p10 pleno: thread/run/message correctos y acierta lo clave — **el servicio persiste el thread**, no la app. Único objetivo en Competente |
 | D2.2.c | Integrate agent tools: APIs, knowledge stores, search, content understanding, custom functions | Evaluado | **En aprendizaje** | DIAG-1 p9 parcial: catálogo incompleto, confunde modalidad (voz) con tool. E-006. Material 2026-08-08: `notes/D2-apps-y-agentes/07` § Tools (3 categorías, File Search vs AI Search, OpenAPI, MCP) — **sin verificar** |
-| D2.2.d | Implement orchestrated multi-agent solutions | Pendiente | No evaluado | — |
-| D2.2.e | Build autonomous or semiautonomous workflows with safeguards and approval flow controls | Evaluado | **En aprendizaje** | DIAG-1 p11: patrón human-in-the-loop correcto, falta la mecánica `requires_action` → `submit_tool_outputs`. E-009 |
+| D2.2.d | Implement orchestrated multi-agent solutions | Pendiente | No evaluado | —. Material 2026-08-09: `notes/D2-apps-y-agentes/09-multi-agente-y-orquestacion.md` — **sin verificar** |
+| D2.2.e | Build autonomous or semiautonomous workflows with safeguards and approval flow controls | Evaluado | **En aprendizaje** | DIAG-1 p11: patrón human-in-the-loop correcto, falta la mecánica `requires_action` → `submit_tool_outputs`. E-009. Material 2026-08-09: `notes/D2-apps-y-agentes/09-multi-agente-y-orquestacion.md` — **sin verificar** |
 | D2.2.f | Integrate monitoring into deployed agents, evaluate agent behavior, perform error analysis | Pendiente | No evaluado | — |
 
 ### D2.3 Optimize and operationalize generative AI systems

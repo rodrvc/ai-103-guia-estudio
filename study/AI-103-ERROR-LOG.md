@@ -131,9 +131,10 @@ Todos provienen de **DIAG-1 (2026-08-04)**. Repasos programados: 1d = 2026-08-05
 - **Mi respuesta:** "cuando se va a tomar la decisión y se tienen todas las evidencias habría que agregar un paso de humano en el medio para aprobar"
 - **Correcta:** El **concepto es correcto** (contó como acierto). Falta el **mecanismo exacto**, que es lo que se pregunta: el run entra en estado **`requires_action`** cuando el modelo solicita invocar la tool; la ejecución se **pausa antes de ejecutar la función**; tu app inserta la aprobación humana y luego llama a **`submit_tool_outputs`** para reanudar el run.
 - **Causa:** falta de práctica (conoce el patrón, no la API)
-- **Concepto a reforzar:** estados del run (`queued`, `in_progress`, `requires_action`, `completed`, `failed`) y el ciclo submit_tool_outputs
+- **Concepto a reforzar:** el ciclo de pausa/reanudación al invocar una tool, en **las dos APIs** (ver aviso abajo)
 - **Repasos:** 1d ☐ | 3d ☐ | 7d ☐ | 14d ☐ | 30d ☐
-- **Estado:** abierto
+- **Estado:** abierto — **con material desde 2026-08-09:** `notes/D2-apps-y-agentes/08-las-cuatro-tools.md` y `/09-multi-agente-y-orquestacion.md`
+- ⚠️ **Actualizado 2026-08-09 tras leer la fuente:** `requires_action` + `submit_tool_outputs` es el flujo de la **Assistants API** (antigua). El material actual de Foundry usa la **Responses API**: item de tipo **`function_call`** → devuelves un **`function_call_output`** con el mismo `call_id`. **El concepto es idéntico**; cambia el nombre. Reconocer ambos. Además, los runs **expiran a los 10 minutos**.
 
 ---
 

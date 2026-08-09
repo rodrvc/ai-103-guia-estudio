@@ -8,6 +8,21 @@
 
 ---
 
+## 2026-08-09 — Sesión 015: cierre de material de D1 y D2 (6 apuntes) + publicación
+
+- **El usuario pidió cerrar el contenido de D1 y D2** para poder estudiarlos completos. Escritos **6 apuntes** leyendo docs de Azure (5 de los 6 temas **no están en el curso oficial**): `D1/03-cuotas-y-rate-limits` · `D1/04-seguridad-identidad-y-red` · `D1/05-genaiops-cicd-y-monitoreo` · `D2/08-las-cuatro-tools` · `D2/09-multi-agente-y-orquestacion` · `D2/10-observabilidad-y-tracing`.
+- **Cobertura: 27% → 59%.** D1 y D2 (**55–65% del examen**) quedan cubiertos.
+- ⚠️ **Tres correcciones tras verificar la fuente** — dos afectaban a apuntes ya publicados:
+  1. **Content filters: son 4 categorías graduadas**, no 5. Task Adherence, Prompt Shields, Groundedness, PII y Protected Material son **filtros binarios sin severidad**. La sesión 014 lo había apuntado mal por leer solo el módulo de Learn. Corregido en E-004.
+  2. **Los roles RBAC se renombraron:** *Azure AI User* → **Foundry User**. Corregido en 3 apuntes.
+  3. **`requires_action` / `submit_tool_outputs` es de la Assistants API.** La Responses API usa **`function_call` → `function_call_output`**. Anotado en E-009 con ambos nombres.
+- **Revisión externa aplicada** (agente `alvaro-tech-architect`) antes de publicar: despersonalizadas **23 referencias** al historial personal (E-NNN, DIAG, R7) → "Confusión frecuente: X no es Y" · apunte nuevo `D1/00-fundamentos` (el vocabulario que todo lo demás daba por sabido) · chunking añadido a RAG · INDEX con ruta de lectura y tabla de confusiones · README reescrito · LICENSE MIT.
+- **Publicado** en https://github.com/rodrvc/ai-103-guia-estudio (público, rama `main`).
+- **Sin cambios de nivel.** El cuello de botella se movió: ya no es escribir material, es **verificarlo** (~40 preguntas, 2 respondidas).
+- **Próxima acción:** DIAG-2 (D3/D4/D5 sin medir) o evaluar D1/D2, que ya tienen material completo.
+
+---
+
 ## 2026-08-08 — Sesión 014: IA responsable (LP1-M6) + primer repaso real
 
 - **Volvió a LP1-M6** tras empezar LP2-M1 en la misma sesión. **Salta de módulo con frecuencia** — no asumir continuidad, verificar en Learn o preguntar.

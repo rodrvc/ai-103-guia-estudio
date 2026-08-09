@@ -205,9 +205,9 @@ https://<recurso>.services.ai.azure.com/api/projects/<proyecto>/applications/<ap
 ### Autenticación
 
 - **Microsoft Entra ID**, obligatorio
-- El llamante necesita el rol **Azure AI User** sobre el Agent Application
+- El llamante necesita el rol **Foundry User** (antes *Azure AI User*) sobre el Agent Application. Si solo consume el agente, basta **Foundry Agent Consumer**
 - **API keys NO soportadas** para Agent Applications
-- `403 Forbidden` → falta el rol Azure AI User
+- `403 Forbidden` → falta el rol. Detalle de roles: [Seguridad](../D1-plataforma/04-seguridad-identidad-y-red.md)
 
 Verificar el endpoint:
 
@@ -241,7 +241,7 @@ Cuidado: dentro del proyecto el servicio persiste la conversación (nota 04), pe
 **Alto valor:**
 - **Deploy (proyecto) vs Publish (Agent Application con endpoint)**
 - **Identidad de Entra nueva al publicar → reasignar RBAC**
-- **Azure AI User** + Entra ID; **API key no vale**
+- **Foundry User** (antes *Azure AI User*) + Entra ID; **API key no vale**
 - **File Search (tus subidas) vs Azure AI Search (índices existentes)**
 - Las 3 categorías del catálogo: **Configured / Catalog / Custom**
 - El agente publicado es **stateless** — el historial lo guarda el cliente
@@ -268,7 +268,7 @@ Cuidado: dentro del proyecto el servicio persiste la conversación (nota 04), pe
 
 1. **Publicar** (Publish), no solo desplegar. Eso crea el **Agent Application** con su endpoint estable e invocable desde fuera del proyecto.
 2. Al publicar recibió una **identidad de Entra propia**, distinta de la del proyecto. Los permisos no se heredan: hay que **reasignar el rol RBAC** sobre el Storage a la nueva identidad.
-3. Que no se puede. Los Agent Applications usan **Entra ID exclusivamente**; necesita el rol **Azure AI User**. Sin él, `403 Forbidden`.
+3. Que no se puede. Los Agent Applications usan **Entra ID exclusivamente**; necesita el rol **Foundry User** (antes *Azure AI User*), o **Foundry Agent Consumer** si solo consume. Sin rol, `403 Forbidden`.
 4. **Azure AI Search** — conecta con índices empresariales que ya existen. File Search es para documentos que subes al agente y se indexan en un vector store.
 5. Los endpoints de Agent Application son **stateless** (Responses API). El **historial lo mantiene tu cliente** y lo envía en cada llamada.
 6. **VS Code**: el YAML se versiona en Git junto a tu código y entra en el flujo normal de code review.

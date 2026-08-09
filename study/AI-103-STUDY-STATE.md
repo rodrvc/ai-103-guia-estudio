@@ -8,7 +8,7 @@
 >
 > Evidencia: `AI-103-ERROR-LOG.md` (errores y patrones) · `AI-103-PRACTICE.md` (quizzes y labs) · `AI-103-SYLLABUS.md` (niveles por objetivo) · `AI-103-LEARNING-PATH.md` (currículo) · `PROFILE.md` (perfil, fuentes, riesgos).
 
-- **Última actualización:** 2026-08-08
+- **Última actualización:** 2026-08-09
 - **Fase actual:** **LP1, módulo 6** (*"Implement a responsible generative AI solution"*, 9 unidades) — volvió a LP1 el 2026-08-08 tras empezar LP2-M1. Verificado en Learn ese día: **LP1 = 4/6 (87%)** · **LP2 = 0/9**.
   ⚠️ **Salta de módulo con frecuencia** (LP1-M5 → LP2-M1 → LP1-M6 en una sesión). **No asumas que sigue donde lo dejaste: pregúntale o verifica en Learn.** Quedan a medias LP1-M5 (pausado en la u6) y LP2-M1 (teoría anotada, falta el ejercicio)
 - **Examen reservado:** No
@@ -23,8 +23,8 @@
 | Objetivos del temario | 44 | `AI-103-SYLLABUS.md` |
 | Evaluados | 12 (27%) | DIAG-1 + D1.2.b |
 | Competente o superior | **2** (5%) | D2.2.b · **D1.2.b** (3/3 casos, 2026-08-04) |
-| Apuntes escritos | **9** | `notes/INDEX.md` |
-| **Cobertura de material** | **~12 / 44 objetivos (27%)** | D3, D4 y D5 sin una línea |
+| Apuntes escritos | **15** | `notes/INDEX.md` |
+| **Cobertura de material** | **~26 / 44 objetivos (59%)** | **D1 y D2 cubiertos**; D3, D4 y D5 sin una línea |
 | Simulaciones completas hechas | 0 | — |
 | Mejor puntaje parcial | **42%** (DIAG-1, D1+D2) | `AI-103-PRACTICE.md` |
 | Módulos del curso oficial | **4 / 30 (13%)** | Verificado en Learn 2026-08-05 |
@@ -74,7 +74,7 @@ Análisis completo, distribución por causa y pares de servicios que confunde: `
 
 - **Crítica:** E-003 managed identity · E-001 deployment vs model · E-002 cuotas TPM/PTU
 - **Alta:** E-005 capas de retrieval · E-007 evaluadores · E-004 content filters
-- **Media:** E-006 catálogo de tools · E-009 requires_action · E-008 LLM vs SLM
+- **Media:** E-006 catálogo de tools · E-009 pausa por tool call · E-008 LLM vs SLM
 
 ---
 
@@ -94,7 +94,7 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 | E-006 | Catálogo de tools | En aprendizaje | 08-05 ☐ | 08-07 ☐ | 08-11 ☐ | 08-18 ☐ | 09-03 ☐ |
 | E-007 | Evaluadores / groundedness | Débil | 08-05 ☐ | 08-07 ☐ | 08-11 ☐ | 08-18 ☐ | 09-03 ☐ |
 | E-008 | LLM vs SLM | En aprendizaje | 08-05 ☐ | 08-07 ☐ | 08-11 ☐ | 08-18 ☐ | 09-03 ☐ |
-| E-009 | requires_action / submit_tool_outputs | En aprendizaje | 08-05 ☐ | 08-07 ☐ | 08-11 ☐ | 08-18 ☐ | 09-03 ☐ |
+| E-009 | Pausa por tool call (`function_call`) | En aprendizaje | 08-05 ☐ | 08-07 ☐ | 08-11 ☐ | 08-18 ☐ | 09-03 ☐ |
 
 **Prioritarios para el repaso de 1 día (08-05):** E-001, E-003, E-005, E-007 — los cuatro de mayor impacto en el examen.
 
@@ -119,7 +119,7 @@ Los 9 errores de DIAG-1 entran con el mismo calendario base.
 - **LP1-M5**: pausado en la u6
 - **LP2-M1**: teoría anotada, falta el ejercicio (u9) y el knowledge check (u10)
 
-**El cuello de botella real es la cobertura de material.** 8 apuntes ≈ 23% de los objetivos; **D3+D4+D5 (30–45% del examen) sin una línea**. Escribir apuntes de los dominios vacíos es lo que más rinde después de DIAG-2.
+**El cuello de botella se movió (2026-08-09).** D1 y D2 quedaron **cerrados** con 6 apuntes nuevos (~59% de cobertura). Ahora hay dos cuellos: **D3+D4+D5 sin una línea** (30–45% del examen) y, sobre todo, **nada verificado**: ~40 preguntas escritas, 2 respondidas. Con D1 y D2 ya cubiertos, **evaluar rinde más que seguir escribiendo**.
 
 **Deudas acumuladas** (mencionarlas, no imponerlas):
 
